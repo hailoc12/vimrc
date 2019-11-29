@@ -1,18 +1,19 @@
 #!/bin/sh
 set -e
 export local_dir="vimrc"
+cp -r ~/$local_dir ~/.vim_runtime
 
-cd ~/$local_dir
+cd ~/.vim_runtime
 
-echo "set runtimepath+=~/$local_dir
+echo "set runtimepath+=~/.vim_runtime
 
-source ~/$local_dir/vimrcs/basic.vim
-source ~/$local_dir/vimrcs/filetypes.vim
-source ~/$local_dir/vimrcs/plugins_config.vim
-source ~/$local_dir/vimrcs/extended.vim
+source ~/.vim_runtime/vimrcs/basic.vim
+source ~/.vim_runtime/vimrcs/filetypes.vim
+source ~/.vim_runtime/vimrcs/plugins_config.vim
+source ~/.vim_runtime/vimrcs/extended.vim
 
 try
-source ~/$local_dir/my_configs.vim
+source ~/.vim_runtime/my_configs.vim
 catch
 endtry" > ~/.vimrc
 
