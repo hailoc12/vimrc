@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 export local_dir="vimrc"
-cp -r ~/$local_dir ~/.vim_runtime
+sudo cp -r ~/$local_dir ~/.vim_runtime
 
 cd ~/.vim_runtime
 
@@ -16,5 +16,8 @@ try
 source ~/.vim_runtime/my_configs.vim
 catch
 endtry" > ~/.vimrc
+
+#install YouCompleteMe
+sudo apt install build-essential cmake python3-dev
 
 echo "Installed the Ultimate Vim configuration successfully! Enjoy :-)"
