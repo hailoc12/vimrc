@@ -27,8 +27,7 @@ map <leader>o :BufExplorer<cr>
 " => tagList plugin
 """"""""""""""""""""""""""""""
 map <leader>t :TlistToggle<cr>
-
-
+let Tlist_Use_Right_Window   = 1
 
 """"""""""""""""""""""""""""""
 " => MRU plugin
