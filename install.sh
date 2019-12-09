@@ -1,6 +1,9 @@
 #!/bin/sh
 set -e
 export local_dir="vimrc"
+
+#delete old data and copy new one
+sudo rm -rf ~/.vim_runtime
 sudo cp -r ~/$local_dir ~/.vim_runtime
 
 cd ~/.vim_runtime

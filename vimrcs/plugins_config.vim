@@ -23,6 +23,12 @@ let g:bufExplorerFindActive=1
 let g:bufExplorerSortBy='name'
 map <leader>o :BufExplorer<cr>
 
+""""""""""""""""""""""""""""""
+" => tagList plugin
+""""""""""""""""""""""""""""""
+map <leader>t :TlistToggle<cr>
+
+
 
 """"""""""""""""""""""""""""""
 " => MRU plugin
