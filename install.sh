@@ -20,4 +20,7 @@ endtry" > ~/.vimrc
 #install YouCompleteMe
 sudo apt install build-essential cmake python3-dev
 
+#install taglist
+sudo apt-get install exuberant-ctags
+
 echo "Installed the Ultimate Vim configuration successfully! Enjoy :-)"
