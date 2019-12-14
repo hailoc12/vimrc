@@ -2,6 +2,10 @@
 set -e
 export local_dir="vimrc"
 
+#init submodule
+cd sources_non_forked/YouCompleteMe/
+git submodule update --init --recursive
+
 #delete old data and copy new one
 sudo rm -rf ~/.vim_runtime
 sudo cp -r ~/$local_dir ~/.vim_runtime
@@ -22,8 +26,13 @@ endtry" > ~/.vimrc
 
 #install YouCompleteMe
 sudo apt install build-essential cmake python3-dev
+cd ~/.vim_runtime/sources_non_forked/YouCompleteMe
+python3 install.py
 
 #install taglist
 sudo apt-get install exuberant-ctags
+
+#install other python3 lib
+pip3 install -r requirements.txt
 
 echo "Installed the Ultimate Vim configuration successfully! Enjoy :-)"
