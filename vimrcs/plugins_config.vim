@@ -203,3 +203,10 @@ map <leader>sr :SyntasticReset<cr>
 map <leader>st :SyntasticToggleMode<cr>:redraw!<cr>
 map <leader>sn :lnext<cr>
 map <leader>sp :lprevious<cr>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Vietnamese Keymap
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+map <leader>km :set keymap=vietnamese-vni_utf-8<cr>
+map <leader>kt :set keymap=<cr>
