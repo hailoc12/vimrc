@@ -8,7 +8,7 @@ git submodule update --init --recursive
 
 # replace current vim plugins with new plugins
 sudo rm -rf ~/.vim_runtime
-sudo cp -r ~/$local_dir ~/.vim_runtime
+sudo cp -r ~/$local_dir/vimrc ~/.vim_runtime
 
 cd ~/.vim_runtime
 
