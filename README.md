@@ -24,5 +24,5 @@ Ctrl + j/h/k/l
 <leader>pp : setlocal paste!
 
 ### Openfile with Fuzzy Matching
-
+<leader>j
 
