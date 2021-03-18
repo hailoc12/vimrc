@@ -14,6 +14,9 @@ sudo cp ~/$local_dir/my_configs.vim ~/.vim_runtime/vimrcs/
 cd ~/.vim_runtime
 ./install_awesome_vimrc.sh
 
+# fix can't write undo file
+sudo chmod -R 755 ~/.vim_runtime
+
 #install YouCompleteMe
 # sudo apt install build-essential cmake python3-dev
 # cd ~/.vim_runtime/sources_non_forked/YouCompleteMe
