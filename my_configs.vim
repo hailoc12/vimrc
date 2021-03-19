@@ -1,0 +1,1 @@
+imap ii <Esc>
