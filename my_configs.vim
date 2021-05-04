@@ -1,2 +1,2 @@
 imap ii <Esc>
-map <leader>k :set keymap=vietnamese-vni_utf-8
+map <leader>km :set keymap=vietnamese-vni_utf-8
