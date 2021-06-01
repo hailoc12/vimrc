@@ -21,16 +21,12 @@ sudo apt install build-essential python3-dev
 sudo snap install cmake --classic
 sudo apt-get install g++-8
 cd ~/.vim_runtime/sources_non_forked/YouCompleteMe
-<<<<<<< HEAD
 CC=gcc-8 CXX=g++-8 python3 ./install.py --all
 
 #update to the latest vim
 sudo add-apt-repository ppa:jonathonf/vim
 sudo apt update
 sudo apt install vim
-=======
-CC=gcc-8 CXX=g++-8 python3 ./install.py
->>>>>>> 070e7e042d5fc118e516eaad9ace8e049f886b5a
 
 #install taglist
 # sudo apt-get install exuberant-ctags

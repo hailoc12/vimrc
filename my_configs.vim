@@ -1,2 +1,2 @@
-imap ii <Esc>
-map <leader>km :set keymap=vietnamese-vni_utf-8
+" set keymap to vietnamese by default 
+set keymap=vietnamese-vni_utf-8
