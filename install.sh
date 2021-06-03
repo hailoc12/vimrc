@@ -10,9 +10,6 @@ sudo rm -rf ~/.vim_runtime
 sudo cp -r ~/$local_dir/vimrc ~/.vim_runtime
 sudo cp ~/$local_dir/my_configs.vim ~/.vim_runtime/vimrcs/
 
-cd ~/.vim_runtime
-./install_awesome_vimrc.sh
-
 # fix can't write undo file
 sudo chmod -R 755 ~/.vim_runtime
 
@@ -21,12 +18,18 @@ sudo apt install build-essential python3-dev
 sudo snap install cmake --classic
 sudo apt-get install g++-8
 cd ~/.vim_runtime/sources_non_forked/YouCompleteMe
-CC=gcc-8 CXX=g++-8 python3 ./install.py --all
+CC=gcc-8 CXX=g++-8 sudo python3 ./install.py --all
+
+# install java
+sudo apt install default-jre
 
 #update to the latest vim
 sudo add-apt-repository ppa:jonathonf/vim
 sudo apt update
 sudo apt install vim
+
+cd ~/.vim_runtime
+./install_awesome_vimrc.sh
 
 #install taglist
 # sudo apt-get install exuberant-ctags
