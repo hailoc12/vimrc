@@ -17,6 +17,7 @@ sudo chmod -R 755 ~/.vim_runtime
 sudo apt install build-essential python3-dev
 sudo snap install cmake --classic
 sudo apt-get install g++-8
+sudo apt install libstdc++6
 cd ~/.vim_runtime/sources_non_forked/YouCompleteMe
 CC=gcc-8 CXX=g++-8 sudo python3 ./install.py --all
 
