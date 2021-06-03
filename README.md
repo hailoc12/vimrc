@@ -52,3 +52,7 @@ xdate: 09/03/21 16:01:25
 
 <leader>ss: spell checking
 
+### Syntastic checking
+<leader> ss: systastic checking
+<leader> se: display errors 
+<leader> sc: close display errors 
