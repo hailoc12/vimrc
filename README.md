@@ -2,6 +2,27 @@
 
 This vimrc is modified from the awesome https://github.com/amix/vimrc to fit my personal developing style 
 
+## Install 
+### For Vim
+```
+# on macos
+bash install_vim_macos.sh
+
+# on linux
+bash install_vim_linux.sh
+```
+
+### For Neovim
+1. Install "For Vim" first
+2. Run this command
+```
+# on macos
+bash install_nvim_macos.sh
+
+# on linux
+bash install_nvim_linux.sh
+```
+
 # Important shortcuts to remember 
 
 ### Move between windows
