@@ -15,7 +15,8 @@ sudo chmod -R 755 ~/.vim_runtime
 
 #install YouCompleteMe
 sudo apt install build-essential python3-dev
-sudo snap install cmake --classic
+sudo apt install cmake
+# sudo snap install cmake --classic
 sudo apt-get install g++-8
 sudo apt install libstdc++6
 cd ~/.vim_runtime/sources_non_forked/YouCompleteMe
