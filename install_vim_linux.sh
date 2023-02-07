@@ -3,6 +3,11 @@ set -e
 export local_dir="vimrc"
 
 # get all source codes
+rm -rf vimrc/sources_non_forked/YouCompleteMe
+git clone https://github.com/ycm-core/YouCompleteMe vimrc/sources_non_forked/YouCompleteMe
+cd ~/$local_dir/vimrc/sources_non_forked/YouCompleteMe
+git submodule update --init --recursive
+cd ~/$local_dir/
 git submodule update --init --recursive
 
 # replace current vim plugins with new plugins
