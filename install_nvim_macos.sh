@@ -4,6 +4,7 @@ export local_dir="vimrc"
 
 # set neovim to use vim config
 rm -rf ~/.config/nvim/*
+mkdir ~/.config/nvim
 ln -s ~/.vimrc ~/.config/nvim/init.vim
 
 # install Github Copilot
