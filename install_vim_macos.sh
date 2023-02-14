@@ -5,14 +5,19 @@ export local_dir="vimrc"
 # get all source codes
 rm -rf vimrc/sources_non_forked/YouCompleteMe
 git clone https://github.com/ycm-core/YouCompleteMe vimrc/sources_non_forked/YouCompleteMe
+rm -rf vimrc/sources_non_forked/tlib
+git clone https://github.com/vim-scripts/tlib vimrc/sources_non_forked/tlib
+
 cd ~/$local_dir/vimrc/sources_non_forked/YouCompleteMe
+git submodule update --init --recursive
+cd ~/$local_dir/vimrc/sources_non_forked/tlib
 git submodule update --init --recursive
 cd ~/$local_dir/
 
 git submodule update --init --recursive
 
 # replace current vim plugins with new plugins
-rm -rf ~/.vim_runtime
+sudo rm -rf ~/.vim_runtime
 cp -r ~/$local_dir/vimrc ~/.vim_runtime
 cp ~/$local_dir/my_configs.vim ~/.vim_runtime/vimrcs/
 
