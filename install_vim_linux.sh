@@ -3,11 +3,18 @@ set -e
 export local_dir="vimrc"
 
 # get all source codes
+cd ~/$local_dir/
+git submodule update --init --recursive
+
 rm -rf vimrc/sources_non_forked/YouCompleteMe
 git clone https://github.com/ycm-core/YouCompleteMe vimrc/sources_non_forked/YouCompleteMe
+rm -rf vimrc/sources_non_forked/tlib
+git clone https://github.com/vim-scripts/tlib vimrc/sources_non_forked/tlib
+
 cd ~/$local_dir/vimrc/sources_non_forked/YouCompleteMe
 git submodule update --init --recursive
-cd ~/$local_dir/
+
+cd ~/$local_dir/vimrc/sources_non_forked/tlib
 git submodule update --init --recursive
 
 # replace current vim plugins with new plugins
@@ -25,10 +32,15 @@ sudo apt install cmake
 sudo apt-get install g++-8
 sudo apt install libstdc++6
 cd ~/.vim_runtime/sources_non_forked/YouCompleteMe
-CC=gcc-8 CXX=g++-8 sudo python3 ./install.py --all
+sudo chown -R $(whoami) ~/.vim_runtime/sources_non_forked/YouCompleteMe
+
+sudo apt install golang-go
+sudo apt install default-jre
+sudo apt install npm
+
+CC=gcc-8 CXX=g++-8 python3 ./install.py --all
 
 # install java
-sudo apt install default-jre
 
 #update to the latest vim
 sudo add-apt-repository ppa:jonathonf/vim
