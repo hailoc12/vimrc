@@ -6,13 +6,13 @@ export local_dir="vimrc"
 cd ~/$local_dir/
 git submodule update --init --recursive
 
-rm -rf vimrc/sources_non_forked/YouCompleteMe
-git clone https://github.com/ycm-core/YouCompleteMe vimrc/sources_non_forked/YouCompleteMe
+#rm -rf vimrc/sources_non_forked/YouCompleteMe
+#git clone https://github.com/ycm-core/YouCompleteMe vimrc/sources_non_forked/YouCompleteMe
 rm -rf vimrc/sources_non_forked/tlib
 git clone https://github.com/vim-scripts/tlib vimrc/sources_non_forked/tlib
 
-cd ~/$local_dir/vimrc/sources_non_forked/YouCompleteMe
-git submodule update --init --recursive
+#cd ~/$local_dir/vimrc/sources_non_forked/YouCompleteMe
+#git submodule update --init --recursive
 
 cd ~/$local_dir/vimrc/sources_non_forked/tlib
 git submodule update --init --recursive
@@ -31,14 +31,14 @@ sudo apt install cmake
 # sudo snap install cmake --classic
 sudo apt-get install g++-8
 sudo apt install libstdc++6
-cd ~/.vim_runtime/sources_non_forked/YouCompleteMe
-sudo chown -R $(whoami) ~/.vim_runtime/sources_non_forked/YouCompleteMe
+#cd ~/.vim_runtime/sources_non_forked/YouCompleteMe
+#sudo chown -R $(whoami) ~/.vim_runtime/sources_non_forked/YouCompleteMe
 
 sudo apt install golang-go
 sudo apt install default-jre
 sudo apt install npm
 
-CC=gcc-8 CXX=g++-8 python3 ./install.py --all
+#CC=gcc-8 CXX=g++-8 python3 ./install.py --all
 
 # install java
 
