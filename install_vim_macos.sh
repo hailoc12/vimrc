@@ -3,13 +3,9 @@ set -e
 export local_dir="vimrc"
 
 # get all source codes
-rm -rf vimrc/sources_non_forked/YouCompleteMe
-git clone https://github.com/ycm-core/YouCompleteMe vimrc/sources_non_forked/YouCompleteMe
-rm -rf vimrc/sources_non_forked/tlib
 git clone https://github.com/vim-scripts/tlib vimrc/sources_non_forked/tlib
+rm -rf vimrc/sources_non_forked/tlib
 
-cd ~/$local_dir/vimrc/sources_non_forked/YouCompleteMe
-git submodule update --init --recursive
 cd ~/$local_dir/vimrc/sources_non_forked/tlib
 git submodule update --init --recursive
 cd ~/$local_dir/
@@ -30,8 +26,6 @@ brew install mono
 brew install java
 sudo ln -sfn $(brew --prefix java)/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 brew install vim
-cd ~/.vim_runtime/sources_non_forked/YouCompleteMe
-python3 ./install.py --all --verbose
 
 cd ~/.vim_runtime
 ./install_awesome_vimrc.sh
