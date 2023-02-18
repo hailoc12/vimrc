@@ -44,6 +44,7 @@ sudo apt install npm
 
 #update to the latest vim
 sudo add-apt-repository ppa:jonathonf/vim
+sudo apt remove vim
 sudo apt update
 sudo apt install vim
 

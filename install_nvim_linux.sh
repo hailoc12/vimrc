@@ -16,6 +16,12 @@ git clone https://github.com/github/copilot.vim \
 # install lib for YouCompleteMe to work correctly
 python3 -m pip install --user --upgrade pynvim
 
+# upgrade nodejs to 14x
+sudo apt update
+curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -
+sudo apt install -y nodejs
+node -v
+
 # install coc.nvim for code complete
 rm -rf ~/.local/share/nvim/site/pack/coc/start
 mkdir -p ~/.local/share/nvim/site/pack/coc/start
