@@ -58,4 +58,4 @@ cd ~/.vim_runtime
 # pip3 install -r requirements.txt
 
 # fix undo error files
-sudo chown -R $(whoami) .vim_runtime
+sudo chown -R $(whoami) ~/.vim_runtime
