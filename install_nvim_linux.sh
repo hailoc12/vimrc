@@ -2,6 +2,8 @@
 set -e
 export local_dir="vimrc"
 
+sudo apt install neovim
+
 # set neovim to use vim config
 rm -rf ~/.config/nvim
 mkdir ~/.config/nvim
