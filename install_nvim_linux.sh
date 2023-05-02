@@ -1,8 +1,9 @@
 #!/bin/sh
 set -e
 export local_dir="vimrc"
-
-sudo apt install neovim
+sudo add-apt-repository ppa:neovim-ppa/stable
+sudo apt-get update
+sudo apt-get install neovim
 
 # set neovim to use vim config
 rm -rf ~/.config/nvim
@@ -16,9 +17,9 @@ git clone https://github.com/github/copilot.vim \
 # install lib for YouCompleteMe to work correctly
 python3 -m pip install --user --upgrade pynvim
 
-# upgrade nodejs to 14x
+# upgrade nodejs to 16x
 sudo apt update
-curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -
+curl -sL https://deb.nodesource.com/setup_16.x | sudo bash -
 sudo apt install -y nodejs
 node -v
 

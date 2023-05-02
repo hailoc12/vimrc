@@ -43,6 +43,7 @@ sudo apt install npm
 # install java
 
 #update to the latest vim
+sudo apt install software-properties-common
 sudo add-apt-repository ppa:jonathonf/vim
 sudo apt remove vim
 sudo apt update
