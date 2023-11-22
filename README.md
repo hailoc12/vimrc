@@ -24,6 +24,8 @@ bash install_nvim_linux.sh
 ```
 
 # Important shortcuts to remember 
+### Fix tlib error
+move to line 77 and remove --complete=command arguments
 
 ### Move between windows
 Ctrl + j/h/k/l
