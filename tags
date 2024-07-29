@@ -212,6 +212,7 @@ $2	vimrc/vimrcs/extended.vim	/^vnoremap $2 <esc>`>a]<esc>`<i[<esc>$/;"	m
 $3	vimrc/vimrcs/extended.vim	/^inoremap $3 {}<esc>i$/;"	m
 $3	vimrc/vimrcs/extended.vim	/^vnoremap $3 <esc>`>a}<esc>`<i{<esc>$/;"	m
 $4	vimrc/vimrcs/extended.vim	/^inoremap $4 {<esc>o}<esc>O$/;"	m
+$FZF_DEFAULT_OPTS	vimrc/vimrcs/plugins_config.vim	/^let $FZF_DEFAULT_OPTS = '--no-unicode'$/;"	v
 $LANG	vimrc/sources_non_forked/vim-markdown/test/vimrc	/^let $LANG='en_US'$/;"	v
 $LANG	vimrc/vimrcs/basic.vim	/^let $LANG='en'$/;"	v
 $PERL6_EXCEPTIONS_HANDLER	vimrc/sources_non_forked/ale/ale_linters/perl6/perl6.vim	/^let $PERL6_EXCEPTIONS_HANDLER = 'JSON'$/;"	v
