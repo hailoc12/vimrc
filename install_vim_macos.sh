@@ -25,7 +25,7 @@ sudo chmod -R 755 ~/.vim_runtime
 brew install cmake python go nodejs
 brew install mono
 brew install java
-brew install ctags
+brew install universal-ctags
 brew install fzf
 sudo ln -sfn $(brew --prefix java)/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 brew install vim
