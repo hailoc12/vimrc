@@ -48,6 +48,8 @@ sudo add-apt-repository ppa:jonathonf/vim
 sudo apt remove vim
 sudo apt update
 sudo apt install vim
+sudo apt install exuberant-ctags
+sudo apt-get install fzf
 
 cd ~/.vim_runtime
 ./install_awesome_vimrc.sh
