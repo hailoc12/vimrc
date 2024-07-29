@@ -6,11 +6,11 @@ export local_dir="vimrc"
 cd ~/$local_dir/
 git submodule update --init --recursive
 
-rm -rf vimrc/sources_non_forked/tlib
-git clone https://github.com/vim-scripts/tlib vimrc/sources_non_forked/tlib
+# rm -rf vimrc/sources_non_forked/tlib
+# git clone https://github.com/vim-scripts/tlib vimrc/sources_non_forked/tlib
 
-cd ~/$local_dir/vimrc/sources_non_forked/tlib
-git submodule update --init --recursive
+# cd ~/$local_dir/vimrc/sources_non_forked/tlib
+# git submodule update --init --recursive
 
 # replace current vim plugins with new plugins
 

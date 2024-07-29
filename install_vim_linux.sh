@@ -8,14 +8,14 @@ git submodule update --init --recursive
 
 #rm -rf vimrc/sources_non_forked/YouCompleteMe
 #git clone https://github.com/ycm-core/YouCompleteMe vimrc/sources_non_forked/YouCompleteMe
-rm -rf vimrc/sources_non_forked/tlib
-git clone https://github.com/vim-scripts/tlib vimrc/sources_non_forked/tlib
+# rm -rf vimrc/sources_non_forked/tlib
+# git clone https://github.com/vim-scripts/tlib vimrc/sources_non_forked/tlib
 
 #cd ~/$local_dir/vimrc/sources_non_forked/YouCompleteMe
 #git submodule update --init --recursive
 
-cd ~/$local_dir/vimrc/sources_non_forked/tlib
-git submodule update --init --recursive
+# cd ~/$local_dir/vimrc/sources_non_forked/tlib
+# git submodule update --init --recursive
 
 # replace current vim plugins with new plugins
 sudo rm -rf ~/.vim_runtime

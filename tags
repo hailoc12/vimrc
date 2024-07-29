@@ -1773,7 +1773,7 @@ TAGS	vimrc/my_plugins/fzf/Makefile	/^	TAGS=tcell make test$/;"	m
 TAGS_FILE	vimrc/my_plugins/vim-gutentags/plat/win32/update_tags.cmd	/^    set TAGS_FILE=%~2$/;"	v
 TAGS_FILE	vimrc/my_plugins/vim-gutentags/plat/win32/update_tags.cmd	/^set TAGS_FILE=tags$/;"	v
 TBrowseOutput	vimrc/sources_non_forked/tlib/plugin/02tlib.vim	/^command! -nargs=1 -complete=command TBrowseOutput call tlib#cmd#BrowseOutput(<q-args>)$/;"	c
-TBrowseScriptnames	vimrc/sources_non_forked/tlib/plugin/02tlib.vim	/^command! -nargs=0 -complete=command TBrowseScriptnames call tlib#cmd#TBrowseScriptnames()$/;"	c
+TBrowseScriptnames	vimrc/sources_non_forked/tlib/plugin/02tlib.vim	/^command! -nargs=0 TBrowseScriptnames call tlib#cmd#TBrowseScriptnames()$/;"	c
 TLet	vimrc/sources_non_forked/tlib/plugin/02tlib.vim	/^command! -nargs=+ TLet if !exists(matchstr(<q-args>, '^[^=[:space:]]\\+')) | exec 'let '. <q-args> | endif$/;"	c
 TLib	vimrc/sources_non_forked/tlib/autoload/tlib/autocmdgroup.vim	/^augroup TLib$/;"	a
 TOVLWrite	vimrc/sources_non_forked/vim-addon-mw-utils/autoload/tovl/scratch_buffer.vim	/^augroup TOVLWrite$/;"	a
