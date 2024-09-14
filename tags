@@ -132,6 +132,9 @@
 !_TAG_KIND_DESCRIPTION!Sh	f,function	/functions/
 !_TAG_KIND_DESCRIPTION!Sh	h,heredoc	/label for here document/
 !_TAG_KIND_DESCRIPTION!Sh	s,script	/script files/
+!_TAG_KIND_DESCRIPTION!TOML	K,qkey	/qualified keys/
+!_TAG_KIND_DESCRIPTION!TOML	a,arraytable	/array tables/
+!_TAG_KIND_DESCRIPTION!TOML	t,table	/tables/
 !_TAG_KIND_DESCRIPTION!Vim	C,constant	/constant definitions/
 !_TAG_KIND_DESCRIPTION!Vim	a,augroup	/autocommand groups/
 !_TAG_KIND_DESCRIPTION!Vim	c,command	/user-defined commands/
@@ -172,6 +175,7 @@
 !_TAG_PARSER_VERSION!Rust	0.0	/current.age/
 !_TAG_PARSER_VERSION!SVG	0.0	/current.age/
 !_TAG_PARSER_VERSION!Sh	0.0	/current.age/
+!_TAG_PARSER_VERSION!TOML	0.0	/current.age/
 !_TAG_PARSER_VERSION!Vim	1.1	/current.age/
 !_TAG_PARSER_VERSION!XML	0.0	/current.age/
 !_TAG_PARSER_VERSION!Yaml	0.0	/current.age/
@@ -1939,6 +1943,7 @@ Italic	vimrc/my_plugins/fzf/src/tui/dummy.go	/^	Italic        = Attr(1 << 2)$/;"
 Italic	vimrc/my_plugins/fzf/src/tui/tcell.go	/^	Italic             = Attr(tcell.AttrItalic)$/;"	c	package:tui
 Item	vimrc/my_plugins/fzf/src/item.go	/^type Item struct {$/;"	s	package:fzf
 ItemBuilder	vimrc/my_plugins/fzf/src/chunklist.go	/^type ItemBuilder func(*Item, []byte) bool$/;"	t	package:fzf	typeref:typename:func(*Item, []byte) bool
+Iterm	vimrc/my_plugins/fzf/typos.toml	/^Iterm = "Iterm"$/;"	K	table:default.extend-words
 JSON Front Matter	vimrc/sources_non_forked/vim-markdown/README.md	/^#### JSON Front Matter$/;"	t	subsection:Vim Markdown""Options""Syntax extensions
 JavaScriptFold	vimrc/vimrcs/filetypes.vim	/^function! JavaScriptFold() $/;"	f
 Jump	vimrc/my_plugins/fzf/src/tui/tui.go	/^	Jump$/;"	c	package:tui
@@ -4819,6 +4824,7 @@ assert_correct_indent_in_insert	vimrc/sources_non_forked/vim-ruby/spec/spec_help
 assert_correct_indenting	vimrc/sources_non_forked/vim-ruby/spec/spec_helper.rb	/^  def assert_correct_indenting(extension='rb', string)$/;"	f
 assert_equal	vimrc/my_plugins/fzf/test/test_go.rb	/^  def assert_equal(expected, actual)$/;"	f	class:TestBase
 assert_equal_org	vimrc/my_plugins/fzf/test/test_go.rb	/^  alias assert_equal_org assert_equal$/;"	a	class:TestBase
+assign	vimrc/sources_non_forked/rust.vim/triagebot.toml	/^[assign]$/;"	t
 assignments	vimrc/sources_non_forked/vim-ruby/spec/indent/continuations_spec.rb	/^  describe "assignments" do$/;"	d	describe:Indenting
 asyncomplete#sources#ale#completor	vimrc/sources_non_forked/ale/autoload/asyncomplete/sources/ale.vim	/^function! asyncomplete#sources#ale#completor(options, context) abort$/;"	f
 asyncomplete#sources#ale#get_source_options	vimrc/sources_non_forked/ale/autoload/asyncomplete/sources/ale.vim	/^function! asyncomplete#sources#ale#get_source_options(...) abort$/;"	f
@@ -5005,6 +5011,7 @@ b:undo_indent	vimrc/sources_non_forked/rust.vim/indent/rust.vim	/^let b:undo_ind
 b:undo_indent	vimrc/sources_non_forked/typescript-vim/indent/typescript.vim	/^let b:undo_indent = 'setlocal indentexpr< smartindent< autoindent< indentkeys<'$/;"	v
 b:undo_indent	vimrc/sources_non_forked/vim-javascript/indent/javascript.vim	/^let b:undo_indent = 'setlocal indentexpr< smartindent< autoindent< indentkeys< lisp<'$/;"	v
 b:undo_indent	vimrc/sources_non_forked/vim-ruby/indent/ruby.vim	/^let b:undo_indent = "setlocal indentexpr< indentkeys< smartindent<"$/;"	v
+ba	vimrc/my_plugins/fzf/typos.toml	/^ba = "ba"$/;"	K	table:default.extend-words
 bar	vimrc/my_plugins/fzf/src/terminal.go	/^	bar        []bool$/;"	m	struct:fzf.previewer	typeref:typename:[]bool
 bar	vimrc/sources_non_forked/vim-ruby/spec/indent/continuations_spec.rb	/^      def bar($/;"	f
 bash	vimrc/my_plugins/fzf/test/test_go.rb	/^    def bash$/;"	S	class:Shell
@@ -5422,6 +5429,7 @@ debugV2	vimrc/my_plugins/fzf/src/algo/algo.go	/^func debugV2(T []rune, pattern [
 default	vimrc/sources_non_forked/editorconfig-vim/tests/plugin/Rakefile	/^task :default => :spec$/;"	t
 default	vimrc/sources_non_forked/vim-gitgutter/plugin/gitgutter.vim	/^  let default = exists('&previewpopup') ? !empty(&previewpopup) : 0$/;"	v
 default	vimrc/sources_non_forked/vim-multiple-cursors/Rakefile	/^task :default => :spec$/;"	t
+default.extend-words	vimrc/my_plugins/fzf/typos.toml	/^[default.extend-words]$/;"	t
 defaultEscDelay	vimrc/my_plugins/fzf/src/tui/light.go	/^	defaultEscDelay = 100$/;"	c	package:tui
 defaultHeight	vimrc/my_plugins/fzf/src/tui/light.go	/^	defaultHeight = 24$/;"	c	package:tui
 defaultHistoryMax	vimrc/my_plugins/fzf/src/constants.go	/^	defaultHistoryMax int = 1000$/;"	c	package:fzf	typeref:typename:int
@@ -5520,6 +5528,7 @@ enabledState	vimrc/my_plugins/fzf/src/terminal.go	/^	enabledState$/;"	c	package:
 encodePlaceholder	vimrc/my_plugins/fzf/src/terminal_test.go	/^func (flags placeholderFlags) encodePlaceholder() string {$/;"	f	unknown:fzf.placeholderFlags	typeref:typename:string
 end	vimrc/my_plugins/fzf/src/tokenizer.go	/^	end   int$/;"	m	struct:fzf.Range	typeref:typename:int
 end	vimrc/sources_non_forked/vim-ruby/spec/syntax/methods_spec.rb	/^      def end end$/;"	f
+enew	vimrc/my_plugins/fzf/typos.toml	/^enew = "enew"$/;"	K	table:default.extend-words
 enum,enumeration names	vimrc/sources_non_forked/rust.vim/ctags/rust.ctags	/^--regex-Rust=\/^[ \\t]*(pub[ \\t]+)?enum[ \\t]+([a-zA-Z0-9_]+)\/\\2\/g,enum,enumeration names\/$/;"	k	langdef:Rust
 env	vimrc/my_plugins/fzf/src/terminal.go	/^	env          []string$/;"	m	struct:fzf.previewRequest	typeref:typename:[]string
 env_reload#ReloadEnv	vimrc/sources_non_forked/vim-addon-mw-utils/autoload/env_reload.vim	/^fun! env_reload#ReloadEnv(bash_export_command_output)$/;"	f
@@ -5565,6 +5574,7 @@ expect	vimrc/sources_non_forked/vim-snipmate/t/parser.vim	/^        let expect =
 expect	vimrc/sources_non_forked/vim-snipmate/t/parser.vim	/^        let expect = [[[1234567890]]]$/;"	v
 expect	vimrc/sources_non_forked/vim-snipmate/t/parser.vim	/^        let expect[0][0][1].flags = ''$/;"	v
 expect	vimrc/sources_non_forked/vim-snipmate/t/parser.vim	/^        let expect[0][0][1].flags = 'g'$/;"	v
+extend-exclude	vimrc/my_plugins/fzf/typos.toml	/^extend-exclude = ["README.md"]$/;"	K	table:files
 extended	vimrc/my_plugins/fzf/src/pattern.go	/^	extended      bool$/;"	m	struct:fzf.Pattern	typeref:typename:bool
 extendedMatch	vimrc/my_plugins/fzf/src/pattern.go	/^func (p *Pattern) extendedMatch(item *Item, withPos bool, slab *util.Slab) ([]Offset, int, *[]in/;"	f	struct:fzf.Pattern	typeref:typename:([]Offset, int, *[]int)
 extraLines	vimrc/my_plugins/fzf/src/terminal.go	/^func (t *Terminal) extraLines() int {$/;"	f	struct:fzf.Terminal	typeref:typename:int
@@ -5584,6 +5594,7 @@ fg	vimrc/my_plugins/fzf/src/tui/tui.go	/^	fg   Color$/;"	m	struct:tui.ColorPair	
 fifo	vimrc/my_plugins/fzf/src/proxy.go	/^func fifo(name string) (string, error) {$/;"	f	package:fzf	typeref:typename:(string, error)
 file	vimrc/my_plugins/fzf/src/options.go	/^	file   bool$/;"	m	struct:fzf.walkerOpts	typeref:typename:bool
 file	vimrc/my_plugins/fzf/src/terminal.go	/^	file          bool$/;"	m	struct:fzf.placeholderFlags	typeref:typename:bool
+files	vimrc/my_plugins/fzf/typos.toml	/^[files]$/;"	t
 files	vimrc/sources_non_forked/editorconfig-vim/tests/core/editorconfig2.ps1	/^$files=@()$/;"	v
 fill	vimrc/my_plugins/fzf/src/tui/light.go	/^func (w *LightWindow) fill(str string, resetCode string) FillReturn {$/;"	f	struct:tui.LightWindow	typeref:typename:FillReturn
 fill	vimrc/my_plugins/fzf/src/tui/tcell.go	/^func fill(x, y, w, h int, n ColorPair, r rune) {$/;"	f	package:tui
@@ -5614,6 +5625,7 @@ flake8#Flake8UnplaceMarkers	vimrc/sources_non_forked/vim-flake8/autoload/flake8.
 flush	vimrc/my_plugins/fzf/src/terminal.go	/^func (t *Terminal) flush() {$/;"	f	struct:fzf.Terminal
 flush	vimrc/my_plugins/fzf/src/tui/light.go	/^func (r *LightRenderer) flush() {$/;"	f	unknown:tui.LightRenderer
 fn	vimrc/sources_non_forked/editorconfig-vim/tests/core/editorconfig2.ps1	/^$fn=[System.IO.Path]::GetTempFileName();$/;"	v
+fo	vimrc/my_plugins/fzf/typos.toml	/^fo = "fo"$/;"	K	table:default.extend-words
 focus	vimrc/my_plugins/fzf/test/test_go.rb	/^  def focus$/;"	f	class:Tmux
 foldmarker	vimrc/sources_non_forked/vim-snippets/pythonx/vimsnippets.py	/^def foldmarker():$/;"	f
 follow	vimrc/my_plugins/fzf/src/options.go	/^	follow      bool$/;"	m	struct:fzf.previewOpts	typeref:typename:bool
@@ -12682,6 +12694,7 @@ t	vimrc/sources_non_forked/bufexplorer/plugin/bufexplorer.vim	/^    nnoremap <sc
 t	vimrc/sources_non_forked/mru.vim/plugin/mru.vim	/^    nnoremap <buffer> <silent> t$/;"	m
 t	vimrc/sources_non_forked/mru.vim/plugin/mru.vim	/^    vnoremap <buffer> <silent> t$/;"	m
 tab.txt	vimrc/sources_non_forked/editorconfig-vim/tests/plugin/spec/editorconfig_spec.rb	/^    it 'tab.txt' do$/;"	i	describe:plugin/editorconfig.vim
+tabe	vimrc/my_plugins/fzf/typos.toml	/^tabe = "tabe"$/;"	K	table:default.extend-words
 tabstop	vimrc/my_plugins/fzf/src/terminal.go	/^	tabstop            int$/;"	m	struct:fzf.Terminal	typeref:typename:int
 tabstop	vimrc/my_plugins/fzf/src/tui/light.go	/^	tabstop       int$/;"	m	struct:tui.LightRenderer	typeref:typename:int
 tabstop	vimrc/my_plugins/fzf/src/tui/light.go	/^	tabstop  int$/;"	m	struct:tui.LightWindow	typeref:typename:int

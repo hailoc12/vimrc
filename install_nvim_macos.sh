@@ -12,7 +12,7 @@ ln -s ~/.vimrc ~/.config/nvim/init.vim
 #    ~/.config/nvim/pack/github/start/copilot.vim
 
 # install lib for YouCompleteMe to work correctly
-python3 -m pip install --user --upgrade pynvim
+# python3 -m pip install --user --upgrade pynvim
 
 # install coc.nvim for code complete
 # rm -rf ~/.local/share/nvim/site/pack/coc/start
@@ -22,5 +22,6 @@ python3 -m pip install --user --upgrade pynvim
 # nvim -c "helptags coc.nvim/doc/ | q"
 
 # echo "Notice: open neovim then enter command :Copilot setup to finish setup Github Copilot"
+echo "OK"
 
 
