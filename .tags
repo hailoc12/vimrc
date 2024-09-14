@@ -199,6 +199,7 @@ $2	vimrc/vimrcs/extended.vim	/^vnoremap $2 <esc>`>a]<esc>`<i[<esc>$/;"	m	line:84
 $3	vimrc/vimrcs/extended.vim	/^inoremap $3 {}<esc>i$/;"	m	line:93	language:Vim
 $3	vimrc/vimrcs/extended.vim	/^vnoremap $3 <esc>`>a}<esc>`<i{<esc>$/;"	m	line:85	language:Vim
 $4	vimrc/vimrcs/extended.vim	/^inoremap $4 {<esc>o}<esc>O$/;"	m	line:94	language:Vim
+$FZF_DEFAULT_OPTS	vimrc/vimrcs/plugins_config.vim	/^let $FZF_DEFAULT_OPTS = '--no-unicode'$/;"	v	line:232	language:Vim
 $LANG	vimrc/sources_non_forked/vim-markdown/test/vimrc	/^let $LANG='en_US'$/;"	v	line:3	language:Vim
 $LANG	vimrc/vimrcs/basic.vim	/^let $LANG='en'$/;"	v	line:63	language:Vim
 $PERL6_EXCEPTIONS_HANDLER	vimrc/sources_non_forked/ale/ale_linters/perl6/perl6.vim	/^let $PERL6_EXCEPTIONS_HANDLER = 'JSON'$/;"	v	line:10	language:Vim
@@ -376,15 +377,18 @@ $q	vimrc/vimrcs/extended.vim	/^vnoremap $q <esc>`>a'<esc>`<i'<esc>$/;"	m	line:87
 <C-S>	vimrc/sources_non_forked/vim-surround/plugin/surround.vim	/^      imap    <C-S> <Plug>Isurround$/;"	m	line:623	language:Vim
 <C-W><C-F>	vimrc/sources_non_forked/open_file_under_cursor.vim/plugin/open_file_under_cursor.vim	/^nnoremap <C-W><C-F> :call GotoFile("new")<CR>$/;"	m	line:41	language:Vim
 <C-W>f	vimrc/sources_non_forked/open_file_under_cursor.vim/plugin/open_file_under_cursor.vim	/^nnoremap <C-W>f :call GotoFile("new")<CR>$/;"	m	line:40	language:Vim
+<C-]>	vimrc/my_plugins/codeium.vim/plugin/codeium.vim	/^    imap <silent><script><nowait><expr> <C-]> codeium#Clear() . "\\<C-]>"$/;"	m	line:50	language:Vim
 <C-h>	vimrc/vimrcs/basic.vim	/^map <C-h> <C-W>h$/;"	m	line:220	language:Vim
 <C-j>	vimrc/vimrcs/basic.vim	/^map <C-j> <C-W>j$/;"	m	line:218	language:Vim
 <C-j>	vimrc/vimrcs/plugins_config.vim	/^ino <C-j> <C-r>=snipMate#TriggerSnippet()<cr>$/;"	m	line:70	language:Vim
 <C-j>	vimrc/vimrcs/plugins_config.vim	/^snor <C-j> <esc>i<right><C-r>=snipMate#TriggerSnippet()<cr>$/;"	m	line:71	language:Vim
+<C-k>	vimrc/my_plugins/codeium.vim/plugin/codeium.vim	/^    imap <script><silent><nowait><expr> <C-k> codeium#AcceptNextWord()$/;"	m	line:62	language:Vim
 <C-k>	vimrc/vimrcs/basic.vim	/^map <C-k> <C-W>k$/;"	m	line:219	language:Vim
+<C-l>	vimrc/my_plugins/codeium.vim/plugin/codeium.vim	/^    imap <script><silent><nowait><expr> <C-l> codeium#AcceptNextLine()$/;"	m	line:65	language:Vim
 <C-l>	vimrc/vimrcs/basic.vim	/^map <C-l> <C-W>l$/;"	m	line:221	language:Vim
 <C-n>	vimrc/vimrcs/plugins_config.vim	/^nmap <C-n> <Plug>yankstack_substitute_newer_paste$/;"	m	line:41	language:Vim
 <C-p>	vimrc/vimrcs/plugins_config.vim	/^nmap <C-p> <Plug>yankstack_substitute_older_paste$/;"	m	line:40	language:Vim
-<C-p>	vimrc/vimrcs/plugins_config.vim	/^nnoremap <C-p> :Files<CR>$/;"	m	line:234	language:Vim
+<C-p>	vimrc/vimrcs/plugins_config.vim	/^nnoremap <C-p> :Files<CR>$/;"	m	line:235	language:Vim
 <C-q>	vimrc/sources_non_forked/ale/ftplugin/ale-preview-selection.vim	/^noremap <buffer> <C-q> <NOP>$/;"	m	line:7	language:Vim
 <C-space>	vimrc/vimrcs/basic.vim	/^map <C-space> ?$/;"	m	line:212	language:Vim
 <C-v>	vimrc/sources_non_forked/ale/ftplugin/ale-preview-selection.vim	/^noremap <buffer> <C-v> <NOP>$/;"	m	line:8	language:Vim
@@ -414,9 +418,12 @@ $q	vimrc/vimrcs/extended.vim	/^vnoremap $q <esc>`>a'<esc>`<i'<esc>$/;"	m	line:87
 <Leader>ig	vimrc/sources_non_forked/vim-indent-guides/plugin/indent_guides.vim	/^  nmap <silent><unique> <Leader>ig <Plug>IndentGuidesToggle$/;"	m	line:72	language:Vim
 <Leader>m	vimrc/vimrcs/basic.vim	/^noremap <Leader>m mmHmt:%s\/<C-V><cr>\/\/ge<cr>'tzt'm$/;"	m	line:323	language:Vim
 <Leader>p	vimrc/sources_forked/vim-peepopen/plugin/peepopen.vim	/^  map! <unique> <silent> <Leader>p <Plug>PeepOpen$/;"	m	line:50	language:Vim
+<M-Bslash>	vimrc/my_plugins/codeium.vim/plugin/codeium.vim	/^    imap <M-Bslash> <Plug>(codeium-complete)$/;"	m	line:59	language:Vim
 <M-P>	vimrc/sources_non_forked/vim-yankstack/autoload/yankstack.vim	/^  imap <M-P> <Plug>yankstack_substitute_newer_paste$/;"	m	line:195	language:Vim
 <M-P>	vimrc/sources_non_forked/vim-yankstack/autoload/yankstack.vim	/^  nmap <M-P> <Plug>yankstack_substitute_newer_paste$/;"	m	line:193	language:Vim
 <M-P>	vimrc/sources_non_forked/vim-yankstack/autoload/yankstack.vim	/^  xmap <M-P> <Plug>yankstack_substitute_newer_paste$/;"	m	line:194	language:Vim
+<M-[>	vimrc/my_plugins/codeium.vim/plugin/codeium.vim	/^    imap <M-[> <Plug>(codeium-previous)$/;"	m	line:56	language:Vim
+<M-]>	vimrc/my_plugins/codeium.vim/plugin/codeium.vim	/^    imap <M-]> <Plug>(codeium-next-or-complete)$/;"	m	line:53	language:Vim
 <M-j>	vimrc/vimrcs/basic.vim	/^nmap <M-j> mz:m+<cr>`z$/;"	m	line:280	language:Vim
 <M-j>	vimrc/vimrcs/basic.vim	/^vmap <M-j> :m'>+<cr>`<my`>mzgv`yo`z$/;"	m	line:282	language:Vim
 <M-k>	vimrc/vimrcs/basic.vim	/^nmap <M-k> mz:m-2<cr>`z$/;"	m	line:281	language:Vim
@@ -499,6 +506,11 @@ $q	vimrc/vimrcs/extended.vim	/^vnoremap $q <esc>`>a'<esc>`<i'<esc>$/;"	m	line:87
 <Plug>(ale_show_completion_menu)	vimrc/sources_non_forked/ale/autoload/ale/completion.vim	/^vnoremap <silent> <Plug>(ale_show_completion_menu) <Nop>$/;"	m	line:13	language:Vim
 <Plug>(ale_toggle)	vimrc/sources_non_forked/ale/plugin/ale.vim	/^nnoremap <silent> <Plug>(ale_toggle) :ALEToggle<Return>$/;"	m	line:330	language:Vim
 <Plug>(ale_toggle_buffer)	vimrc/sources_non_forked/ale/plugin/ale.vim	/^nnoremap <silent> <Plug>(ale_toggle_buffer) :ALEToggleBuffer<Return>$/;"	m	line:334	language:Vim
+<Plug>(codeium-complete)	vimrc/my_plugins/codeium.vim/plugin/codeium.vim	/^imap <Plug>(codeium-complete)  <Cmd>call codeium#Complete()<CR>$/;"	m	line:46	language:Vim
+<Plug>(codeium-dismiss)	vimrc/my_plugins/codeium.vim/plugin/codeium.vim	/^imap <Plug>(codeium-dismiss)     <Cmd>call codeium#Clear()<CR>$/;"	m	line:42	language:Vim
+<Plug>(codeium-next)	vimrc/my_plugins/codeium.vim/plugin/codeium.vim	/^imap <Plug>(codeium-next)     <Cmd>call codeium#CycleCompletions(1)<CR>$/;"	m	line:43	language:Vim
+<Plug>(codeium-next-or-complete)	vimrc/my_plugins/codeium.vim/plugin/codeium.vim	/^imap <Plug>(codeium-next-or-complete)     <Cmd>call codeium#CycleOrComplete()<CR>$/;"	m	line:44	language:Vim
+<Plug>(codeium-previous)	vimrc/my_plugins/codeium.vim/plugin/codeium.vim	/^imap <Plug>(codeium-previous) <Cmd>call codeium#CycleCompletions(-1)<CR>$/;"	m	line:45	language:Vim
 <Plug>(expand_region_expand)	vimrc/sources_non_forked/vim-expand-region/plugin/expand_region.vim	/^  snoremap <silent> <Plug>(expand_region_expand)$/;"	m	line:31	language:Vim
 <Plug>(expand_region_expand)	vimrc/sources_non_forked/vim-expand-region/plugin/expand_region.vim	/^  xnoremap <silent> <Plug>(expand_region_expand)$/;"	m	line:36	language:Vim
 <Plug>(expand_region_expand)	vimrc/sources_non_forked/vim-expand-region/plugin/expand_region.vim	/^nnoremap <silent> <Plug>(expand_region_expand)$/;"	m	line:27	language:Vim
@@ -589,6 +601,7 @@ $q	vimrc/vimrcs/extended.vim	/^vnoremap $q <esc>`>a'<esc>`<i'<esc>$/;"	m	line:87
 <SID>TogBG	vimrc/sources_non_forked/vim-colors-solarized/autoload/togglebg.vim	/^noremap <SID>TogBG  :call <SID>TogBG()<CR>$/;"	m	line:26	language:Vim
 <SID>c:	vimrc/sources_non_forked/vim-ruby/ftplugin/ruby.vim	/^  nmap <buffer><script> <SID>c: :<C-U><C-R>=v:count ? v:count : ''<CR>$/;"	m	line:182	language:Vim
 <SID>tagzv	vimrc/sources_non_forked/vim-ruby/ftplugin/ruby.vim	/^  cmap <buffer><script><expr> <SID>tagzv &foldopen =~# 'tag' ? '<Bar>norm! zv' : ''$/;"	m	line:230	language:Vim
+<Tab>	vimrc/my_plugins/codeium.vim/plugin/codeium.vim	/^    imap <script><silent><nowait><expr> <Tab> codeium#Accept()$/;"	m	line:23	language:Vim
 <Up>	vimrc/sources_non_forked/ack.vim/autoload/ack.vim	/^    nmap <buffer> <silent> <Up> k$/;"	m	line:136	language:Vim
 <c-s>	vimrc/sources_non_forked/tlib/autoload/tlib/input.vim	/^    imap <buffer> <c-s> <c-o>call <SID>EditCallback(1)<cr>$/;"	m	line:1261	language:Vim
 <c-s>	vimrc/sources_non_forked/tlib/autoload/tlib/input.vim	/^    map <buffer> <c-s> :call <SID>EditCallback(1)<cr>$/;"	m	line:1259	language:Vim
@@ -605,10 +618,10 @@ $q	vimrc/vimrcs/extended.vim	/^vnoremap $q <esc>`>a'<esc>`<i'<esc>$/;"	m	line:87
 <leader><cr>	vimrc/vimrcs/basic.vim	/^map <silent> <leader><cr> :noh<cr>$/;"	m	line:215	language:Vim
 <leader>a	vimrc/vimrcs/plugins_config.vim	/^nmap <silent> <leader>a <Plug>(ale_next_wrap)$/;"	m	line:160	language:Vim
 <leader>b	vimrc/vimrcs/plugins_config.vim	/^map <leader>b :CtrlPBuffer<cr>$/;"	m	line:54	language:Vim
-<leader>b	vimrc/vimrcs/plugins_config.vim	/^nnoremap <leader>b :Buffers<CR>$/;"	m	line:236	language:Vim
+<leader>b	vimrc/vimrcs/plugins_config.vim	/^nnoremap <leader>b :Buffers<CR>$/;"	m	line:237	language:Vim
 <leader>ba	vimrc/vimrcs/basic.vim	/^map <leader>ba :bufdo bd<cr>$/;"	m	line:227	language:Vim
 <leader>bd	vimrc/vimrcs/basic.vim	/^map <leader>bd :Bclose<cr>:tabclose<cr>gT$/;"	m	line:224	language:Vim
-<leader>bt	vimrc/vimrcs/plugins_config.vim	/^nnoremap <leader>bt :BTags<CR>$/;"	m	line:240	language:Vim
+<leader>bt	vimrc/vimrcs/plugins_config.vim	/^nnoremap <leader>bt :BTags<CR>$/;"	m	line:241	language:Vim
 <leader>cc	vimrc/vimrcs/extended.vim	/^map <leader>cc :botright cope<cr>$/;"	m	line:140	language:Vim
 <leader>cd	vimrc/vimrcs/basic.vim	/^map <leader>cd :cd %:p:h<cr>:pwd<cr>$/;"	m	line:250	language:Vim
 <leader>co	vimrc/vimrcs/extended.vim	/^map <leader>co ggVGy:tabnew<cr>:set syntax=qf<cr>pgg$/;"	m	line:141	language:Vim
@@ -633,7 +646,7 @@ $q	vimrc/vimrcs/extended.vim	/^vnoremap $q <esc>`>a'<esc>`<i'<esc>$/;"	m	line:87
 <leader>sn	vimrc/vimrcs/basic.vim	/^map <leader>sn ]s$/;"	m	line:313	language:Vim
 <leader>sp	vimrc/vimrcs/basic.vim	/^map <leader>sp [s$/;"	m	line:314	language:Vim
 <leader>ss	vimrc/vimrcs/basic.vim	/^map <leader>ss :setlocal spell!<cr>$/;"	m	line:310	language:Vim
-<leader>t	vimrc/vimrcs/plugins_config.vim	/^nnoremap <leader>t :Tags<CR>$/;"	m	line:238	language:Vim
+<leader>t	vimrc/vimrcs/plugins_config.vim	/^nnoremap <leader>t :Tags<CR>$/;"	m	line:239	language:Vim
 <leader>t<leader>	vimrc/vimrcs/basic.vim	/^map <leader>t<leader> :tabnext<cr>$/;"	m	line:237	language:Vim
 <leader>tc	vimrc/vimrcs/basic.vim	/^map <leader>tc :tabclose<cr>$/;"	m	line:235	language:Vim
 <leader>te	vimrc/vimrcs/basic.vim	/^map <leader>te :tabedit <C-r>=escape(expand("%:p:h"), " ")<cr>\/$/;"	m	line:247	language:Vim
@@ -1016,6 +1029,17 @@ Close	vimrc/my_plugins/fzf/src/tui/tui.go	/^	Close()$/;"	n	line:555	language:Go	
 Close	vimrc/sources_non_forked/vim-snipmate/ftplugin/html_snip_helper.vim	/^fun! Close() abort$/;"	f	line:8	language:Vim	signature:()
 CmdLine	vimrc/vimrcs/basic.vim	/^function! CmdLine(str)$/;"	f	line:367	language:Vim	signature:(str)
 Cnew	vimrc/sources_non_forked/rust.vim/plugin/cargo.vim	/^command! -nargs=+ Cnew call cargo#new(<q-args>)$/;"	c	line:13	language:Vim
+Codeium	vimrc/my_plugins/codeium.vim/plugin/codeium.vim	/^command! -nargs=? -complete=customlist,codeium#command#Complete Codeium exe codeium#command#Comm/;"	c	line:6	language:Vim
+CodeiumAuto	vimrc/my_plugins/codeium.vim/plugin/codeium.vim	/^command! CodeiumAuto :silent! call CodeiumAuto()$/;"	c	line:109	language:Vim
+CodeiumAuto	vimrc/my_plugins/codeium.vim/plugin/codeium.vim	/^function! CodeiumAuto()  " Enable the automatic triggering of completions$/;"	f	line:105	language:Vim	signature:()
+CodeiumDisable	vimrc/my_plugins/codeium.vim/plugin/codeium.vim	/^command! CodeiumDisable :silent! call CodeiumDisable()$/;"	c	line:87	language:Vim
+CodeiumDisable	vimrc/my_plugins/codeium.vim/plugin/codeium.vim	/^function! CodeiumDisable() " Disable Codeium altogether$/;"	f	line:83	language:Vim	signature:()
+CodeiumEnable	vimrc/my_plugins/codeium.vim/plugin/codeium.vim	/^command! CodeiumEnable :silent! call CodeiumEnable()$/;"	c	line:81	language:Vim
+CodeiumEnable	vimrc/my_plugins/codeium.vim/plugin/codeium.vim	/^function! CodeiumEnable()  " Enable Codeium if it is disabled$/;"	f	line:76	language:Vim	signature:()
+CodeiumManual	vimrc/my_plugins/codeium.vim/plugin/codeium.vim	/^command! CodeiumManual :silent! call CodeiumManual()$/;"	c	line:103	language:Vim
+CodeiumManual	vimrc/my_plugins/codeium.vim/plugin/codeium.vim	/^function! CodeiumManual() " Disable the automatic triggering of completions$/;"	f	line:99	language:Vim	signature:()
+CodeiumToggle	vimrc/my_plugins/codeium.vim/plugin/codeium.vim	/^command! CodeiumToggle :silent! call CodeiumToggle()$/;"	c	line:97	language:Vim
+CodeiumToggle	vimrc/my_plugins/codeium.vim/plugin/codeium.vim	/^function! CodeiumToggle()$/;"	f	line:89	language:Vim	signature:()
 Coercion	vimrc/sources_non_forked/vim-abolish/README.markdown	/^## Coercion$/;"	s	line:117	language:Markdown	chapter:abolish.vim
 CoffeeAuWatch	vimrc/sources_non_forked/vim-coffee-script/ftplugin/coffee.vim	/^  augroup CoffeeAuWatch$/;"	a	line:267	language:Vim
 CoffeeBufNew	vimrc/sources_non_forked/vim-coffee-script/Readme.md	/^#### CoffeeBufNew$/;"	t	line:385	language:Markdown	section:Custom Autocmds
@@ -1126,7 +1150,7 @@ Contributors	vimrc/sources_non_forked/auto-pairs/README.md	/^Contributors$/;"	s	
 Contributors	vimrc/sources_non_forked/vim-multiple-cursors/README.md	/^### Contributors$/;"	S	line:253	language:Markdown	section:vim-multiple-cursors""Contributing
 Contributors	vimrc/sources_non_forked/vim-snipmate/Contributors.md	/^# Contributors #$/;"	c	line:1	language:Markdown
 Cope	vimrc/README.md	/^### Cope$/;"	S	line:376	language:Markdown	section:The Ultimate vimrc""Key Mappings
-Copy Paste	README.md	/^### Copy Paste$/;"	S	line:46	language:Markdown	chapter:Important shortcuts to remember
+Copy Paste	README.md	/^### Copy Paste$/;"	S	line:50	language:Markdown	chapter:Important shortcuts to remember
 CopyRunes	vimrc/my_plugins/fzf/src/util/chars.go	/^func (chars *Chars) CopyRunes(dest []rune, from int) {$/;"	f	line:211	language:Go	struct:util.Chars	signature:(dest []rune, from int)
 CountItems	vimrc/my_plugins/fzf/src/chunklist.go	/^func CountItems(cs []*Chunk) int {$/;"	f	line:49	language:Go	package:fzf	typeref:typename:int	signature:(cs []*Chunk)
 Cpublish	vimrc/sources_non_forked/rust.vim/plugin/cargo.vim	/^command! -nargs=* Cpublish call cargo#publish(<q-args>)$/;"	c	line:20	language:Vim
@@ -1466,6 +1490,7 @@ ExitError	vimrc/my_plugins/fzf/src/constants.go	/^	ExitError     = 2$/;"	c	line:
 ExitInterrupt	vimrc/my_plugins/fzf/src/constants.go	/^	ExitInterrupt = 130$/;"	c	line:74	language:Go	package:fzf
 ExitNoMatch	vimrc/my_plugins/fzf/src/constants.go	/^	ExitNoMatch   = 1$/;"	c	line:71	language:Go	package:fzf
 ExitOk	vimrc/my_plugins/fzf/src/constants.go	/^	ExitOk        = 0$/;"	c	line:70	language:Go	package:fzf
+Expand-File	vimrc/my_plugins/codeium.vim/powershell/gzip.ps1	/^Function Expand-File$/;"	f	line:1	language:PowerShell
 Expect	vimrc/my_plugins/fzf/src/options.go	/^	Expect       map[tui.Event]string$/;"	m	line:463	language:Go	struct:fzf.Options	typeref:typename:map[tui.Event]string
 Expected	vimrc/sources_non_forked/vim-multiple-cursors/CONTRIBUTING.md	/^## Expected$/;"	s	line:3	language:Markdown	chapter:Problems summary
 Expected Result	vimrc/sources_non_forked/nerdtree/.github/ISSUE_TEMPLATE/bug.md	/^#### Expected Result$/;"	t	line:45	language:Markdown
@@ -1504,7 +1529,7 @@ FILE_LIST_CMD_IS_ABSOLUTE	vimrc/my_plugins/vim-gutentags/plat/win32/update_tags.
 FZF	vimrc/my_plugins/fzf/plugin/fzf.vim	/^command! -nargs=* -complete=dir -bang FZF call s:cmd(<bang>0, <f-args>)$/;"	c	line:1099	language:Vim
 FZF	vimrc/my_plugins/fzf/test/test_go.rb	/^FZF = "FZF_DEFAULT_OPTS=\\"--no-scrollbar --pointer \\\\> --marker \\\\>\\" FZF_DEFAULT_COMMAND=/;"	C	line:27	language:Ruby
 FZF Vim integration	vimrc/my_plugins/fzf/README-VIM.md	/^FZF Vim integration$/;"	c	line:1	language:Markdown
-Fast editing	README.md	/^### Fast editing$/;"	S	line:58	language:Markdown	chapter:Important shortcuts to remember
+Fast editing	README.md	/^### Fast editing$/;"	S	line:62	language:Markdown	chapter:Important shortcuts to remember
 Fatal	vimrc/my_plugins/fzf/src/tui/tui.go	/^	Fatal$/;"	c	line:105	language:Go	package:tui
 Features	vimrc/sources_non_forked/auto-pairs/README.md	/^Features$/;"	s	line:15	language:Markdown	chapter:Auto Pairs
 Features	vimrc/sources_non_forked/gruvbox/README.md	/^Features$/;"	s	line:64	language:Markdown
@@ -1534,7 +1559,7 @@ FinishFill	vimrc/my_plugins/fzf/src/tui/tui.go	/^	FinishFill()$/;"	n	line:554	la
 First	vimrc/my_plugins/fzf/src/merger.go	/^func (mg *Merger) First() Result {$/;"	f	line:80	language:Go	struct:fzf.Merger	typeref:typename:Result	signature:()
 Fish	vimrc/my_plugins/fzf/src/options.go	/^	Fish         bool$/;"	m	line:413	language:Go	struct:fzf.Options	typeref:typename:bool
 Fish shell	vimrc/my_plugins/fzf/README.md	/^### Fish shell$/;"	S	line:872	language:Markdown	section:<img src="https://raw.githubusercontent.com/junegunn/i/master/fzf.png" height="170" alt="fzf - a command-line fuzzy finder"> [![github-actions](https://github.com/junegunn/fzf/workflows/Test%20fzf%20on%20Linux/badge.svg)](https://github.com/junegunn/fzf/actions)""Tips
-Fix tlib error	README.md	/^### Fix tlib error$/;"	S	line:27	language:Markdown	chapter:Important shortcuts to remember
+Fix tlib error	README.md	/^### Fix tlib error$/;"	S	line:31	language:Markdown	chapter:Important shortcuts to remember
 Flake	vimrc/sources_non_forked/vim-flake8/ftplugin/python_flake8.vim	/^command! Flake :call flake8#Flake8()$/;"	c	line:53	language:Vim
 Flake8	vimrc/sources_non_forked/vim-flake8/ftplugin/python_flake8.vim	/^function! Flake8()$/;"	f	line:40	language:Vim	signature:()
 Fly Mode	vimrc/sources_non_forked/auto-pairs/README.md	/^Fly Mode$/;"	s	line:124	language:Markdown	chapter:Auto Pairs
@@ -1733,6 +1758,7 @@ How can I show lines of files?	vimrc/sources_non_forked/nerdtree/README.markdown
 How can I truncate the components from the right in narrow windows?	vimrc/sources_non_forked/lightline.vim/README.md	/^#### How can I truncate the components from the right in narrow windows?$/;"	t	line:402	language:Markdown	subsection:lightline.vim""Advanced configuration""more tips
 How do I open NERDTree automatically when Vim starts?	vimrc/sources_non_forked/nerdtree/README.markdown	/^### How do I open NERDTree automatically when Vim starts?$/;"	S	line:113	language:Markdown	section:The NERDTree [![Vint](https://github.com/preservim/nerdtree/workflows/Vint/badge.svg)](https://github.com/preservim/nerdtree/actions?workflow=Vint)""Frequently Asked Questions
 How to include your own stuff?	vimrc/README.md	/^## How to include your own stuff?$/;"	s	line:134	language:Markdown	chapter:The Ultimate vimrc
+How to install new plugin?	README.md	/^## How to install new plugin?$/;"	s	line:26	language:Markdown	chapter:Introduction ?
 How to install on Linux	vimrc/README.md	/^## How to install on Linux$/;"	s	line:56	language:Markdown	chapter:The Ultimate vimrc
 How to install on Windows?	vimrc/README.md	/^## How to install on Windows?$/;"	s	line:51	language:Markdown	chapter:The Ultimate vimrc
 How to install the Awesome version?	vimrc/README.md	/^## How to install the Awesome version?$/;"	s	line:15	language:Markdown	chapter:The Ultimate vimrc
@@ -1756,7 +1782,7 @@ I16	vimrc/my_plugins/fzf/src/util/slab.go	/^	I16 []int16$/;"	m	line:4	language:G
 I32	vimrc/my_plugins/fzf/src/util/slab.go	/^	I32 []int32$/;"	m	line:5	language:Go	struct:util.Slab	typeref:typename:[]int32
 INDEX_WHOLE_PROJECT	vimrc/my_plugins/vim-gutentags/plat/win32/update_tags.cmd	/^        set INDEX_WHOLE_PROJECT=0$/;"	v	line:105	language:DosBatch
 INDEX_WHOLE_PROJECT	vimrc/my_plugins/vim-gutentags/plat/win32/update_tags.cmd	/^set INDEX_WHOLE_PROJECT=1$/;"	v	line:98	language:DosBatch
-Important shortcuts to remember	README.md	/^# Important shortcuts to remember $/;"	c	line:26	language:Markdown
+Important shortcuts to remember	README.md	/^# Important shortcuts to remember $/;"	c	line:30	language:Markdown
 Included Plugins	vimrc/README.md	/^## Included Plugins$/;"	s	line:84	language:Markdown	chapter:The Ultimate vimrc
 Included color schemes	vimrc/README.md	/^## Included color schemes$/;"	s	line:110	language:Markdown	chapter:The Ultimate vimrc
 Included modes	vimrc/README.md	/^## Included modes$/;"	s	line:120	language:Markdown	chapter:The Ultimate vimrc
@@ -1926,6 +1952,7 @@ LOG_FILE	vimrc/my_plugins/vim-gutentags/plat/win32/update_tags.cmd	/^if [%LOG_FI
 LOG_FILE	vimrc/my_plugins/vim-gutentags/plat/win32/update_tags.cmd	/^set LOG_FILE=$/;"	v	line:17	language:DosBatch
 LaTeX math	vimrc/sources_non_forked/vim-markdown/README.md	/^#### LaTeX math$/;"	t	line:247	language:Markdown	subsection:Vim Markdown""Options""Syntax extensions
 Language maintainers	vimrc/sources_non_forked/vim-snippets/README.md	/^Language maintainers$/;"	s	line:233	language:Markdown	chapter:Versions / dialects / ..
+Launching Codeium Chat	vimrc/my_plugins/codeium.vim/README.md	/^### Launching Codeium Chat$/;"	S	line:189	language:Markdown	section:codeium.vim""🛠️ Configuration
 Layout	vimrc/my_plugins/fzf/man/man1/fzf.1	/^.SS Layout$/;"	S	line:241	language:Man	section:fzf""OPTIONS
 Layout	vimrc/my_plugins/fzf/src/options.go	/^	Layout       layoutType$/;"	m	line:438	language:Go	struct:fzf.Options	typeref:typename:layoutType
 LeadingWhitespaces	vimrc/my_plugins/fzf/src/util/chars.go	/^func (chars *Chars) LeadingWhitespaces() int {$/;"	f	line:163	language:Go	struct:util.Chars	typeref:typename:int	signature:()
@@ -2018,8 +2045,8 @@ MakoIndentClose	vimrc/sources_non_forked/vim-bundle-mako/indent/mako.vim	/^fun! 
 MakoIndentOpen	vimrc/sources_non_forked/vim-bundle-mako/indent/mako.vim	/^fun! <SID>MakoIndentOpen(lnum)$/;"	f	line:382	language:Vim	signature:(lnum)
 MakoIndentPush	vimrc/sources_non_forked/vim-bundle-mako/indent/mako.vim	/^fun! <SID>MakoIndentPush(tag)$/;"	f	line:162	language:Vim	signature:(tag)
 Man	vimrc/my_plugins/fzf/src/options.go	/^	Man          bool$/;"	m	line:414	language:Go	struct:fzf.Options	typeref:typename:bool
-Managing buffers	README.md	/^### Managing buffers$/;"	S	line:40	language:Markdown	chapter:Important shortcuts to remember
-Managing tabs	README.md	/^### Managing tabs  $/;"	S	line:33	language:Markdown	chapter:Important shortcuts to remember
+Managing buffers	README.md	/^### Managing buffers$/;"	S	line:44	language:Markdown	chapter:Important shortcuts to remember
+Managing tabs	README.md	/^### Managing tabs  $/;"	S	line:37	language:Markdown	chapter:Important shortcuts to remember
 Manual (not recommended)	vimrc/sources_non_forked/ack.vim/README.md	/^#### Manual (not recommended)$/;"	t	line:47	language:Markdown	subsection:ack.vim""Installation""The Plugin
 Manually	vimrc/sources_non_forked/bufexplorer/README.md	/^### Manually$/;"	S	line:34	language:Markdown	section:bufexplorer""Installation
 Manually	vimrc/sources_non_forked/vim-ruby/INSTALL.markdown	/^Manually$/;"	s	line:34	language:Markdown	chapter:Installation
@@ -2080,7 +2107,7 @@ MouseEvent	vimrc/my_plugins/fzf/src/tui/tui.go	/^type MouseEvent struct {$/;"	s	
 Move	vimrc/my_plugins/fzf/src/tui/light.go	/^func (w *LightWindow) Move(y int, x int) {$/;"	f	line:948	language:Go	struct:tui.LightWindow	signature:(y int, x int)
 Move	vimrc/my_plugins/fzf/src/tui/tcell.go	/^func (w *TcellWindow) Move(y int, x int) {$/;"	f	line:586	language:Go	struct:tui.TcellWindow	signature:(y int, x int)
 Move	vimrc/my_plugins/fzf/src/tui/tui.go	/^	Move(y int, x int)$/;"	n	line:561	language:Go	interface:tui.Window	signature:(y int, x int)
-Move between windows	README.md	/^### Move between windows$/;"	S	line:30	language:Markdown	chapter:Important shortcuts to remember
+Move between windows	README.md	/^### Move between windows$/;"	S	line:34	language:Markdown	chapter:Important shortcuts to remember
 MoveAndClear	vimrc/my_plugins/fzf/src/tui/light.go	/^func (w *LightWindow) MoveAndClear(y int, x int) {$/;"	f	line:955	language:Go	struct:tui.LightWindow	signature:(y int, x int)
 MoveAndClear	vimrc/my_plugins/fzf/src/tui/tcell.go	/^func (w *TcellWindow) MoveAndClear(y int, x int) {$/;"	f	line:592	language:Go	struct:tui.TcellWindow	signature:(y int, x int)
 MoveAndClear	vimrc/my_plugins/fzf/src/tui/tui.go	/^	MoveAndClear(y int, x int)$/;"	n	line:562	language:Go	interface:tui.Window	signature:(y int, x int)
@@ -2482,6 +2509,7 @@ ShouldEmitResizeEvent	vimrc/my_plugins/fzf/src/tui/dummy.go	/^func (r *Fullscree
 ShouldEmitResizeEvent	vimrc/my_plugins/fzf/src/tui/light.go	/^func (r *LightRenderer) ShouldEmitResizeEvent() bool {$/;"	f	line:728	language:Go	struct:tui.LightRenderer	typeref:typename:bool	signature:()
 ShouldEmitResizeEvent	vimrc/my_plugins/fzf/src/tui/tcell.go	/^func (r *FullscreenRenderer) ShouldEmitResizeEvent() bool {$/;"	f	line:210	language:Go	unknown:tui.FullscreenRenderer	typeref:typename:bool	signature:()
 ShouldEmitResizeEvent	vimrc/my_plugins/fzf/src/tui/tui.go	/^	ShouldEmitResizeEvent() bool$/;"	n	line:532	language:Go	interface:tui.Renderer	typeref:typename:bool	signature:()
+Show Codeium status in statusline	vimrc/my_plugins/codeium.vim/README.md	/^### Show Codeium status in statusline$/;"	S	line:164	language:Markdown	section:codeium.vim""🛠️ Configuration
 ShowAppliedFilters	vimrc/sources_non_forked/vim-addon-mw-utils/autoload/tovl/ui/filter_list.vim	/^    command! -buffer -nargs=0 ShowAppliedFilters call b:filtered_view.ShowAppliedFilters()$/;"	c	line:143	language:Vim
 ShowUsage	vimrc/my_plugins/vim-gutentags/plat/unix/update_gtags.sh	/^ShowUsage() {$/;"	f	line:9	language:Sh
 ShowUsage	vimrc/my_plugins/vim-gutentags/plat/unix/update_pyscopedb.sh	/^ShowUsage() {$/;"	f	line:13	language:Sh
@@ -2555,7 +2583,7 @@ Switch between Ripgrep launcher mode (CTRL-R) and fzf filtering mode (CTRL-F)	vi
 Switch between Ripgrep mode and fzf filtering mode (CTRL-T)	vimrc/my_plugins/fzf/ADVANCED.md	/^# Switch between Ripgrep mode and fzf filtering mode (CTRL-T)$/;"	c	line:484	language:Markdown
 SynFold	vimrc/sources_non_forked/vim-ruby/syntax/ruby.vim	/^com! -nargs=* SynFold call s:run_syntax_fold(<q-args>)$/;"	c	line:64	language:Vim
 Sync	vimrc/my_plugins/fzf/src/options.go	/^	Sync         bool$/;"	m	line:470	language:Go	struct:fzf.Options	typeref:typename:bool
-Syntastic checking	README.md	/^### Syntastic checking$/;"	S	line:78	language:Markdown	chapter:Important shortcuts to remember
+Syntastic checking	README.md	/^### Syntastic checking$/;"	S	line:82	language:Markdown	chapter:Important shortcuts to remember
 Syntax Concealing	vimrc/sources_non_forked/vim-markdown/README.md	/^### Syntax Concealing$/;"	S	line:165	language:Markdown	section:Vim Markdown""Options
 Syntax extensions	vimrc/sources_non_forked/vim-markdown/README.md	/^### Syntax extensions$/;"	S	line:243	language:Markdown	section:Vim Markdown""Options
 Syntax highlighting	vimrc/sources_non_forked/typescript-vim/README.md	/^Syntax highlighting$/;"	s	line:136	language:Markdown	chapter:An old Typescript Syntax for Vim
@@ -2571,7 +2599,7 @@ Syntax highlighting	vimrc/sources_non_forked/vim-ruby/spec/syntax/strings/heredo
 Syntax highlighting	vimrc/sources_non_forked/vim-ruby/spec/syntax/strings/interpolation_spec.rb	/^describe "Syntax highlighting" do$/;"	d	line:3	language:RSpec
 Syntax highlighting	vimrc/sources_non_forked/vim-ruby/spec/syntax/strings/strings_spec.rb	/^describe "Syntax highlighting" do$/;"	d	line:3	language:RSpec
 Syntax highlighting	vimrc/sources_non_forked/vim-ruby/spec/syntax/symbols_spec.rb	/^describe "Syntax highlighting" do$/;"	d	line:3	language:RSpec
-Syntax/Lint error:	README.md	/^### Syntax\/Lint error:$/;"	S	line:73	language:Markdown	chapter:Important shortcuts to remember
+Syntax/Lint error:	README.md	/^### Syntax\/Lint error:$/;"	S	line:77	language:Markdown	chapter:Important shortcuts to remember
 SyntaxCheckers_rust_cargo_GetLocList	vimrc/sources_non_forked/rust.vim/syntax_checkers/rust/cargo.vim	/^function! SyntaxCheckers_rust_cargo_GetLocList() dict$/;"	f	line:30	language:Vim	signature:()
 SyntaxCheckers_rust_cargo_IsAvailable	vimrc/sources_non_forked/rust.vim/syntax_checkers/rust/cargo.vim	/^function! SyntaxCheckers_rust_cargo_IsAvailable() dict$/;"	f	line:20	language:Vim	signature:()
 SyntaxCheckers_rust_rustc_GetLocList	vimrc/sources_non_forked/rust.vim/syntax_checkers/rust/rustc.vim	/^function! SyntaxCheckers_rust_rustc_GetLocList() dict$/;"	f	line:18	language:Vim	signature:()
@@ -2965,7 +2993,7 @@ With patience	vimrc/sources_non_forked/vim-ruby/INSTALL.markdown	/^With patience
 WithAttr	vimrc/my_plugins/fzf/src/tui/tui.go	/^func (p ColorPair) WithAttr(attr Attr) ColorPair {$/;"	f	line:282	language:Go	struct:tui.ColorPair	typeref:typename:ColorPair	signature:(attr Attr)
 WithNth	vimrc/my_plugins/fzf/src/options.go	/^	WithNth      []Range$/;"	m	line:423	language:Go	struct:fzf.Options	typeref:typename:[]Range
 WithShell	vimrc/my_plugins/fzf/src/options.go	/^	WithShell    string$/;"	m	line:485	language:Go	struct:fzf.Options	typeref:typename:string
-Working with folder and files	README.md	/^### Working with folder and files$/;"	S	line:49	language:Markdown	chapter:Important shortcuts to remember
+Working with folder and files	README.md	/^### Working with folder and files$/;"	S	line:53	language:Markdown	chapter:Important shortcuts to remember
 Wrap	vimrc/my_plugins/fzf/src/options.go	/^	Wrap         bool$/;"	m	line:440	language:Go	struct:fzf.Options	typeref:typename:bool
 WrapSign	vimrc/my_plugins/fzf/src/options.go	/^	WrapSign     *string$/;"	m	line:441	language:Go	struct:fzf.Options	typeref:typename:*string
 WriteBookmarks	vimrc/sources_non_forked/nerdtree/lib/nerdtree/creator.vim	/^    command! -buffer -nargs=0 WriteBookmarks call g:NERDTreeBookmark.Write()$/;"	c	line:25	language:Vim
@@ -5104,6 +5132,47 @@ closePlatform	vimrc/my_plugins/fzf/src/tui/light_unix.go	/^func (r *LightRendere
 closePlatform	vimrc/my_plugins/fzf/src/tui/light_windows.go	/^func (r *LightRenderer) closePlatform() {$/;"	f	line:89	language:Go	unknown:tui.LightRenderer	signature:()
 closed	vimrc/my_plugins/fzf/src/tui/light.go	/^	closed        *util.AtomicBool$/;"	m	line:83	language:Go	struct:tui.LightRenderer	typeref:typename:*util.AtomicBool
 code	vimrc/my_plugins/fzf/src/terminal.go	/^	code int$/;"	m	line:126	language:Go	struct:fzf.quitSignal	typeref:typename:int
+codeium	vimrc/my_plugins/codeium.vim/plugin/codeium.vim	/^augroup codeium$/;"	a	line:27	language:Vim
+codeium#Accept	vimrc/my_plugins/codeium.vim/autoload/codeium.vim	/^function! codeium#Accept() abort$/;"	f	line:90	language:Vim	signature:()
+codeium#AcceptNextLine	vimrc/my_plugins/codeium.vim/autoload/codeium.vim	/^function! codeium#AcceptNextLine() abort$/;"	f	line:107	language:Vim	signature:()
+codeium#AcceptNextWord	vimrc/my_plugins/codeium.vim/autoload/codeium.vim	/^function! codeium#AcceptNextWord() abort$/;"	f	line:95	language:Vim	signature:()
+codeium#AddTrackedWorkspace	vimrc/my_plugins/codeium.vim/autoload/codeium.vim	/^function! codeium#AddTrackedWorkspace() abort$/;"	f	line:484	language:Vim	signature:()
+codeium#Chat	vimrc/my_plugins/codeium.vim/autoload/codeium.vim	/^function! codeium#Chat() abort$/;"	f	line:496	language:Vim	signature:()
+codeium#Clear	vimrc/my_plugins/codeium.vim/autoload/codeium.vim	/^function! codeium#Clear(...) abort$/;"	f	line:289	language:Vim	signature:(...)
+codeium#Complete	vimrc/my_plugins/codeium.vim/autoload/codeium.vim	/^function! codeium#Complete(...) abort$/;"	f	line:334	language:Vim	signature:(...)
+codeium#CompletionText	vimrc/my_plugins/codeium.vim/autoload/codeium.vim	/^function! codeium#CompletionText() abort$/;"	f	line:34	language:Vim	signature:()
+codeium#CycleCompletions	vimrc/my_plugins/codeium.vim/autoload/codeium.vim	/^function! codeium#CycleCompletions(n) abort$/;"	f	line:317	language:Vim	signature:(n)
+codeium#CycleOrComplete	vimrc/my_plugins/codeium.vim/autoload/codeium.vim	/^function! codeium#CycleOrComplete() abort$/;"	f	line:414	language:Vim	signature:()
+codeium#DebouncedComplete	vimrc/my_plugins/codeium.vim/autoload/codeium.vim	/^function! codeium#DebouncedComplete(...) abort$/;"	f	line:404	language:Vim	signature:(...)
+codeium#Enabled	vimrc/my_plugins/codeium.vim/autoload/codeium.vim	/^function! codeium#Enabled() abort$/;"	f	line:17	language:Vim	signature:()
+codeium#GetStatusString	vimrc/my_plugins/codeium.vim/autoload/codeium.vim	/^function! codeium#GetStatusString(...) abort$/;"	f	line:509	language:Vim	signature:(...)
+codeium#RedrawStatusLine	vimrc/my_plugins/codeium.vim/autoload/codeium.vim	/^function! codeium#RedrawStatusLine() abort$/;"	f	line:537	language:Vim	signature:()
+codeium#RefreshContext	vimrc/my_plugins/codeium.vim/autoload/codeium.vim	/^function! codeium#RefreshContext() abort$/;"	f	line:473	language:Vim	signature:()
+codeium#ServerLeave	vimrc/my_plugins/codeium.vim/autoload/codeium.vim	/^function! codeium#ServerLeave() abort$/;"	f	line:543	language:Vim	signature:()
+codeium#command#ApiKey	vimrc/my_plugins/codeium.vim/autoload/codeium/command.vim	/^function! codeium#command#ApiKey() abort$/;"	f	line:174	language:Vim	signature:()
+codeium#command#BrowserCommand	vimrc/my_plugins/codeium.vim/autoload/codeium/command.vim	/^function! codeium#command#BrowserCommand() abort$/;"	f	line:1	language:Vim	signature:()
+codeium#command#Command	vimrc/my_plugins/codeium.vim/autoload/codeium/command.vim	/^function! codeium#command#Command(arg) abort$/;"	f	line:186	language:Vim	signature:(arg)
+codeium#command#Complete	vimrc/my_plugins/codeium.vim/autoload/codeium/command.vim	/^function! codeium#command#Complete(arg, lead, pos) abort$/;"	f	line:181	language:Vim	signature:(arg,lead,pos)
+codeium#command#HomeDir	vimrc/my_plugins/codeium.vim/autoload/codeium/command.vim	/^function! codeium#command#HomeDir() abort$/;"	f	line:21	language:Vim	signature:()
+codeium#command#LoadConfig	vimrc/my_plugins/codeium.vim/autoload/codeium/command.vim	/^function! codeium#command#LoadConfig(dir) abort$/;"	f	line:31	language:Vim	signature:(dir)
+codeium#command#StartLanguageServer	vimrc/my_plugins/codeium.vim/autoload/codeium/command.vim	/^function! codeium#command#StartLanguageServer() abort$/;"	f	line:149	language:Vim	signature:()
+codeium#command#XdgConfigDir	vimrc/my_plugins/codeium.vim/autoload/codeium/command.vim	/^function! codeium#command#XdgConfigDir() abort$/;"	f	line:13	language:Vim	signature:()
+codeium#doc#GetDocument	vimrc/my_plugins/codeium.vim/autoload/codeium/doc.vim	/^function! codeium#doc#GetDocument(bufId, curLine, curCol) abort$/;"	f	line:88	language:Vim	signature:(bufId,curLine,curCol)
+codeium#doc#GetEditorOptions	vimrc/my_plugins/codeium.vim/autoload/codeium/doc.vim	/^function! codeium#doc#GetEditorOptions() abort$/;"	f	line:118	language:Vim	signature:()
+codeium#log#Debug	vimrc/my_plugins/codeium.vim/autoload/codeium/log.vim	/^function! codeium#log#Debug(msg) abort$/;"	f	line:48	language:Vim	signature:(msg)
+codeium#log#Error	vimrc/my_plugins/codeium.vim/autoload/codeium/log.vim	/^function! codeium#log#Error(msg) abort$/;"	f	line:36	language:Vim	signature:(msg)
+codeium#log#Exception	vimrc/my_plugins/codeium.vim/autoload/codeium/log.vim	/^function! codeium#log#Exception() abort$/;"	f	line:56	language:Vim	signature:()
+codeium#log#Info	vimrc/my_plugins/codeium.vim/autoload/codeium/log.vim	/^function! codeium#log#Info(msg) abort$/;"	f	line:44	language:Vim	signature:(msg)
+codeium#log#Log	vimrc/my_plugins/codeium.vim/autoload/codeium/log.vim	/^function! codeium#log#Log(level, msg) abort$/;"	f	line:18	language:Vim	signature:(level,msg)
+codeium#log#Logfile	vimrc/my_plugins/codeium.vim/autoload/codeium/log.vim	/^function! codeium#log#Logfile() abort$/;"	f	line:14	language:Vim	signature:()
+codeium#log#Trace	vimrc/my_plugins/codeium.vim/autoload/codeium/log.vim	/^function! codeium#log#Trace(msg) abort$/;"	f	line:52	language:Vim	signature:(msg)
+codeium#log#Warn	vimrc/my_plugins/codeium.vim/autoload/codeium/log.vim	/^function! codeium#log#Warn(msg) abort$/;"	f	line:40	language:Vim	signature:(msg)
+codeium#server#Request	vimrc/my_plugins/codeium.vim/autoload/codeium/server.vim	/^function! codeium#server#Request(type, data, ...) abort$/;"	f	line:64	language:Vim	signature:(type,data,...)
+codeium#server#RequestMetadata	vimrc/my_plugins/codeium.vim/autoload/codeium/server.vim	/^function! codeium#server#RequestMetadata() abort$/;"	f	line:54	language:Vim	signature:()
+codeium#server#Start	vimrc/my_plugins/codeium.vim/autoload/codeium/server.vim	/^function! codeium#server#Start(...) abort$/;"	f	line:145	language:Vim	signature:(...)
+codeium#util#HasSupportedVersion	vimrc/my_plugins/codeium.vim/autoload/codeium/util.vim	/^function! codeium#util#HasSupportedVersion() abort$/;"	f	line:5	language:Vim	signature:()
+codeium#util#LineEndingChars	vimrc/my_plugins/codeium.vim/autoload/codeium/util.vim	/^function! codeium#util#LineEndingChars(...) abort$/;"	f	line:1	language:Vim	signature:(...)
+codeium.vim	vimrc/my_plugins/codeium.vim/README.md	/^# codeium.vim$/;"	c	line:17	language:Markdown
 coffee#CoffeeSetUpErrorFormat	vimrc/sources_non_forked/vim-coffee-script/autoload/coffee.vim	/^function! coffee#CoffeeSetUpErrorFormat()$/;"	f	line:48	language:Vim	signature:()
 coffee#CoffeeSetUpVariables	vimrc/sources_non_forked/vim-coffee-script/autoload/coffee.vim	/^function! coffee#CoffeeSetUpVariables()$/;"	f	line:7	language:Vim	signature:()
 coffeeAll	vimrc/sources_non_forked/vim-coffee-script/Makefile	/^coffeeAll:$/;"	t	line:19	language:Make
@@ -5940,6 +6009,7 @@ g:__ale_c_project_filenames	vimrc/sources_non_forked/ale/autoload/ale/c.vim	/^le
 g:__fzf_command	vimrc/my_plugins/fzf.vim/autoload/fzf/vim.vim	/^    let g:__fzf_command = "normal ".prefix.item."\\<cr>"$/;"	v	line:645	language:Vim
 g:__gutentags_vim_is_leaving	vimrc/my_plugins/vim-gutentags/autoload/gutentags.vim	/^    let g:__gutentags_vim_is_leaving = 1$/;"	v	line:358	language:Vim
 g:__gutentags_vim_is_leaving	vimrc/my_plugins/vim-gutentags/plugin/gutentags.vim	/^let g:__gutentags_vim_is_leaving = 0$/;"	v	line:92	language:Vim
+g:_codeium_timer	vimrc/my_plugins/codeium.vim/autoload/codeium.vim	/^  let g:_codeium_timer = timer_start(delay, function('codeium#Complete', [current_buf]))$/;"	v	line:411	language:Vim
 g:_fugitive_last_job	vimrc/sources_non_forked/vim-fugitive/autoload/fugitive.vim	/^  let g:_fugitive_last_job = a:state$/;"	v	line:3429	language:Vim
 g:abc	vimrc/sources_non_forked/vim-addon-mw-utils/autoload/glob_linux.vim	/^      let g:abc=7$/;"	v	line:33	language:Vim
 g:abolish_last_dict	vimrc/sources_non_forked/vim-abolish/plugin/abolish.vim	/^  let g:abolish_last_dict = dict$/;"	v	line:436	language:Vim
@@ -6221,6 +6291,18 @@ g:cmd_edited	vimrc/vimrcs/extended.vim	/^            let g:cmd_edited = substitu
 g:cmd_edited	vimrc/vimrcs/extended.vim	/^            let g:cmd_edited = substitute(g:cmd, "\\\\(.*\\[\\\\\\\\\\]\\\\).*\\[\\\\\\\\\\]", "/;"	v	line:163	language:Vim
 g:cmd_edited	vimrc/vimrcs/extended.vim	/^        let g:cmd_edited = substitute(g:cmd, "\\\\(.*\\[\/\\]\\\\).*", "\\\\1", "")$/;"	v	line:158	language:Vim
 g:cmd_edited	vimrc/vimrcs/extended.vim	/^        let g:cmd_edited = substitute(g:cmd, "\\\\(.*\\[\\\\\\\\]\\\\).*", "\\\\1", "")$/;"	v	line:156	language:Vim
+g:codeium_enabled	vimrc/my_plugins/codeium.vim/autoload/codeium/command.vim	/^  let g:codeium_enabled = 0$/;"	v	line:141	language:Vim
+g:codeium_enabled	vimrc/my_plugins/codeium.vim/autoload/codeium/command.vim	/^  let g:codeium_enabled = 1$/;"	v	line:157	language:Vim
+g:codeium_enabled	vimrc/my_plugins/codeium.vim/plugin/codeium.vim	/^  let g:codeium_enabled = v:false$/;"	v	line:84	language:Vim
+g:codeium_enabled	vimrc/my_plugins/codeium.vim/plugin/codeium.vim	/^  let g:codeium_enabled = v:true$/;"	v	line:77	language:Vim
+g:codeium_manual	vimrc/my_plugins/codeium.vim/plugin/codeium.vim	/^  let g:codeium_manual = v:false$/;"	v	line:106	language:Vim
+g:codeium_manual	vimrc/my_plugins/codeium.vim/plugin/codeium.vim	/^  let g:codeium_manual = v:true$/;"	v	line:100	language:Vim
+g:codeium_server_job	vimrc/my_plugins/codeium.vim/autoload/codeium/server.vim	/^    let g:codeium_server_job = job_start(args, {$/;"	v	line:285	language:Vim
+g:codeium_server_job	vimrc/my_plugins/codeium.vim/autoload/codeium/server.vim	/^    let g:codeium_server_job = jobstart(args, {$/;"	v	line:281	language:Vim
+g:codeium_server_job	vimrc/my_plugins/codeium.vim/autoload/codeium/server.vim	/^let g:codeium_server_job = v:null$/;"	v	line:28	language:Vim
+g:codeium_server_started	vimrc/my_plugins/codeium.vim/autoload/codeium/command.vim	/^    let g:codeium_server_started = v:true$/;"	v	line:152	language:Vim
+g:codeium_warn_filetype_missing	vimrc/my_plugins/codeium.vim/autoload/codeium/doc.vim	/^    let g:codeium_warn_filetype_missing = v:false$/;"	v	line:98	language:Vim
+g:codeium_workspace_root_hints	vimrc/my_plugins/codeium.vim/autoload/codeium.vim	/^let g:codeium_workspace_root_hints = ['.bzr','.git','.hg','.svn','_FOSSIL_','package.json']$/;"	v	line:456	language:Vim
 g:coffee_cake	vimrc/sources_non_forked/vim-coffee-script/autoload/coffee.vim	/^    let g:coffee_cake = 'cake'$/;"	v	line:20	language:Vim
 g:coffee_cake_options	vimrc/sources_non_forked/vim-coffee-script/autoload/coffee.vim	/^    let g:coffee_cake_options = ''$/;"	v	line:25	language:Vim
 g:coffee_compiler	vimrc/sources_non_forked/vim-coffee-script/autoload/coffee.vim	/^    let g:coffee_compiler = 'coffee'$/;"	v	line:10	language:Vim
@@ -6686,6 +6768,8 @@ g:loaded_abolish	vimrc/sources_non_forked/vim-abolish/plugin/abolish.vim	/^let g
 g:loaded_ack	vimrc/sources_non_forked/ack.vim/plugin/ack.vim	/^let g:loaded_ack = 1$/;"	v	line:81	language:Vim
 g:loaded_ale	vimrc/sources_non_forked/ale/plugin/ale.vim	/^let g:loaded_ale = 1$/;"	v	line:39	language:Vim
 g:loaded_ale_dont_use_this_in_other_plugins_please	vimrc/sources_non_forked/ale/plugin/ale.vim	/^let g:loaded_ale_dont_use_this_in_other_plugins_please = 1$/;"	v	line:13	language:Vim
+g:loaded_codeium	vimrc/my_plugins/codeium.vim/plugin/codeium.vim	/^let g:loaded_codeium = 1$/;"	v	line:4	language:Vim
+g:loaded_codeium_log	vimrc/my_plugins/codeium.vim/autoload/codeium/log.vim	/^let g:loaded_codeium_log = 1$/;"	v	line:4	language:Vim
 g:loaded_commentary	vimrc/sources_non_forked/vim-commentary/plugin/commentary.vim	/^let g:loaded_commentary = 1$/;"	v	line:9	language:Vim
 g:loaded_ctrlp	vimrc/sources_non_forked/ctrlp.vim/plugin/ctrlp.vim	/^let g:loaded_ctrlp = 1$/;"	v	line:11	language:Vim
 g:loaded_ctrlp_bookmarkdir	vimrc/sources_non_forked/ctrlp.vim/autoload/ctrlp/bookmarkdir.vim	/^let g:loaded_ctrlp_bookmarkdir = 1$/;"	v	line:11	language:Vim
@@ -7393,6 +7477,7 @@ main_syntax	vimrc/sources_non_forked/vim-pug/syntax/pug.vim	/^  let main_syntax 
 main_syntax	vimrc/sources_non_forked/vim-ruby/syntax/eruby.vim	/^  let main_syntax = 'eruby'$/;"	v	line:11	language:Vim
 maintainer	vimrc/sources_non_forked/vim-snipmate/addon-info.json	/^  "maintainer" : "Rok Garbas \/ Marc Weber",$/;"	s	line:5	language:JSON
 maintainer	vimrc/sources_non_forked/vim-snippets/addon-info.json	/^  "maintainer" : "honza @ github & others",$/;"	s	line:4	language:JSON
+major	vimrc/my_plugins/codeium.vim/autoload/codeium/server.vim	/^    let major = v:version \/ 100$/;"	v	line:16	language:Vim
 major	vimrc/my_plugins/fzf/src/core.go	/^	major int$/;"	m	line:22	language:Go	struct:fzf.revision	typeref:typename:int
 makeImageBorder	vimrc/my_plugins/fzf/src/terminal.go	/^func (t *Terminal) makeImageBorder(width int, top bool) string {$/;"	f	line:2556	language:Go	struct:fzf.Terminal	typeref:typename:string	signature:(width int, top bool)
 makeSpace	vimrc/my_plugins/fzf/src/tui/light.go	/^func (r *LightRenderer) makeSpace() {$/;"	f	line:215	language:Go	struct:tui.LightRenderer	signature:()
@@ -7480,6 +7565,7 @@ minIndex	vimrc/my_plugins/fzf/src/merger.go	/^	minIndex int32$/;"	m	line:24	lang
 minItem	vimrc/my_plugins/fzf/src/item.go	/^var minItem = Item{text: util.Chars{Index: math.MinInt32}}$/;"	v	line:22	language:Go	package:fzf
 minRank	vimrc/my_plugins/fzf/src/result.go	/^func minRank() Result {$/;"	f	line:102	language:Go	package:fzf	typeref:typename:Result	signature:()
 minWidth	vimrc/my_plugins/fzf/src/terminal.go	/^	minWidth  = 4$/;"	c	line:1364	language:Go	package:fzf
+minor	vimrc/my_plugins/codeium.vim/autoload/codeium/server.vim	/^    let minor = v:version % 100$/;"	v	line:17	language:Vim
 minor	vimrc/my_plugins/fzf/src/core.go	/^	minor int$/;"	m	line:23	language:Go	struct:fzf.revision	typeref:typename:int
 mirror	vimrc/sources_non_forked/vim-snipmate/t/jumping.vim	/^            let mirror = { 'line' : 0 }$/;"	v	line:93	language:Vim
 mkfifo	vimrc/my_plugins/fzf/src/proxy_unix.go	/^func mkfifo(path string, mode uint32) (string, error) {$/;"	f	line:16	language:Go	package:fzf	typeref:typename:(string, error)	signature:(path string, mode uint32)
@@ -7692,6 +7778,7 @@ pastes the most recently yanked string	vimrc/sources_non_forked/vim-yankstack/sp
 pastes the most recently yanked text after the cursor	vimrc/sources_non_forked/vim-yankstack/spec/yankstack/yankstack_spec.rb	/^        it "pastes the most recently yanked text after the cursor" do$/;"	i	line:263	language:RSpec	describe:Yankstack.in insert mode.typing the `substitute_older_paste` after a character-wise yank
 pasting a string with 'p'	vimrc/sources_non_forked/vim-yankstack/spec/yankstack/yankstack_spec.rb	/^      describe "pasting a string with 'p'" do$/;"	d	line:173	language:RSpec	context:Yankstack.in visual mode, with text highlighted
 pasting a string with 'p'	vimrc/sources_non_forked/vim-yankstack/spec/yankstack/yankstack_spec.rb	/^      describe "pasting a string with 'p'" do$/;"	d	line:69	language:RSpec	context:Yankstack.in normal mode
+patch	vimrc/my_plugins/codeium.vim/autoload/codeium/server.vim	/^      let patch = printf('%04d', v:versionlong % 1000)$/;"	v	line:19	language:Vim
 path	vimrc/my_plugins/fzf/src/history.go	/^	path     string$/;"	m	line:11	language:Go	struct:fzf.History	typeref:typename:string
 pathogen#cycle_filetype	vimrc/autoload/pathogen.vim	/^function! pathogen#cycle_filetype() abort$/;"	f	line:85	language:Vim	signature:()
 pathogen#execute	vimrc/autoload/pathogen.vim	/^function! pathogen#execute(...) abort$/;"	f	line:157	language:Vim	signature:(...)
@@ -8003,6 +8090,7 @@ s:AbsoluteVimPath	vimrc/sources_non_forked/vim-fugitive/autoload/fugitive.vim	/^
 s:AcceptSelection	vimrc/sources_non_forked/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:AcceptSelection(action)$/;"	f	line:1302	language:Vim	signature:(action)
 s:AccessModifier	vimrc/sources_non_forked/vim-ruby/indent/ruby.vim	/^function! s:AccessModifier(cline_info) abort$/;"	f	line:310	language:Vim	signature:(cline_info)
 s:ActivateBuffer	vimrc/sources_non_forked/bufexplorer/plugin/bufexplorer.vim	/^function! s:ActivateBuffer()$/;"	f	line:285	language:Vim	signature:()
+s:ActuallyStart	vimrc/my_plugins/codeium.vim/autoload/codeium/server.vim	/^function! s:ActuallyStart() abort$/;"	f	line:253	language:Vim	signature:()
 s:Add	vimrc/sources_non_forked/vim-snipmate/autoload/snipMate_python_demo.vim	/^fun! s:Add(dict, line, source, trigger) abort$/;"	f	line:20	language:Vim	signature:(dict,line,source,trigger)
 s:AddBufToCurrentTab	vimrc/sources_non_forked/bufexplorer/plugin/bufexplorer.vim	/^function! s:AddBufToCurrentTab(bufnr)$/;"	f	line:227	language:Vim	signature:(bufnr)
 s:AddDiffSection	vimrc/sources_non_forked/vim-fugitive/autoload/fugitive.vim	/^function! s:AddDiffSection(to, stat, label, files) abort$/;"	f	line:2623	language:Vim	signature:(to,stat,label,files)
@@ -8115,6 +8203,7 @@ s:ChompStderr	vimrc/sources_non_forked/vim-fugitive/autoload/fugitive.vim	/^func
 s:ChooseCommandMap	vimrc/sources_non_forked/tabular/plugin/Tabular.vim	/^function! s:ChooseCommandMap(commandline)$/;"	f	line:77	language:Vim	signature:(commandline)
 s:ChooseSnippet	vimrc/sources_non_forked/vim-snipmate/autoload/snipMate.vim	/^fun! s:ChooseSnippet(snippets) abort$/;"	f	line:546	language:Vim	signature:(snippets)
 s:Cleanup	vimrc/sources_non_forked/bufexplorer/plugin/bufexplorer.vim	/^function! s:Cleanup()$/;"	f	line:350	language:Vim	signature:()
+s:ClearCompletion	vimrc/my_plugins/codeium.vim/autoload/codeium.vim	/^function! s:ClearCompletion() abort$/;"	f	line:154	language:Vim	signature:()
 s:Close	vimrc/sources_non_forked/bufexplorer/plugin/bufexplorer.vim	/^function! s:Close()$/;"	f	line:1042	language:Vim	signature:()
 s:Close	vimrc/sources_non_forked/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:Close()$/;"	f	line:332	language:Vim	signature:()
 s:CloseCustomFuncs	vimrc/sources_non_forked/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:CloseCustomFuncs()$/;"	f	line:426	language:Vim	signature:()
@@ -8152,6 +8241,7 @@ s:CompleteRemote	vimrc/sources_non_forked/vim-fugitive/autoload/fugitive.vim	/^f
 s:CompleteRevision	vimrc/sources_non_forked/vim-fugitive/autoload/fugitive.vim	/^function! s:CompleteRevision(A, L, P, ...) abort$/;"	f	line:2538	language:Vim	signature:(A,L,P,...)
 s:CompleteSub	vimrc/sources_non_forked/vim-fugitive/autoload/fugitive.vim	/^function! s:CompleteSub(subcommand, A, L, P, ...) abort$/;"	f	line:2523	language:Vim	signature:(subcommand,A,L,P,...)
 s:CompleteTabularizeCommand	vimrc/sources_non_forked/tabular/plugin/Tabular.vim	/^function! s:CompleteTabularizeCommand(argstart, cmdline, cursorpos)$/;"	f	line:64	language:Vim	signature:(argstart,cmdline,cursorpos)
+s:CompletionInserter	vimrc/my_plugins/codeium.vim/autoload/codeium.vim	/^function! s:CompletionInserter(current_completion, insert_text) abort$/;"	f	line:42	language:Vim	signature:(current_completion,insert_text)
 s:CompletionStillValid	vimrc/sources_non_forked/ale/autoload/ale/completion.vim	/^function! s:CompletionStillValid(request_id) abort$/;"	f	line:431	language:Vim	signature:(request_id)
 s:ConfigCallback	vimrc/sources_non_forked/vim-fugitive/autoload/fugitive.vim	/^function! s:ConfigCallback(r, into) abort$/;"	f	line:1067	language:Vim	signature:(r,into)
 s:ConfigLengthSort	vimrc/sources_non_forked/vim-fugitive/autoload/fugitive.vim	/^function! s:ConfigLengthSort(i1, i2) abort$/;"	f	line:1407	language:Vim	signature:(i1,i2)
@@ -8335,6 +8425,7 @@ s:FindHistoryItem	vimrc/sources_non_forked/ale/autoload/ale/history.vim	/^functi
 s:FindLeftOfSyntax	vimrc/sources_non_forked/vim-markdown/ftplugin/markdown.vim	/^function! s:FindLeftOfSyntax(lnum, col)$/;"	f	line:623	language:Vim	signature:(lnum,col)
 s:FindNextSyntax	vimrc/sources_non_forked/vim-markdown/ftplugin/markdown.vim	/^function! s:FindNextSyntax(lnum, col, name)$/;"	f	line:606	language:Vim	signature:(lnum,col,name)
 s:FindParentVCSRoot	vimrc/sources_non_forked/nerdtree/nerdtree_plugin/vcs.vim	/^function! s:FindParentVCSRoot(path)$/;"	f	line:34	language:Vim	signature:(path)
+s:FindPort	vimrc/my_plugins/codeium.vim/autoload/codeium/server.vim	/^function! s:FindPort(dir, timer) abort$/;"	f	line:103	language:Vim	signature:(dir,timer)
 s:FindProjectRoot	vimrc/sources_non_forked/ale/ale_linters/erlang/erlang_ls.vim	/^function! s:FindProjectRoot(buffer) abort$/;"	f	line:23	language:Vim	signature:(buffer)
 s:FindRightOfSyntax	vimrc/sources_non_forked/vim-markdown/ftplugin/markdown.vim	/^function! s:FindRightOfSyntax(lnum, col)$/;"	f	line:619	language:Vim	signature:(lnum,col)
 s:FindSpan	vimrc/sources_non_forked/ale/autoload/ale/handlers/rust.vim	/^function! s:FindSpan(buffer, span) abort$/;"	f	line:14	language:Vim	signature:(buffer,span)
@@ -8380,6 +8471,7 @@ s:GetCommand	vimrc/sources_non_forked/ale/ale_linters/erlang/syntaxerl.vim	/^fun
 s:GetCommandFromHelpOutput	vimrc/sources_non_forked/ale/ale_linters/erlang/syntaxerl.vim	/^function! s:GetCommandFromHelpOutput(buffer, output, metadata) abort$/;"	f	line:33	language:Vim	signature:(buffer,output,metadata)
 s:GetConfig	vimrc/sources_non_forked/ale/ale_linters/java/checkstyle.vim	/^function! s:GetConfig(buffer, config) abort$/;"	f	line:44	language:Vim	signature:(buffer,config)
 s:GetCounts	vimrc/sources_non_forked/ale/autoload/ale/statusline.vim	/^function! s:GetCounts(buffer) abort$/;"	f	line:97	language:Vim	signature:(buffer)
+s:GetCurrentCompletionItem	vimrc/my_plugins/codeium.vim/autoload/codeium.vim	/^function! s:GetCurrentCompletionItem() abort$/;"	f	line:141	language:Vim	signature:()
 s:GetCwd	vimrc/sources_non_forked/ale/ale_linters/erlang/elvis.vim	/^function! s:GetCwd(buffer) abort$/;"	f	line:38	language:Vim	signature:(buffer)
 s:GetDUBCommand	vimrc/sources_non_forked/ale/ale_linters/d/dmd.vim	/^function! s:GetDUBCommand(buffer) abort$/;"	f	line:4	language:Vim	signature:(buffer)
 s:GetDefaultPolicy	vimrc/sources_non_forked/vim-coffee-script/indent/coffee.vim	/^function! s:GetDefaultPolicy(curlnum)$/;"	f	line:250	language:Vim	signature:(curlnum)
@@ -8420,6 +8512,7 @@ s:GetParentHeaderLineNumber	vimrc/sources_non_forked/vim-markdown/ftplugin/markd
 s:GetPopupOpts	vimrc/sources_non_forked/ale/autoload/ale/floating_preview.vim	/^function! s:GetPopupOpts() abort$/;"	f	line:204	language:Vim	signature:()
 s:GetPrevNormalLine	vimrc/sources_non_forked/vim-coffee-script/indent/coffee.vim	/^function! s:GetPrevNormalLine(startlnum)$/;"	f	line:153	language:Vim	signature:(startlnum)
 s:GetPreviousHeaderLineNumberAtLevel	vimrc/sources_non_forked/vim-markdown/ftplugin/markdown.vim	/^function! s:GetPreviousHeaderLineNumberAtLevel(level, ...)$/;"	f	line:285	language:Vim	signature:(level,...)
+s:GetProjectRoot	vimrc/my_plugins/codeium.vim/autoload/codeium.vim	/^function! s:GetProjectRoot() abort$/;"	f	line:457	language:Vim	signature:()
 s:GetRubyVarType	vimrc/sources_non_forked/vim-ruby/autoload/rubycomplete.vim	/^function! s:GetRubyVarType(v)$/;"	f	line:155	language:Vim	signature:(v)
 s:GetScopes	vimrc/sources_non_forked/vim-snipmate/autoload/snipMate.vim	/^function! s:GetScopes() abort$/;"	f	line:256	language:Vim	signature:()
 s:GetTabNbr	vimrc/sources_non_forked/bufexplorer/plugin/bufexplorer.vim	/^function! s:GetTabNbr(bufNbr)$/;"	f	line:1249	language:Vim	signature:(bufNbr)
@@ -8470,9 +8563,11 @@ s:GrepSubcommand	vimrc/sources_non_forked/vim-fugitive/autoload/fugitive.vim	/^f
 s:GroupCmd	vimrc/sources_non_forked/ale/autoload/ale/sign.vim	/^function! s:GroupCmd() abort$/;"	f	line:162	language:Vim	signature:()
 s:GroupLoclistItems	vimrc/sources_non_forked/ale/autoload/ale/sign.vim	/^function! s:GroupLoclistItems(buffer, loclist) abort$/;"	f	line:261	language:Vim	signature:(buffer,loclist)
 s:HL	vimrc/sources_non_forked/gruvbox/colors/gruvbox.vim	/^function! s:HL(group, fg, ...)$/;"	f	line:374	language:Vim	signature:(group,fg,...)
+s:HandleCompletionsResult	vimrc/my_plugins/codeium.vim/autoload/codeium.vim	/^function! s:HandleCompletionsResult(out, err, status) abort$/;"	f	line:113	language:Vim	signature:(out,err,status)
 s:HandleESLintOutput	vimrc/sources_non_forked/ale/autoload/ale/handlers/eslint.vim	/^function! s:HandleESLintOutput(buffer, lines, type) abort$/;"	f	line:223	language:Vim	signature:(buffer,lines,type)
 s:HandleExit	vimrc/sources_non_forked/ale/autoload/ale/engine.vim	/^function! s:HandleExit(job_info, buffer, output, data) abort$/;"	f	line:151	language:Vim	signature:(job_info,buffer,output,data)
 s:HandleExit	vimrc/sources_non_forked/ale/autoload/ale/fix.vim	/^function! s:HandleExit(job_info, buffer, job_output, data) abort$/;"	f	line:93	language:Vim	signature:(job_info,buffer,job_output,data)
+s:HandleGetStatusResponse	vimrc/my_plugins/codeium.vim/autoload/codeium/server.vim	/^function! s:HandleGetStatusResponse(out, err, status) abort$/;"	f	line:121	language:Vim	signature:(out,err,status)
 s:HandleLSPDiagnostics	vimrc/sources_non_forked/ale/autoload/ale/lsp_linter.vim	/^function! s:HandleLSPDiagnostics(conn_id, response) abort$/;"	f	line:80	language:Vim	signature:(conn_id,response)
 s:HandleLSPErrorMessage	vimrc/sources_non_forked/ale/autoload/ale/lsp_linter.vim	/^function! s:HandleLSPErrorMessage(linter, response) abort$/;"	f	line:169	language:Vim	signature:(linter,response)
 s:HandleLSPResponseToCustomRequests	vimrc/sources_non_forked/ale/autoload/ale/lsp_linter.vim	/^function! s:HandleLSPResponseToCustomRequests(conn_id, response) abort$/;"	f	line:532	language:Vim	signature:(conn_id,response)
@@ -8575,6 +8670,7 @@ s:LSP_MESSAGE_TYPE_ERROR	vimrc/sources_non_forked/ale/autoload/ale/lsp_window.vi
 s:LSP_MESSAGE_TYPE_INFORMATION	vimrc/sources_non_forked/ale/autoload/ale/lsp_window.vim	/^let s:LSP_MESSAGE_TYPE_INFORMATION = 3$/;"	v	line:9	language:Vim
 s:LSP_MESSAGE_TYPE_LOG	vimrc/sources_non_forked/ale/autoload/ale/lsp_window.vim	/^let s:LSP_MESSAGE_TYPE_LOG = 4$/;"	v	line:10	language:Vim
 s:LSP_MESSAGE_TYPE_WARNING	vimrc/sources_non_forked/ale/autoload/ale/lsp_window.vim	/^let s:LSP_MESSAGE_TYPE_WARNING = 2$/;"	v	line:8	language:Vim
+s:LaunchChat	vimrc/my_plugins/codeium.vim/autoload/codeium.vim	/^function! s:LaunchChat(out, err, status) abort$/;"	f	line:422	language:Vim	signature:(out,err,status)
 s:LaunchPeepOpenViaVim	vimrc/sources_forked/vim-peepopen/plugin/peepopen.vim	/^function s:LaunchPeepOpenViaVim()$/;"	f	line:30	language:Vim	signature:()
 s:LeadingOperator	vimrc/sources_non_forked/vim-ruby/indent/ruby.vim	/^function! s:LeadingOperator(cline_info) abort$/;"	f	line:440	language:Vim	signature:(cline_info)
 s:Left	vimrc/sources_non_forked/auto-pairs/plugin/auto-pairs.vim	/^let s:Left = s:Go."\\<LEFT>"$/;"	v	line:112	language:Vim
@@ -8623,6 +8719,7 @@ s:MapNorms	vimrc/sources_non_forked/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:MapNorm
 s:MapNotHasmapto	vimrc/sources_non_forked/vim-markdown/ftplugin/markdown.vim	/^function! s:MapNotHasmapto(lhs, rhs)$/;"	f	line:751	language:Vim	signature:(lhs,rhs)
 s:MapSpecs	vimrc/sources_non_forked/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:MapSpecs()$/;"	f	line:1106	language:Vim	signature:()
 s:MapStatus	vimrc/sources_non_forked/vim-fugitive/autoload/fugitive.vim	/^function! s:MapStatus() abort$/;"	f	line:2684	language:Vim	signature:()
+s:MapTab	vimrc/my_plugins/codeium.vim/plugin/codeium.vim	/^function! s:MapTab() abort$/;"	f	line:21	language:Vim	signature:()
 s:MarkToOpen	vimrc/sources_non_forked/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:MarkToOpen()$/;"	f	line:1364	language:Vim	signature:()
 s:MarkdownClearSyntaxVariables	vimrc/sources_non_forked/vim-markdown/ftplugin/markdown.vim	/^function! s:MarkdownClearSyntaxVariables()$/;"	f	line:892	language:Vim	signature:()
 s:MarkdownHighlightSources	vimrc/sources_non_forked/vim-markdown/ftplugin/markdown.vim	/^function! s:MarkdownHighlightSources(force)$/;"	f	line:806	language:Vim	signature:(force)
@@ -8702,6 +8799,7 @@ s:NextHunk	vimrc/sources_non_forked/vim-fugitive/autoload/fugitive.vim	/^functio
 s:NextItem	vimrc/sources_non_forked/vim-fugitive/autoload/fugitive.vim	/^function! s:NextItem(count) abort$/;"	f	line:4775	language:Vim	signature:(count)
 s:NextSection	vimrc/sources_non_forked/vim-fugitive/autoload/fugitive.vim	/^function! s:NextSection(count) abort$/;"	f	line:4799	language:Vim	signature:(count)
 s:NextSectionEnd	vimrc/sources_non_forked/vim-fugitive/autoload/fugitive.vim	/^function! s:NextSectionEnd(count) abort$/;"	f	line:4836	language:Vim	signature:(count)
+s:NoopCallback	vimrc/my_plugins/codeium.vim/autoload/codeium/server.vim	/^function! s:NoopCallback(...) abort$/;"	f	line:51	language:Vim	signature:(...)
 s:Notifier	vimrc/sources_non_forked/nerdtree/lib/nerdtree/notifier.vim	/^let s:Notifier = {}$/;"	v	line:3	language:Vim
 s:Notifier.AddListener	vimrc/sources_non_forked/nerdtree/lib/nerdtree/notifier.vim	/^function! s:Notifier.AddListener(event, funcname)$/;"	f	line:5	language:Vim	signature:(event,funcname)
 s:Notifier.GetListenersForEvent	vimrc/sources_non_forked/nerdtree/lib/nerdtree/notifier.vim	/^function! s:Notifier.GetListenersForEvent(name)$/;"	f	line:30	language:Vim	signature:(name)
@@ -8713,6 +8811,8 @@ s:NvimCreate	vimrc/sources_non_forked/ale/autoload/ale/floating_preview.vim	/^fu
 s:NvimPrepareWindowContent	vimrc/sources_non_forked/ale/autoload/ale/floating_preview.vim	/^function! s:NvimPrepareWindowContent(lines) abort$/;"	f	line:102	language:Vim	signature:(lines)
 s:NvimShow	vimrc/sources_non_forked/ale/autoload/ale/floating_preview.vim	/^function! s:NvimShow(lines, options) abort$/;"	f	line:26	language:Vim	signature:(lines,options)
 s:OPTCRE	vimrc/sources_non_forked/editorconfig-vim/autoload/editorconfig_core/ini.vim	/^let s:OPTCRE = '\\v\\s*([^:=[:space:]][^:=]*)\\s*([:=])\\s*(.*)$'$/;"	v	line:49	language:Vim
+s:OnClose	vimrc/my_plugins/codeium.vim/autoload/codeium/server.vim	/^function! s:OnClose(result, on_complete_cb) abort$/;"	f	line:41	language:Vim	signature:(result,on_complete_cb)
+s:OnExit	vimrc/my_plugins/codeium.vim/autoload/codeium/server.vim	/^function! s:OnExit(result, status, on_complete_cb) abort$/;"	f	line:30	language:Vim	signature:(result,status,on_complete_cb)
 s:OnReady	vimrc/sources_non_forked/ale/autoload/ale/codefix.vim	/^function! s:OnReady($/;"	f	line:335	language:Vim	signature:(   line,column,end_line,end_column,MenuCallback,linter,lsp_details,)
 s:OnReady	vimrc/sources_non_forked/ale/autoload/ale/completion.vim	/^function! s:OnReady(linter, lsp_details) abort$/;"	f	line:762	language:Vim	signature:(linter,lsp_details)
 s:OnReady	vimrc/sources_non_forked/ale/autoload/ale/definition.vim	/^function! s:OnReady(line, column, options, capability, linter, lsp_details) abort$/;"	f	line:184	language:Vim	signature:(line,column,options,capability,linter,lsp_details)
@@ -8900,8 +9000,10 @@ s:RemoveUnicodeQuotes	vimrc/sources_non_forked/ale/autoload/ale/handlers/flawfin
 s:RemoveUnicodeQuotes	vimrc/sources_non_forked/ale/autoload/ale/handlers/gcc.vim	/^function! s:RemoveUnicodeQuotes(text) abort$/;"	f	line:20	language:Vim	signature:(text)
 s:RemoveUnicodeQuotes	vimrc/sources_non_forked/ale/autoload/ale/handlers/pony.vim	/^function! s:RemoveUnicodeQuotes(text) abort$/;"	f	line:5	language:Vim	signature:(text)
 s:Render	vimrc/sources_non_forked/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:Render(lines, pat)$/;"	f	line:731	language:Vim	signature:(lines,pat)
+s:RenderCurrentCompletion	vimrc/my_plugins/codeium.vim/autoload/codeium.vim	/^function! s:RenderCurrentCompletion() abort$/;"	f	line:166	language:Vim	signature:()
 s:ReplaceCmd	vimrc/sources_non_forked/vim-fugitive/autoload/fugitive.vim	/^function! s:ReplaceCmd(cmd) abort$/;"	f	line:2565	language:Vim	signature:(cmd)
 s:ReplaceCompletionOptions	vimrc/sources_non_forked/ale/autoload/ale/completion.vim	/^function! s:ReplaceCompletionOptions(source) abort$/;"	f	line:261	language:Vim	signature:(source)
+s:RequestServerStatus	vimrc/my_plugins/codeium.vim/autoload/codeium/server.vim	/^function! s:RequestServerStatus() abort$/;"	f	line:117	language:Vim	signature:()
 s:Reset	vimrc/sources_non_forked/bufexplorer/plugin/bufexplorer.vim	/^function! s:Reset()$/;"	f	line:160	language:Vim	signature:()
 s:Reset	vimrc/sources_non_forked/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:Reset(args)$/;"	f	line:377	language:Vim	signature:(args)
 s:ResetShellSlash	vimrc/sources_non_forked/editorconfig-vim/plugin/editorconfig.vim	/^function! s:ResetShellSlash(bufnr) " {{{2$/;"	f	line:108	language:Vim	signature:(bufnr)
@@ -8969,6 +9071,7 @@ s:SearchingFilepaths	vimrc/sources_non_forked/ack.vim/autoload/ack.vim	/^functio
 s:SelectBuffer	vimrc/sources_non_forked/bufexplorer/plugin/bufexplorer.vim	/^function! s:SelectBuffer(...)$/;"	f	line:798	language:Vim	signature:(...)
 s:SelectJavascript	vimrc/sources_non_forked/vim-javascript/ftdetect/javascript.vim	/^fun! s:SelectJavascript()$/;"	f	line:1	language:Vim	signature:()
 s:Selection	vimrc/sources_non_forked/vim-fugitive/autoload/fugitive.vim	/^function! s:Selection(arg1, ...) abort$/;"	f	line:4514	language:Vim	signature:(arg1,...)
+s:SendHeartbeat	vimrc/my_plugins/codeium.vim/autoload/codeium/server.vim	/^function! s:SendHeartbeat(timer) abort$/;"	f	line:137	language:Vim	signature:(timer)
 s:SendInitMessage	vimrc/sources_non_forked/ale/autoload/ale/lsp.vim	/^function! s:SendInitMessage(conn) abort$/;"	f	line:398	language:Vim	signature:(conn)
 s:SendMessageData	vimrc/sources_non_forked/ale/autoload/ale/lsp.vim	/^function! s:SendMessageData(conn, data) abort$/;"	f	line:579	language:Vim	signature:(conn,data)
 s:Set	vimrc/sources_non_forked/bufexplorer/plugin/bufexplorer.vim	/^function! s:Set(var, default)$/;"	f	line:113	language:Vim	signature:(var,default)
@@ -8983,6 +9086,7 @@ s:SetOffset	vimrc/sources_non_forked/tlib/autoload/tlib/input.vim	/^function! s:
 s:SetOpt	vimrc/sources_non_forked/tlib/autoload/tlib/arg.vim	/^function! s:SetOpt(def, opts, idx, opt) abort "{{{3$/;"	f	line:127	language:Vim	signature:(def,opts,idx,opt)
 s:SetOption	vimrc/sources_non_forked/vim-colors-solarized/colors/solarized.vim	/^function! s:SetOption(name,default)$/;"	f	line:192	language:Vim	signature:(name,default)
 s:SetScrollBind	vimrc/sources_non_forked/tlib/autoload/tlib/file.vim	/^function! s:SetScrollBind(world) "{{{3$/;"	f	line:148	language:Vim	signature:(world)
+s:SetStyle	vimrc/my_plugins/codeium.vim/plugin/codeium.vim	/^function! s:SetStyle() abort$/;"	f	line:12	language:Vim	signature:()
 s:SetTimestamp	vimrc/sources_non_forked/tlib/autoload/tlib/cache.vim	/^function! s:SetTimestamp(cfile, type) "{{{3$/;"	f	line:120	language:Vim	signature:(cfile,type)
 s:SetUpMessage	vimrc/sources_non_forked/vim-rhubarb/plugin/rhubarb.vim	/^function! s:SetUpMessage(filename) abort$/;"	f	line:14	language:Vim	signature:(filename)
 s:SetWD	vimrc/sources_non_forked/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:SetWD(args)$/;"	f	line:1199	language:Vim	signature:(args)
@@ -9214,6 +9318,7 @@ s:UNKNOWN_ERROR_CODE	vimrc/sources_non_forked/ale/autoload/ale/lsp/response.vim	
 s:UndoHighlightLine	vimrc/sources_non_forked/tlib/autoload/tlib/buffer.vim	/^function! s:UndoHighlightLine() "{{{3$/;"	f	line:203	language:Vim	signature:()
 s:Uniq	vimrc/sources_non_forked/vim-fugitive/autoload/fugitive.vim	/^function! s:Uniq(list) abort$/;"	f	line:26	language:Vim	signature:(list)
 s:UnplaceMarkers	vimrc/sources_non_forked/vim-flake8/autoload/flake8.vim	/^function! s:UnplaceMarkers()  " {{{$/;"	f	line:260	language:Vim	signature:()
+s:UnzipAndStart	vimrc/my_plugins/codeium.vim/autoload/codeium/server.vim	/^function! s:UnzipAndStart(status) abort$/;"	f	line:216	language:Vim	signature:(status)
 s:Update	vimrc/sources_non_forked/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:Update(str)$/;"	f	line:782	language:Vim	signature:(str)
 s:UpdateCacheIfNecessary	vimrc/sources_non_forked/ale/autoload/ale/statusline.vim	/^function! s:UpdateCacheIfNecessary(buffer) abort$/;"	f	line:78	language:Vim	signature:(buffer)
 s:UpdateCapabilities	vimrc/sources_non_forked/ale/autoload/ale/lsp.vim	/^function! s:UpdateCapabilities(conn, capabilities) abort$/;"	f	line:198	language:Vim	signature:(conn,capabilities)
@@ -9304,6 +9409,7 @@ s:almost_black	vimrc/sources_non_forked/lightline.vim/autoload/lightline/colorsc
 s:alternatePair	vimrc/sources_non_forked/typescript-vim/indent/typescript.vim	/^function s:alternatePair(stop)$/;"	f	line:66	language:Vim	signature:(stop)
 s:ansi	vimrc/my_plugins/fzf.vim/autoload/fzf/vim.vim	/^function! s:ansi(str, group, default, ...)$/;"	f	line:304	language:Vim	signature:(str,group,default,...)
 s:ansi	vimrc/my_plugins/fzf.vim/autoload/fzf/vim.vim	/^let s:ansi = {'black': 30, 'red': 31, 'green': 32, 'yellow': 33, 'blue': 34, 'magenta': 35, 'cya/;"	v	line:294	language:Vim
+s:api_key	vimrc/my_plugins/codeium.vim/autoload/codeium/command.vim	/^let s:api_key = get(codeium#command#LoadConfig(codeium#command#HomeDir()), 'apiKey', '')$/;"	v	line:43	language:Vim
 s:apply_highlight_fix	vimrc/sources_non_forked/vim-multiple-cursors/autoload/multiple_cursors.vim	/^function! s:apply_highlight_fix()$/;"	f	line:1123	language:Vim	signature:()
 s:apply_user_input_next	vimrc/sources_non_forked/vim-multiple-cursors/autoload/multiple_cursors.vim	/^function! s:apply_user_input_next(mode)$/;"	f	line:989	language:Vim	signature:(mode)
 s:aqua	vimrc/sources_non_forked/gruvbox/autoload/lightline/colorscheme/gruvbox.vim	/^  let s:aqua   = s:getGruvColor('GruvboxAqua')$/;"	v	line:26	language:Vim
@@ -9577,6 +9683,7 @@ s:bgdark	vimrc/sources_non_forked/dracula/colors/dracula.vim	/^let s:bgdark    =
 s:bgdarker	vimrc/sources_non_forked/dracula/colors/dracula.vim	/^let s:bgdarker  = g:dracula#palette.bgdarker$/;"	v	line:40	language:Vim
 s:bglight	vimrc/sources_non_forked/dracula/colors/dracula.vim	/^let s:bglight   = g:dracula#palette.bglight$/;"	v	line:37	language:Vim
 s:bglighter	vimrc/sources_non_forked/dracula/colors/dracula.vim	/^let s:bglighter = g:dracula#palette.bglighter$/;"	v	line:36	language:Vim
+s:bin	vimrc/my_plugins/codeium.vim/autoload/codeium/server.vim	/^let s:bin = v:null$/;"	v	line:4	language:Vim
 s:bin	vimrc/my_plugins/fzf.vim/autoload/fzf/vim.vim	/^let s:bin = {$/;"	v	line:102	language:Vim
 s:bin_dir	vimrc/my_plugins/fzf.vim/autoload/fzf/vim.vim	/^let s:bin_dir = expand('<sfile>:p:h:h:h').'\/bin\/'$/;"	v	line:101	language:Vim
 s:bin_dir	vimrc/sources_non_forked/ale/autoload/ale/python.vim	/^let s:bin_dir = has('unix') ? 'bin' : 'Scripts'$/;"	v	line:9	language:Vim
@@ -9750,6 +9857,7 @@ s:cmd	vimrc/my_plugins/fzf/plugin/fzf.vim	/^function! s:cmd(bang, ...) abort$/;"
 s:cmd1	vimrc/sources_non_forked/tlib/autoload/tlib/vcs.vim	/^            let s:cmd1 = printf(g:tlib#vcs#check, s:cmd)$/;"	v	line:50	language:Vim
 s:cmd_history_sink	vimrc/my_plugins/fzf.vim/autoload/fzf/vim.vim	/^function! s:cmd_history_sink(lines)$/;"	f	line:650	language:Vim	signature:(lines)
 s:codefix_map	vimrc/sources_non_forked/ale/autoload/ale/codefix.vim	/^let s:codefix_map = {}$/;"	v	line:4	language:Vim
+s:codeium_workspace_indexed	vimrc/my_plugins/codeium.vim/autoload/codeium.vim	/^let s:codeium_workspace_indexed = v:false$/;"	v	line:483	language:Vim
 s:coerce	vimrc/sources_non_forked/vim-abolish/plugin/abolish.vim	/^function! s:coerce(type) abort$/;"	f	line:575	language:Vim	signature:(type)
 s:coffeeIndentExpr	vimrc/sources_non_forked/vim-coffee-script/after/indent/html.vim	/^let s:coffeeIndentExpr = &l:indentexpr$/;"	v	line:9	language:Vim
 s:col_end_patterns	vimrc/sources_non_forked/ale/autoload/ale/handlers/eslint.vim	/^let s:col_end_patterns = [$/;"	v	line:157	language:Vim
@@ -9761,6 +9869,7 @@ s:colorscheme_list	vimrc/sources_non_forked/vim-colors-solarized/colors/solarize
 s:columns	vimrc/sources_non_forked/lightline.vim/autoload/lightline.vim	/^let s:columns = -1$/;"	v	line:433	language:Vim
 s:command_output	vimrc/sources_non_forked/ale/autoload/ale/assert.vim	/^let s:command_output = []$/;"	v	line:1	language:Vim
 s:command_sink	vimrc/my_plugins/fzf.vim/autoload/fzf/vim.vim	/^function! s:command_sink(lines)$/;"	f	line:1193	language:Vim	signature:(lines)
+s:commands	vimrc/my_plugins/codeium.vim/autoload/codeium/command.vim	/^let s:commands = {}$/;"	v	line:45	language:Vim
 s:commands	vimrc/sources_non_forked/vim-abolish/plugin/abolish.vim	/^let s:commands = {}$/;"	v	line:225	language:Vim
 s:commands	vimrc/sources_non_forked/vim-abolish/plugin/abolish.vim	/^let s:commands.abbrev     = s:commands.abstract.clone()$/;"	v	line:503	language:Vim
 s:commands	vimrc/sources_non_forked/vim-abolish/plugin/abolish.vim	/^let s:commands.abbrev.options = {"buffer":0,"cmdline":0,"delete":0}$/;"	v	line:504	language:Vim
@@ -9771,6 +9880,12 @@ s:commands	vimrc/sources_non_forked/vim-abolish/plugin/abolish.vim	/^let s:comma
 s:commands	vimrc/sources_non_forked/vim-abolish/plugin/abolish.vim	/^let s:commands.search.options = {"word": 0, "variable": 0, "flags": ""}$/;"	v	line:406	language:Vim
 s:commands	vimrc/sources_non_forked/vim-abolish/plugin/abolish.vim	/^let s:commands.substitute = s:commands.abstract.clone()$/;"	v	line:462	language:Vim
 s:commands	vimrc/sources_non_forked/vim-abolish/plugin/abolish.vim	/^let s:commands.substitute.options = {"word": 0, "variable": 0, "flags": "g"}$/;"	v	line:463	language:Vim
+s:commands.Auth	vimrc/my_plugins/codeium.vim/autoload/codeium/command.vim	/^function! s:commands.Auth(...) abort$/;"	f	line:47	language:Vim	signature:(...)
+s:commands.Disable	vimrc/my_plugins/codeium.vim/autoload/codeium/command.vim	/^function! s:commands.Disable(...) abort$/;"	f	line:140	language:Vim	signature:(...)
+s:commands.DisableBuffer	vimrc/my_plugins/codeium.vim/autoload/codeium/command.vim	/^function! s:commands.DisableBuffer(...) abort$/;"	f	line:144	language:Vim	signature:(...)
+s:commands.Enable	vimrc/my_plugins/codeium.vim/autoload/codeium/command.vim	/^function! s:commands.Enable(...) abort$/;"	f	line:156	language:Vim	signature:(...)
+s:commands.EnableBuffer	vimrc/my_plugins/codeium.vim/autoload/codeium/command.vim	/^function! s:commands.EnableBuffer(...) abort$/;"	f	line:161	language:Vim	signature:(...)
+s:commands.Toggle	vimrc/my_plugins/codeium.vim/autoload/codeium/command.vim	/^function! s:commands.Toggle(...) abort$/;"	f	line:166	language:Vim	signature:(...)
 s:commands.abbrev.process	vimrc/sources_non_forked/vim-abolish/plugin/abolish.vim	/^function! s:commands.abbrev.process(bang,line1,line2,count,args)$/;"	f	line:505	language:Vim	signature:(bang,line1,line2,count,args)
 s:commands.abstract.dispatch	vimrc/sources_non_forked/vim-abolish/plugin/abolish.vim	/^function! s:commands.abstract.dispatch(bang,line1,line2,count,args)$/;"	f	line:228	language:Vim	signature:(bang,line1,line2,count,args)
 s:commands.abstract.go	vimrc/sources_non_forked/vim-abolish/plugin/abolish.vim	/^function! s:commands.abstract.go(bang,line1,line2,count,args)$/;"	f	line:232	language:Vim	signature:(bang,line1,line2,count,args)
@@ -9910,6 +10025,7 @@ s:default_action	vimrc/my_plugins/fzf.vim/autoload/fzf/vim.vim	/^let s:default_a
 s:default_action	vimrc/my_plugins/fzf/plugin/fzf.vim	/^let s:default_action = {$/;"	v	line:1067	language:Vim
 s:default_ale_linter_aliases	vimrc/sources_non_forked/ale/autoload/ale/linter.vim	/^let s:default_ale_linter_aliases = {$/;"	v	line:12	language:Vim
 s:default_ale_linters	vimrc/sources_non_forked/ale/autoload/ale/linter.vim	/^let s:default_ale_linters = {$/;"	v	line:41	language:Vim
+s:default_codeium_enabled	vimrc/my_plugins/codeium.vim/autoload/codeium.vim	/^let s:default_codeium_enabled = {$/;"	v	line:11	language:Vim
 s:default_layout	vimrc/my_plugins/fzf/plugin/fzf.vim	/^function! s:default_layout()$/;"	f	line:141	language:Vim	signature:()
 s:default_normal_maps	vimrc/sources_non_forked/vim-multiple-cursors/plugin/multiple_cursors.vim	/^let s:default_normal_maps = {'!':1, '@':1, '=':1, 'q':1, 'r':1, 't':1, 'T':1, 'y':1, '[':1, ']':/;"	v	line:48	language:Vim
 s:default_paste_key	vimrc/sources_non_forked/vim-yankstack/autoload/yankstack.vim	/^function! s:default_paste_key(mode)$/;"	f	line:120	language:Vim	signature:(mode)
@@ -9948,6 +10064,7 @@ s:dim_0	vimrc/sources_non_forked/lightline.vim/autoload/lightline/colorscheme/se
 s:dim_0	vimrc/sources_non_forked/lightline.vim/autoload/lightline/colorscheme/selenized_dark.vim	/^let s:dim_0     = ['#72898f', 7]$/;"	v	line:11	language:Vim
 s:dim_0	vimrc/sources_non_forked/lightline.vim/autoload/lightline/colorscheme/selenized_light.vim	/^let s:dim_0     = ['#909995', 7]$/;"	v	line:11	language:Vim
 s:dim_0	vimrc/sources_non_forked/lightline.vim/autoload/lightline/colorscheme/selenized_white.vim	/^let s:dim_0     = ['#878787', 7]$/;"	v	line:11	language:Vim
+s:dir	vimrc/my_plugins/codeium.vim/plugin/codeium.vim	/^let s:dir = expand('<sfile>:h:h')$/;"	v	line:71	language:Vim
 s:dirArrows	vimrc/sources_non_forked/nerdtree/syntax/nerdtree.vim	/^    let s:dirArrows = escape(g:NERDTreeDirArrowCollapsible, '~]\\-').escape(g:NERDTreeDirArrowEx/;"	v	line:37	language:Vim
 s:dir_commit_file	vimrc/sources_non_forked/vim-fugitive/autoload/fugitive.vim	/^  let s:dir_commit_file = '\\c^fugitive:\/\/\\%(\/[^\/]\\@=\\)\\=\\([^?#]\\{-1,\\}\\)\/\/\\%(\\(/;"	v	line:167	language:Vim
 s:dir_commit_file	vimrc/sources_non_forked/vim-fugitive/autoload/fugitive.vim	/^  let s:dir_commit_file = '\\c^fugitive:\/\/\\([^?#]\\{-\\}\\)\/\/\\%(\\(\\x\\{40,\\}\\|[0-3]\\)/;"	v	line:179	language:Vim
@@ -10081,6 +10198,7 @@ s:file_source	vimrc/my_plugins/fzf.vim/autoload/fzf/vim/complete.vim	/^function!
 s:file_split_prefix	vimrc/my_plugins/fzf.vim/autoload/fzf/vim/complete.vim	/^function! s:file_split_prefix(prefix)$/;"	f	line:61	language:Vim	signature:(prefix)
 s:filecounts	vimrc/sources_non_forked/ctrlp.vim/autoload/ctrlp/rtscript.vim	/^let s:filecounts = {}$/;"	v	line:24	language:Vim
 s:filerename_map	vimrc/sources_non_forked/ale/autoload/ale/filerename.vim	/^let s:filerename_map = {}$/;"	v	line:4	language:Vim
+s:filetype_aliases	vimrc/my_plugins/codeium.vim/autoload/codeium/doc.vim	/^let s:filetype_aliases = {$/;"	v	line:72	language:Vim
 s:filetype_dict	vimrc/sources_non_forked/vim-markdown/ftplugin/markdown.vim	/^        let s:filetype_dict[key] = val$/;"	v	line:795	language:Vim
 s:filetype_dict	vimrc/sources_non_forked/vim-markdown/ftplugin/markdown.vim	/^    let s:filetype_dict = {$/;"	v	line:798	language:Vim
 s:filetype_dict	vimrc/sources_non_forked/vim-markdown/ftplugin/markdown.vim	/^    let s:filetype_dict = {}$/;"	v	line:791	language:Vim
@@ -10410,6 +10528,7 @@ s:history_sink	vimrc/my_plugins/fzf.vim/autoload/fzf/vim.vim	/^function! s:histo
 s:history_source	vimrc/my_plugins/fzf.vim/autoload/fzf/vim.vim	/^function! s:history_source(type)$/;"	f	line:614	language:Vim	signature:(type)
 s:hiupdate	vimrc/sources_non_forked/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:hiupdate()$/;"	f	line:2735	language:Vim	signature:()
 s:hl_list	vimrc/sources_non_forked/ale/autoload/ale/virtualtext.vim	/^let s:hl_list = get(s:, 'hl_list', [])$/;"	v	line:39	language:Vim
+s:hlgroup	vimrc/my_plugins/codeium.vim/autoload/codeium.vim	/^let s:hlgroup = 'CodeiumSuggestion'$/;"	v	line:1	language:Vim
 s:hlgrps	vimrc/sources_non_forked/ctrlp.vim/autoload/ctrlp.vim	/^let s:hlgrps = {$/;"	v	line:188	language:Vim
 s:hls_cursor	vimrc/sources_non_forked/gruvbox/colors/gruvbox.vim	/^  let s:hls_cursor = get(s:gb, g:gruvbox_hls_cursor)$/;"	v	line:305	language:Vim
 s:hls_cursor	vimrc/sources_non_forked/gruvbox/colors/gruvbox.vim	/^let s:hls_cursor = s:orange$/;"	v	line:303	language:Vim
@@ -10431,6 +10550,11 @@ s:id	vimrc/sources_non_forked/ctrlp.vim/autoload/ctrlp/rtscript.vim	/^let s:id =
 s:id	vimrc/sources_non_forked/ctrlp.vim/autoload/ctrlp/tag.vim	/^let s:id = g:ctrlp_builtins + len(g:ctrlp_ext_vars)$/;"	v	line:22	language:Vim
 s:id	vimrc/sources_non_forked/ctrlp.vim/autoload/ctrlp/undo.vim	/^let s:id = g:ctrlp_builtins + len(g:ctrlp_ext_vars)$/;"	v	line:25	language:Vim
 s:id_counter	vimrc/sources_non_forked/tlib/autoload/tlib/Object.vim	/^let s:id_counter = 0$/;"	v	line:9	language:Vim
+s:ide	vimrc/my_plugins/codeium.vim/autoload/codeium/server.vim	/^  let s:ide = 'neovim'$/;"	v	line:7	language:Vim
+s:ide	vimrc/my_plugins/codeium.vim/autoload/codeium/server.vim	/^  let s:ide = 'vim'$/;"	v	line:9	language:Vim
+s:ide_version	vimrc/my_plugins/codeium.vim/autoload/codeium/server.vim	/^      let s:ide_version =  major . '.' . minor . '.' . patch$/;"	v	line:20	language:Vim
+s:ide_version	vimrc/my_plugins/codeium.vim/autoload/codeium/server.vim	/^      let s:ide_version =  major . '.' . minor$/;"	v	line:22	language:Vim
+s:ide_version	vimrc/my_plugins/codeium.vim/autoload/codeium/server.vim	/^    let s:ide_version = matchstr(execute('version'), 'NVIM v\\zs[^[:space:]]\\+')$/;"	v	line:14	language:Vim
 s:ifilter	vimrc/sources_non_forked/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:ifilter(list, str)$/;"	f	line:2116	language:Vim	signature:(list,str)
 s:ignore	vimrc/sources_non_forked/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:ignore()$/;"	f	line:11	language:Vim	signature:()
 s:in_comm	vimrc/sources_non_forked/vim-javascript/indent/javascript.vim	/^let s:in_comm = s:skip_expr[:-14] . "'comment\\\\|doc'"$/;"	v	line:66	language:Vim
@@ -10531,7 +10655,10 @@ s:kprange	vimrc/sources_non_forked/ctrlp.vim/autoload/ctrlp.vim	/^let s:kprange 
 s:l0	vimrc/sources_non_forked/vim-indent-object/plugin/indent-object.vim	/^let s:l0 = -1$/;"	v	line:39	language:Vim
 s:l1	vimrc/sources_non_forked/vim-indent-object/plugin/indent-object.vim	/^let s:l1 = -1$/;"	v	line:40	language:Vim
 s:label_col	vimrc/sources_non_forked/typescript-vim/indent/typescript.vim	/^function s:label_col()$/;"	f	line:134	language:Vim	signature:()
+s:language_enum	vimrc/my_plugins/codeium.vim/autoload/codeium/doc.vim	/^let s:language_enum = {$/;"	v	line:1	language:Vim
 s:language_id_of_filetype	vimrc/sources_non_forked/ale/autoload/ale/handlers/ocamllsp.vim	/^let s:language_id_of_filetype = {$/;"	v	line:4	language:Vim
+s:language_server_sha	vimrc/my_plugins/codeium.vim/autoload/codeium/server.vim	/^let s:language_server_sha = '071907d082576067b0c7a5f2f7659958865d751e'$/;"	v	line:2	language:Vim
+s:language_server_version	vimrc/my_plugins/codeium.vim/autoload/codeium/server.vim	/^let s:language_server_version = '1.14.11'$/;"	v	line:1	language:Vim
 s:languages	vimrc/sources_non_forked/ale/autoload/ale/fixers/uncrustify.vim	/^let s:languages = {$/;"	v	line:7	language:Vim
 s:lash	vimrc/sources_non_forked/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:lash(...)$/;"	f	line:1835	language:Vim	signature:(...)
 s:lash	vimrc/sources_non_forked/ctrlp.vim/autoload/ctrlp/utils.vim	/^fu! s:lash(...)$/;"	f	line:12	language:Vim	signature:(...)
@@ -10583,6 +10710,7 @@ s:load_scopes	vimrc/sources_non_forked/vim-snipmate/plugin/snipMate.vim	/^functi
 s:log	vimrc/sources_non_forked/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:log(m)$/;"	f	line:2513	language:Vim	signature:(m)
 s:log_diff_context	vimrc/sources_non_forked/vim-fugitive/autoload/fugitive.vim	/^let s:log_diff_context = '{"filename": fugitive#Find(v:val . from, a:dir), "lnum": get(offsets, /;"	v	line:5947	language:Vim
 s:log_file	vimrc/sources_non_forked/vim-gitgutter/autoload/gitgutter/debug.vim	/^let s:log_file    = s:plugin_dir.'gitgutter.log'$/;"	v	line:2	language:Vim
+s:logfile	vimrc/my_plugins/codeium.vim/autoload/codeium/log.vim	/^  let s:logfile = expand(get(g:, 'codeium_log_file', tempname() . '-codeium.log'))$/;"	v	line:7	language:Vim
 s:looking_at	vimrc/sources_non_forked/typescript-vim/indent/typescript.vim	/^function s:looking_at()$/;"	f	line:94	language:Vim	signature:()
 s:love	vimrc/sources_non_forked/lightline.vim/autoload/lightline/colorscheme/rosepine.vim	/^  let s:love = [ '#b4637a', 132 ]$/;"	v	line:23	language:Vim
 s:love	vimrc/sources_non_forked/lightline.vim/autoload/lightline/colorscheme/rosepine.vim	/^  let s:love = [ '#eb6f92', 204 ]$/;"	v	line:38	language:Vim
@@ -10722,6 +10850,7 @@ s:ns_id	vimrc/sources_non_forked/ale/autoload/ale/highlight.vim	/^    let s:ns_i
 s:ns_id	vimrc/sources_non_forked/ale/autoload/ale/virtualtext.vim	/^        let s:ns_id = nvim_create_namespace('ale')$/;"	v	line:48	language:Vim
 s:number_column	vimrc/sources_non_forked/gruvbox/colors/gruvbox.vim	/^  let s:number_column = get(s:gb, g:gruvbox_number_column)$/;"	v	line:310	language:Vim
 s:number_column	vimrc/sources_non_forked/gruvbox/colors/gruvbox.vim	/^let s:number_column = s:none$/;"	v	line:308	language:Vim
+s:nvim_extmark_ids	vimrc/my_plugins/codeium.vim/autoload/codeium.vim	/^let s:nvim_extmark_ids = []$/;"	v	line:152	language:Vim
 s:nvim_job_exit_wrapper	vimrc/my_plugins/vim-gutentags/autoload/gutentags.vim	/^    function! s:nvim_job_exit_wrapper(real_cb, job, exit_code, event_type) abort$/;"	f	line:631	language:Vim	signature:(real_cb,job,exit_code,event_type)
 s:nvim_job_out_wrapper	vimrc/my_plugins/vim-gutentags/autoload/gutentags.vim	/^    function! s:nvim_job_out_wrapper(real_cb, job, lines, event_type) abort$/;"	f	line:635	language:Vim	signature:(real_cb,job,lines,event_type)
 s:ob	vimrc/sources_non_forked/vim-colors-solarized/colors/solarized.vim	/^    let s:ob              = ""$/;"	v	line:367	language:Vim
@@ -11766,6 +11895,7 @@ s:repo_prototype	vimrc/sources_non_forked/vim-fugitive/autoload/fugitive.vim	/^l
 s:repo_rev_parse	vimrc/sources_non_forked/vim-fugitive/autoload/fugitive.vim	/^function! s:repo_rev_parse(rev) dict abort$/;"	f	line:1657	language:Vim	signature:(rev)
 s:repo_translate	vimrc/sources_non_forked/vim-fugitive/autoload/fugitive.vim	/^function! s:repo_translate(rev) dict abort$/;"	f	line:1635	language:Vim	signature:(rev)
 s:repo_tree	vimrc/sources_non_forked/vim-fugitive/autoload/fugitive.vim	/^function! s:repo_tree(...) dict abort$/;"	f	line:1617	language:Vim	signature:(...)
+s:request_nonce	vimrc/my_plugins/codeium.vim/autoload/codeium.vim	/^let s:request_nonce = 0$/;"	v	line:2	language:Vim
 s:reset_summary	vimrc/sources_non_forked/vim-gitgutter/autoload/gitgutter/hunk.vim	/^function! s:reset_summary(bufnr) abort$/;"	f	line:24	language:Vim	signature:(bufnr)
 s:reset_tick	vimrc/sources_non_forked/vim-gitgutter/autoload/gitgutter.vim	/^function! s:reset_tick(bufnr) abort$/;"	f	line:194	language:Vim	signature:(bufnr)
 s:resize_pads	vimrc/sources_non_forked/goyo.vim/autoload/goyo.vim	/^function! s:resize_pads()$/;"	f	line:87	language:Vim	signature:()
@@ -11781,6 +11911,7 @@ s:revert_highlight_fix	vimrc/sources_non_forked/vim-multiple-cursors/autoload/mu
 s:revert_mode	vimrc/sources_non_forked/vim-multiple-cursors/autoload/multiple_cursors.vim	/^function! s:revert_mode(from, to)$/;"	f	line:875	language:Vim	signature:(from,to)
 s:rgb	vimrc/sources_non_forked/lightline.vim/autoload/lightline/colorscheme.vim	/^function! s:rgb(r, g, b) abort$/;"	f	line:146	language:Vim	signature:(r,g,b)
 s:right	vimrc/sources_non_forked/auto-pairs/plugin/auto-pairs.vim	/^func! s:right(s)$/;"	f	line:127	language:Vim	signature:(s)
+s:root	vimrc/my_plugins/codeium.vim/autoload/codeium/server.vim	/^let s:root = expand('<sfile>:h:h:h')$/;"	v	line:3	language:Vim
 s:rootNERDTreePath	vimrc/sources_non_forked/nerdtree/autoload/nerdtree.vim	/^let s:rootNERDTreePath = resolve(expand('<sfile>:p:h:h'))$/;"	v	line:6	language:Vim
 s:rose	vimrc/sources_non_forked/lightline.vim/autoload/lightline/colorscheme/rosepine.vim	/^  let s:rose = [ '#d7827e', 174 ]$/;"	v	line:22	language:Vim
 s:rose	vimrc/sources_non_forked/lightline.vim/autoload/lightline/colorscheme/rosepine.vim	/^  let s:rose = [ '#ebbcba', 217 ]$/;"	v	line:37	language:Vim
@@ -11881,6 +12012,7 @@ s:sep	vimrc/sources_non_forked/ale/autoload/ale/handlers/eslint.vim	/^let s:sep 
 s:sep	vimrc/sources_non_forked/ale/autoload/ale/python.vim	/^let s:sep = has('win32') ? '\\' : '\/'$/;"	v	line:7	language:Vim
 s:separator	vimrc/sources_non_forked/ale/ale_linters/terraform/tfsec.vim	/^let s:separator = has('win32') ? '\\' : '\/'$/;"	v	line:9	language:Vim
 s:separator	vimrc/sources_non_forked/vim-gitgutter/autoload/gitgutter/debug.vim	/^function! s:separator()$/;"	f	line:28	language:Vim	signature:()
+s:server_port	vimrc/my_plugins/codeium.vim/autoload/codeium/server.vim	/^let s:server_port = v:null$/;"	v	line:27	language:Vim
 s:set_color	vimrc/sources_non_forked/goyo.vim/autoload/goyo.vim	/^function! s:set_color(group, attr, color)$/;"	f	line:35	language:Vim	signature:(group,attr,color)
 s:set_fold_levels	vimrc/sources_non_forked/vim-gitgutter/autoload/gitgutter/fold.vim	/^function! s:set_fold_levels()$/;"	f	line:68	language:Vim	signature:()
 s:set_line	vimrc/sources_non_forked/vim-snipmate/autoload/snipmate/jumping.vim	/^function! s:set_line(line, col, len, word)$/;"	f	line:235	language:Vim	signature:(line,col,len,word)
@@ -12376,6 +12508,7 @@ s:use_known_shell	vimrc/sources_non_forked/vim-gitgutter/autoload/gitgutter/util
 s:use_sh	vimrc/my_plugins/fzf/plugin/fzf.vim	/^function! s:use_sh()$/;"	f	line:450	language:Vim	signature:()
 s:use_word_boundary	vimrc/sources_non_forked/vim-multiple-cursors/autoload/multiple_cursors.vim	/^let s:use_word_boundary = 1$/;"	v	line:47	language:Vim
 s:useful_diff_colours	vimrc/sources_non_forked/vim-gitgutter/autoload/gitgutter/highlight.vim	/^function! s:useful_diff_colours()$/;"	f	line:230	language:Vim	signature:()
+s:using_codeium_status	vimrc/my_plugins/codeium.vim/autoload/codeium.vim	/^let s:using_codeium_status = 0$/;"	v	line:3	language:Vim
 s:usrign	vimrc/sources_non_forked/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:usrign(item, type)$/;"	f	line:1873	language:Vim	signature:(item,type)
 s:vacantdict	vimrc/sources_non_forked/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:vacantdict(dict)$/;"	f	line:2135	language:Vim	signature:(dict)
 s:validate_layout	vimrc/my_plugins/fzf/plugin/fzf.vim	/^function! s:validate_layout(layout)$/;"	f	line:374	language:Vim	signature:(layout)
@@ -13532,3 +13665,15 @@ zshKeyBindings	vimrc/my_plugins/fzf/main.go	/^var zshKeyBindings []byte$/;"	v	li
 ½	vimrc/vimrcs/extended.vim	/^cmap ½ \$$/;"	m	line:76	language:Vim
 ½	vimrc/vimrcs/extended.vim	/^imap ½ \$$/;"	m	line:77	language:Vim
 ½	vimrc/vimrcs/extended.vim	/^map ½ \$$/;"	m	line:75	language:Vim
+⌨️ Keybindings	vimrc/my_plugins/codeium.vim/README.md	/^### ⌨️ Keybindings$/;"	S	line:49	language:Markdown	section:codeium.vim""🛠️ Configuration
+⛔ Disabling Codeium	vimrc/my_plugins/codeium.vim/README.md	/^### ⛔ Disabling Codeium$/;"	S	line:107	language:Markdown	section:codeium.vim""🛠️ Configuration
+💤 Lazy	vimrc/my_plugins/codeium.vim/README.md	/^### 💤 Lazy$/;"	S	line:205	language:Markdown	section:codeium.vim""💾 Installation Options
+💪 Manual	vimrc/my_plugins/codeium.vim/README.md	/^### 💪 Manual$/;"	S	line:232	language:Markdown	section:codeium.vim""💾 Installation Options
+💻 Neovim	vimrc/my_plugins/codeium.vim/README.md	/^#### 💻 Neovim$/;"	t	line:243	language:Markdown	subsection:codeium.vim""💾 Installation Options""💪 Manual
+💾 Installation Options	vimrc/my_plugins/codeium.vim/README.md	/^## 💾 Installation Options$/;"	s	line:203	language:Markdown	chapter:codeium.vim
+📦 Vundle	vimrc/my_plugins/codeium.vim/README.md	/^### 📦 Vundle$/;"	S	line:220	language:Markdown	section:codeium.vim""💾 Installation Options
+📦 packer.nvim:	vimrc/my_plugins/codeium.vim/README.md	/^### 📦 packer.nvim:$/;"	S	line:226	language:Markdown	section:codeium.vim""💾 Installation Options
+🔌 vim-plug	vimrc/my_plugins/codeium.vim/README.md	/^### 🔌 vim-plug$/;"	S	line:214	language:Markdown	section:codeium.vim""💾 Installation Options
+🖥️ Vim	vimrc/my_plugins/codeium.vim/README.md	/^#### 🖥️ Vim$/;"	t	line:234	language:Markdown	subsection:codeium.vim""💾 Installation Options""💪 Manual
+🚀 Getting started	vimrc/my_plugins/codeium.vim/README.md	/^## 🚀 Getting started$/;"	s	line:31	language:Markdown	chapter:codeium.vim
+🛠️ Configuration	vimrc/my_plugins/codeium.vim/README.md	/^## 🛠️ Configuration$/;"	s	line:44	language:Markdown	chapter:codeium.vim

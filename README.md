@@ -23,6 +23,10 @@ bash install_nvim_macos.sh
 bash install_nvim_linux.sh
 ```
 
+## How to install new plugin?
+Only need to git submodule add Vim plugin to my_plugins folder, vimrc settings will auto load it
+
+
 # Important shortcuts to remember 
 ### Fix tlib error
 move to line 77 and remove --complete=command arguments
