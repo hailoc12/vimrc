@@ -8,7 +8,9 @@ sudo apt-get install neovim
 # set neovim to use vim config
 rm -rf ~/.config/nvim
 mkdir ~/.config/nvim
-ln -s ~/.vimrc ~/.config/nvim/init.vim
+#ln -s ~/.vimrc ~/.config/nvim/init.vim
+cp -r ~/$local_dir/nvim_configs/* ~/.config/nvim
+
 
 # install Github Copilot
 # git clone https://github.com/github/copilot.vim \
@@ -23,6 +25,10 @@ curl -sL https://deb.nodesource.com/setup_16.x | sudo bash -
 sudo apt install -y nodejs
 node -v
 
+# install plug.vim to install avante
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
 # install coc.nvim for code complete
 # rm -rf ~/.local/share/nvim/site/pack/coc/start
 # mkdir -p ~/.local/share/nvim/site/pack/coc/start
@@ -31,4 +37,5 @@ node -v
 # nvim -c "helptags coc.nvim/doc/ | q"
 
 # echo "Notice: open neovim then enter command :Copilot setup to finish setup Github Copilot"
+echo "OK"
 

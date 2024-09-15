@@ -2,10 +2,19 @@
 set -e
 export local_dir="vimrc"
 
+# install nvim
+brew install nvim
+brew upgrade nvim
+
 # set neovim to use vim config
 rm -rf ~/.config/nvim
 mkdir ~/.config/nvim
-ln -s ~/.vimrc ~/.config/nvim/init.vim
+# ln -s ~/.vimrc ~/.config/nvim/init.vim
+cp -r ~/$local_dir/nvim_configs/* ~/.config/nvim
+
+# install plug.vim to install avante
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 # install Github Copilot
 # git clone https://github.com/github/copilot.vim \

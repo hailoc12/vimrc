@@ -1,0 +1,7 @@
+# Ignore all "tags" folders
+tags/
+
+# Ignore ctags files
+tags
+.tags
+.tags*
