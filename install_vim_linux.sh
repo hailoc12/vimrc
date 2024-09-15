@@ -63,3 +63,5 @@ cd ~/.vim_runtime
 
 # fix undo error files
 sudo chown -R $(whoami) ~/.vim_runtime
+
+echo "Remember to set ANTHROPIC API KEY in nvim_config/init.lua before running nvim install"

@@ -1164,7 +1164,7 @@ Contributors	vimrc/sources_non_forked/auto-pairs/README.md	/^Contributors$/;"	s	
 Contributors	vimrc/sources_non_forked/vim-multiple-cursors/README.md	/^### Contributors$/;"	S	line:253	language:Markdown	section:vim-multiple-cursors""Contributing
 Contributors	vimrc/sources_non_forked/vim-snipmate/Contributors.md	/^# Contributors #$/;"	c	line:1	language:Markdown
 Cope	vimrc/README.md	/^### Cope$/;"	S	line:376	language:Markdown	section:The Ultimate vimrc""Key Mappings
-Copy Paste	README.md	/^### Copy Paste$/;"	S	line:50	language:Markdown	chapter:Important shortcuts to remember
+Copy Paste	README.md	/^### Copy Paste$/;"	S	line:52	language:Markdown	chapter:Important shortcuts to remember
 CopyRunes	vimrc/my_plugins/fzf/src/util/chars.go	/^func (chars *Chars) CopyRunes(dest []rune, from int) {$/;"	f	line:211	language:Go	struct:util.Chars	signature:(dest []rune, from int)
 CountItems	vimrc/my_plugins/fzf/src/chunklist.go	/^func CountItems(cs []*Chunk) int {$/;"	f	line:49	language:Go	package:fzf	typeref:typename:int	signature:(cs []*Chunk)
 Cpublish	vimrc/sources_non_forked/rust.vim/plugin/cargo.vim	/^command! -nargs=* Cpublish call cargo#publish(<q-args>)$/;"	c	line:20	language:Vim
@@ -1548,7 +1548,7 @@ FILE_LIST_CMD_IS_ABSOLUTE	vimrc/my_plugins/vim-gutentags/plat/win32/update_tags.
 FZF	vimrc/my_plugins/fzf/plugin/fzf.vim	/^command! -nargs=* -complete=dir -bang FZF call s:cmd(<bang>0, <f-args>)$/;"	c	line:1099	language:Vim
 FZF	vimrc/my_plugins/fzf/test/test_go.rb	/^FZF = "FZF_DEFAULT_OPTS=\\"--no-scrollbar --pointer \\\\> --marker \\\\>\\" FZF_DEFAULT_COMMAND=/;"	C	line:27	language:Ruby
 FZF Vim integration	vimrc/my_plugins/fzf/README-VIM.md	/^FZF Vim integration$/;"	c	line:1	language:Markdown
-Fast editing	README.md	/^### Fast editing$/;"	S	line:62	language:Markdown	chapter:Important shortcuts to remember
+Fast editing	README.md	/^### Fast editing$/;"	S	line:64	language:Markdown	chapter:Important shortcuts to remember
 Fatal	vimrc/my_plugins/fzf/src/tui/tui.go	/^	Fatal$/;"	c	line:105	language:Go	package:tui
 Features	vimrc/sources_non_forked/auto-pairs/README.md	/^Features$/;"	s	line:15	language:Markdown	chapter:Auto Pairs
 Features	vimrc/sources_non_forked/gruvbox/README.md	/^Features$/;"	s	line:64	language:Markdown
@@ -1578,7 +1578,7 @@ FinishFill	vimrc/my_plugins/fzf/src/tui/tui.go	/^	FinishFill()$/;"	n	line:554	la
 First	vimrc/my_plugins/fzf/src/merger.go	/^func (mg *Merger) First() Result {$/;"	f	line:80	language:Go	struct:fzf.Merger	typeref:typename:Result	signature:()
 Fish	vimrc/my_plugins/fzf/src/options.go	/^	Fish         bool$/;"	m	line:413	language:Go	struct:fzf.Options	typeref:typename:bool
 Fish shell	vimrc/my_plugins/fzf/README.md	/^### Fish shell$/;"	S	line:872	language:Markdown	section:<img src="https://raw.githubusercontent.com/junegunn/i/master/fzf.png" height="170" alt="fzf - a command-line fuzzy finder"> [![github-actions](https://github.com/junegunn/fzf/workflows/Test%20fzf%20on%20Linux/badge.svg)](https://github.com/junegunn/fzf/actions)""Tips
-Fix tlib error	README.md	/^### Fix tlib error$/;"	S	line:31	language:Markdown	chapter:Important shortcuts to remember
+Fix tlib error	README.md	/^### Fix tlib error$/;"	S	line:33	language:Markdown	chapter:Important shortcuts to remember
 Flake	vimrc/sources_non_forked/vim-flake8/ftplugin/python_flake8.vim	/^command! Flake :call flake8#Flake8()$/;"	c	line:53	language:Vim
 Flake8	vimrc/sources_non_forked/vim-flake8/ftplugin/python_flake8.vim	/^function! Flake8()$/;"	f	line:40	language:Vim	signature:()
 Fly Mode	vimrc/sources_non_forked/auto-pairs/README.md	/^Fly Mode$/;"	s	line:124	language:Markdown	chapter:Auto Pairs
@@ -1804,7 +1804,7 @@ I16	vimrc/my_plugins/fzf/src/util/slab.go	/^	I16 []int16$/;"	m	line:4	language:G
 I32	vimrc/my_plugins/fzf/src/util/slab.go	/^	I32 []int32$/;"	m	line:5	language:Go	struct:util.Slab	typeref:typename:[]int32
 INDEX_WHOLE_PROJECT	vimrc/my_plugins/vim-gutentags/plat/win32/update_tags.cmd	/^        set INDEX_WHOLE_PROJECT=0$/;"	v	line:105	language:DosBatch
 INDEX_WHOLE_PROJECT	vimrc/my_plugins/vim-gutentags/plat/win32/update_tags.cmd	/^set INDEX_WHOLE_PROJECT=1$/;"	v	line:98	language:DosBatch
-Important shortcuts to remember	README.md	/^# Important shortcuts to remember $/;"	c	line:30	language:Markdown
+Important shortcuts to remember	README.md	/^# Important shortcuts to remember $/;"	c	line:32	language:Markdown
 Included Plugins	vimrc/README.md	/^## Included Plugins$/;"	s	line:84	language:Markdown	chapter:The Ultimate vimrc
 Included color schemes	vimrc/README.md	/^## Included color schemes$/;"	s	line:110	language:Markdown	chapter:The Ultimate vimrc
 Included modes	vimrc/README.md	/^## Included modes$/;"	s	line:120	language:Markdown	chapter:The Ultimate vimrc
@@ -2075,8 +2075,8 @@ MakoIndentClose	vimrc/sources_non_forked/vim-bundle-mako/indent/mako.vim	/^fun! 
 MakoIndentOpen	vimrc/sources_non_forked/vim-bundle-mako/indent/mako.vim	/^fun! <SID>MakoIndentOpen(lnum)$/;"	f	line:382	language:Vim	signature:(lnum)
 MakoIndentPush	vimrc/sources_non_forked/vim-bundle-mako/indent/mako.vim	/^fun! <SID>MakoIndentPush(tag)$/;"	f	line:162	language:Vim	signature:(tag)
 Man	vimrc/my_plugins/fzf/src/options.go	/^	Man          bool$/;"	m	line:414	language:Go	struct:fzf.Options	typeref:typename:bool
-Managing buffers	README.md	/^### Managing buffers$/;"	S	line:44	language:Markdown	chapter:Important shortcuts to remember
-Managing tabs	README.md	/^### Managing tabs  $/;"	S	line:37	language:Markdown	chapter:Important shortcuts to remember
+Managing buffers	README.md	/^### Managing buffers$/;"	S	line:46	language:Markdown	chapter:Important shortcuts to remember
+Managing tabs	README.md	/^### Managing tabs  $/;"	S	line:39	language:Markdown	chapter:Important shortcuts to remember
 Manual (not recommended)	vimrc/sources_non_forked/ack.vim/README.md	/^#### Manual (not recommended)$/;"	t	line:47	language:Markdown	subsection:ack.vim""Installation""The Plugin
 Manually	vimrc/sources_non_forked/bufexplorer/README.md	/^### Manually$/;"	S	line:34	language:Markdown	section:bufexplorer""Installation
 Manually	vimrc/sources_non_forked/vim-ruby/INSTALL.markdown	/^Manually$/;"	s	line:34	language:Markdown	chapter:Installation
@@ -2137,7 +2137,7 @@ MouseEvent	vimrc/my_plugins/fzf/src/tui/tui.go	/^type MouseEvent struct {$/;"	s	
 Move	vimrc/my_plugins/fzf/src/tui/light.go	/^func (w *LightWindow) Move(y int, x int) {$/;"	f	line:948	language:Go	struct:tui.LightWindow	signature:(y int, x int)
 Move	vimrc/my_plugins/fzf/src/tui/tcell.go	/^func (w *TcellWindow) Move(y int, x int) {$/;"	f	line:586	language:Go	struct:tui.TcellWindow	signature:(y int, x int)
 Move	vimrc/my_plugins/fzf/src/tui/tui.go	/^	Move(y int, x int)$/;"	n	line:561	language:Go	interface:tui.Window	signature:(y int, x int)
-Move between windows	README.md	/^### Move between windows$/;"	S	line:34	language:Markdown	chapter:Important shortcuts to remember
+Move between windows	README.md	/^### Move between windows$/;"	S	line:36	language:Markdown	chapter:Important shortcuts to remember
 MoveAndClear	vimrc/my_plugins/fzf/src/tui/light.go	/^func (w *LightWindow) MoveAndClear(y int, x int) {$/;"	f	line:955	language:Go	struct:tui.LightWindow	signature:(y int, x int)
 MoveAndClear	vimrc/my_plugins/fzf/src/tui/tcell.go	/^func (w *TcellWindow) MoveAndClear(y int, x int) {$/;"	f	line:592	language:Go	struct:tui.TcellWindow	signature:(y int, x int)
 MoveAndClear	vimrc/my_plugins/fzf/src/tui/tui.go	/^	MoveAndClear(y int, x int)$/;"	n	line:562	language:Go	interface:tui.Window	signature:(y int, x int)
@@ -2634,7 +2634,7 @@ Switch between Ripgrep launcher mode (CTRL-R) and fzf filtering mode (CTRL-F)	vi
 Switch between Ripgrep mode and fzf filtering mode (CTRL-T)	vimrc/my_plugins/fzf/ADVANCED.md	/^# Switch between Ripgrep mode and fzf filtering mode (CTRL-T)$/;"	c	line:484	language:Markdown
 SynFold	vimrc/sources_non_forked/vim-ruby/syntax/ruby.vim	/^com! -nargs=* SynFold call s:run_syntax_fold(<q-args>)$/;"	c	line:64	language:Vim
 Sync	vimrc/my_plugins/fzf/src/options.go	/^	Sync         bool$/;"	m	line:470	language:Go	struct:fzf.Options	typeref:typename:bool
-Syntastic checking	README.md	/^### Syntastic checking$/;"	S	line:82	language:Markdown	chapter:Important shortcuts to remember
+Syntastic checking	README.md	/^### Syntastic checking$/;"	S	line:84	language:Markdown	chapter:Important shortcuts to remember
 Syntax Concealing	vimrc/sources_non_forked/vim-markdown/README.md	/^### Syntax Concealing$/;"	S	line:165	language:Markdown	section:Vim Markdown""Options
 Syntax extensions	vimrc/sources_non_forked/vim-markdown/README.md	/^### Syntax extensions$/;"	S	line:243	language:Markdown	section:Vim Markdown""Options
 Syntax highlighting	vimrc/sources_non_forked/typescript-vim/README.md	/^Syntax highlighting$/;"	s	line:136	language:Markdown	chapter:An old Typescript Syntax for Vim
@@ -2650,7 +2650,7 @@ Syntax highlighting	vimrc/sources_non_forked/vim-ruby/spec/syntax/strings/heredo
 Syntax highlighting	vimrc/sources_non_forked/vim-ruby/spec/syntax/strings/interpolation_spec.rb	/^describe "Syntax highlighting" do$/;"	d	line:3	language:RSpec
 Syntax highlighting	vimrc/sources_non_forked/vim-ruby/spec/syntax/strings/strings_spec.rb	/^describe "Syntax highlighting" do$/;"	d	line:3	language:RSpec
 Syntax highlighting	vimrc/sources_non_forked/vim-ruby/spec/syntax/symbols_spec.rb	/^describe "Syntax highlighting" do$/;"	d	line:3	language:RSpec
-Syntax/Lint error:	README.md	/^### Syntax\/Lint error:$/;"	S	line:77	language:Markdown	chapter:Important shortcuts to remember
+Syntax/Lint error:	README.md	/^### Syntax\/Lint error:$/;"	S	line:79	language:Markdown	chapter:Important shortcuts to remember
 SyntaxCheckers_rust_cargo_GetLocList	vimrc/sources_non_forked/rust.vim/syntax_checkers/rust/cargo.vim	/^function! SyntaxCheckers_rust_cargo_GetLocList() dict$/;"	f	line:30	language:Vim	signature:()
 SyntaxCheckers_rust_cargo_IsAvailable	vimrc/sources_non_forked/rust.vim/syntax_checkers/rust/cargo.vim	/^function! SyntaxCheckers_rust_cargo_IsAvailable() dict$/;"	f	line:20	language:Vim	signature:()
 SyntaxCheckers_rust_rustc_GetLocList	vimrc/sources_non_forked/rust.vim/syntax_checkers/rust/rustc.vim	/^function! SyntaxCheckers_rust_rustc_GetLocList() dict$/;"	f	line:18	language:Vim	signature:()
@@ -3056,7 +3056,7 @@ With patience	vimrc/sources_non_forked/vim-ruby/INSTALL.markdown	/^With patience
 WithAttr	vimrc/my_plugins/fzf/src/tui/tui.go	/^func (p ColorPair) WithAttr(attr Attr) ColorPair {$/;"	f	line:282	language:Go	struct:tui.ColorPair	typeref:typename:ColorPair	signature:(attr Attr)
 WithNth	vimrc/my_plugins/fzf/src/options.go	/^	WithNth      []Range$/;"	m	line:423	language:Go	struct:fzf.Options	typeref:typename:[]Range
 WithShell	vimrc/my_plugins/fzf/src/options.go	/^	WithShell    string$/;"	m	line:485	language:Go	struct:fzf.Options	typeref:typename:string
-Working with folder and files	README.md	/^### Working with folder and files$/;"	S	line:53	language:Markdown	chapter:Important shortcuts to remember
+Working with folder and files	README.md	/^### Working with folder and files$/;"	S	line:55	language:Markdown	chapter:Important shortcuts to remember
 Wrap	vimrc/my_plugins/fzf/src/options.go	/^	Wrap         bool$/;"	m	line:440	language:Go	struct:fzf.Options	typeref:typename:bool
 WrapSign	vimrc/my_plugins/fzf/src/options.go	/^	WrapSign     *string$/;"	m	line:441	language:Go	struct:fzf.Options	typeref:typename:*string
 WriteBookmarks	vimrc/sources_non_forked/nerdtree/lib/nerdtree/creator.vim	/^    command! -buffer -nargs=0 WriteBookmarks call g:NERDTreeBookmark.Write()$/;"	c	line:25	language:Vim
