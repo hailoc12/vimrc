@@ -24,7 +24,9 @@ bash install_nvim_linux.sh
 ```
 
 ## How to install new plugin?
-Only need to git submodule add Vim plugin to my_plugins folder, vimrc settings will auto load it
+To work with well with nvim, we will use lazy.nvim to install new plugins
+Just add a new plugin lua config file (like avante.lua) in ~/vimrc/nvim_config/lua/plugins/
+After install using install_vim/nvim_linux/macos.sh, all plugin will be installed when load nvim for the first time
 
 
 # Important shortcuts to remember 

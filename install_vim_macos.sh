@@ -42,3 +42,5 @@ cd ~/.vim_runtime
 
 # fix undo error files
 sudo chown -R $(whoami) ~/.vim_runtime
+
+

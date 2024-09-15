@@ -3363,6 +3363,7 @@ actionChannel	vimrc/my_plugins/fzf/src/server.go	/^	actionChannel chan []*action
 actionNameRegexp	vimrc/my_plugins/fzf/src/options.go	/^	actionNameRegexp *regexp.Regexp$/;"	v	package:fzf	typeref:typename:*regexp.Regexp
 actionType	vimrc/my_plugins/fzf/src/terminal.go	/^type actionType int$/;"	t	package:fzf	typeref:typename:int
 activePreviewOpts	vimrc/my_plugins/fzf/src/terminal.go	/^	activePreviewOpts  *previewOpts$/;"	m	struct:fzf.Terminal	typeref:typename:*previewOpts
+add_to_runtimepath	nvim_configs/init.lua	/^local function add_to_runtimepath(directory)$/;"	f
 addons.apt.packages	vimrc/sources_non_forked/vim-multiple-cursors/.travis.yml	/^    packages:$/;"	k	keyInMiddle:addons.apt
 adjustMarginAndPadding	vimrc/my_plugins/fzf/src/terminal.go	/^func (t *Terminal) adjustMarginAndPadding() (int, int, [4]int, [4]int) {$/;"	f	struct:fzf.Terminal	typeref:typename:(int, int, [4]int, [4]int)
 after	vimrc/sources_non_forked/vim-multiple-cursors/spec/benchmark_spec.rb	/^def after(string)$/;"	f
@@ -5111,6 +5112,7 @@ bracket operators	vimrc/sources_non_forked/vim-ruby/spec/syntax/operators_spec.r
 buf_utils#GotoBuf	vimrc/sources_non_forked/vim-addon-mw-utils/autoload/buf_utils.vim	/^fun! buf_utils#GotoBuf(buf_identifier, opts)$/;"	f
 bufexplorer	vimrc/sources_non_forked/bufexplorer/README.md	/^bufexplorer$/;"	c
 buffer	vimrc/my_plugins/fzf/src/tui/light.go	/^	buffer        []byte$/;"	m	struct:tui.LightRenderer	typeref:typename:[]byte
+build	nvim_configs/lua/plugins/fzf.lua	/^    build = function()$/;"	f
 build	vimrc/my_plugins/fzf/Makefile	/^build:$/;"	t
 build	vimrc/sources_non_forked/vim-markdown/Makefile	/^build:$/;"	t
 build/html2vimdoc	vimrc/sources_non_forked/vim-markdown/Makefile	/^build\/html2vimdoc: | build$/;"	t
@@ -5314,6 +5316,10 @@ compareRanks	vimrc/my_plugins/fzf/src/result_x86.go	/^func compareRanks(irank Re
 compatible	vimrc/my_plugins/fzf/src/core.go	/^func (r revision) compatible(other revision) bool {$/;"	f	struct:fzf.revision	typeref:typename:bool
 complete	vimrc/sources_non_forked/vim-snippets/pythonx/vimsnippets.py	/^def complete(tab, opts):$/;"	f
 cond	vimrc/my_plugins/fzf/src/util/eventbox.go	/^	cond   *sync.Cond$/;"	m	struct:util.EventBox	typeref:typename:*sync.Cond
+config	nvim_configs/lua/plugins/ctrlp.lua	/^    config = function()$/;"	f
+config	nvim_configs/lua/plugins/fzf.lua	/^    config = function()$/;"	f
+config	nvim_configs/lua/plugins/gutentag.lua	/^    config = function()$/;"	f
+config	nvim_configs/lua/plugins/nerdtree.lua	/^    config = function()$/;"	f
 config_name	vimrc/sources_non_forked/editorconfig-vim/tests/core/editorconfig2.ps1	/^                $config_name = $argv[$idx]$/;"	v
 config_name	vimrc/sources_non_forked/editorconfig-vim/tests/core/editorconfig2.ps1	/^$config_name = '.editorconfig'$/;"	v
 configured_lspconfig_servers	vimrc/sources_non_forked/ale/lua/ale/util.lua	/^function M.configured_lspconfig_servers()$/;"	f	unknown:M

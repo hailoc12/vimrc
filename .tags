@@ -82,7 +82,9 @@
 !_TAG_KIND_DESCRIPTION!Python	Y,unknown	/name referring a class\/variable\/function\/module defined in other module/
 !_TAG_KIND_DESCRIPTION!Python	c,class	/classes/
 !_TAG_KIND_DESCRIPTION!Python	f,function	/functions/
+!_TAG_KIND_DESCRIPTION!Python	i,module	/modules/
 !_TAG_KIND_DESCRIPTION!Python	m,member	/class members/
+!_TAG_KIND_DESCRIPTION!Python	v,variable	/variables/
 !_TAG_KIND_DESCRIPTION!Rake	d,directory	/directory tasks/
 !_TAG_KIND_DESCRIPTION!Rake	f,File	/file tasks/
 !_TAG_KIND_DESCRIPTION!Rake	m,multitask	/multi tasks/
@@ -181,6 +183,9 @@
 !_TAG_ROLE_DESCRIPTION!HTML!stylesheet	extFile	/referenced as external files/
 !_TAG_ROLE_DESCRIPTION!Make!makefile	included	/included/
 !_TAG_ROLE_DESCRIPTION!Make!makefile	optional	/optionally included/
+!_TAG_ROLE_DESCRIPTION!Python!module	imported	/imported modules/
+!_TAG_ROLE_DESCRIPTION!Python!module	indirectlyImported	/module imported in alternative name/
+!_TAG_ROLE_DESCRIPTION!Python!module	namespace	/namespace from where classes\/variables\/functions are imported/
 !_TAG_ROLE_DESCRIPTION!Python!unknown	imported	/imported from the other module/
 !_TAG_ROLE_DESCRIPTION!Python!unknown	indirectlyImported	/classes\/variables\/functions\/modules imported in alternative name/
 !_TAG_ROLE_DESCRIPTION!Ruby!library	loaded	/loaded by "load" method/
@@ -745,6 +750,7 @@ ALEStopLSP	vimrc/sources_non_forked/ale/plugin/ale.vim	/^command! -bar -bang -na
 ALESymbolSearch	vimrc/sources_non_forked/ale/plugin/ale.vim	/^command! -nargs=1 ALESymbolSearch :call ale#symbol#Search(<q-args>)$/;"	c	line:295	language:Vim
 ALEToggle	vimrc/sources_non_forked/ale/plugin/ale.vim	/^command! -bar ALEToggle :call ale#toggle#Toggle()$/;"	c	line:238	language:Vim
 ALEToggleBuffer	vimrc/sources_non_forked/ale/plugin/ale.vim	/^command! -bar ALEToggleBuffer :call ale#toggle#ToggleBuffer(bufnr(''))$/;"	c	line:243	language:Vim
+ALWAYS	vimrc/sources_non_forked/vim-snippets/pythonx/javascript_snippets.py	/^ALWAYS = 'always'$/;"	v	line:7	language:Python	access:public
 ARCHIVE	vimrc/sources_non_forked/vim-coffee-script/Makefile	/^ARCHIVE = vim-coffee-script-$(VERSION).zip$/;"	m	line:4	language:Make
 ARCHIVE_DIRS	vimrc/sources_non_forked/vim-coffee-script/Makefile	/^ARCHIVE_DIRS = after autoload compiler doc ftdetect ftplugin indent syntax$/;"	m	line:5	language:Make
 AUTHOR	vimrc/my_plugins/fzf/man/man1/fzf.1	/^.SH AUTHOR$/;"	s	line:1670	language:Man	title:fzf
@@ -1631,6 +1637,7 @@ FuzzyAlgo	vimrc/my_plugins/fzf/src/options.go	/^	FuzzyAlgo    algo.Algo$/;"	m	li
 FuzzyMatchV1	vimrc/my_plugins/fzf/src/algo/algo.go	/^func FuzzyMatchV1(caseSensitive bool, normalize bool, forward bool, text *util.Chars, pattern []/;"	f	line:713	language:Go	package:algo	typeref:typename:(Result, *[]int)	signature:(caseSensitive bool, normalize bool, forward bool, text *util.Chars, pattern []rune, withPos bool, slab *util.Slab)
 FuzzyMatchV2	vimrc/my_plugins/fzf/src/algo/algo.go	/^func FuzzyMatchV2(caseSensitive bool, normalize bool, forward bool, input *util.Chars, pattern [/;"	f	line:432	language:Go	package:algo	typeref:typename:(Result, *[]int)	signature:(caseSensitive bool, normalize bool, forward bool, input *util.Chars, pattern []rune, withPos bool, slab *util.Slab)
 G	vimrc/sources_non_forked/vim-fugitive/plugin/fugitive.vim	/^  command! -bang -nargs=? -range=-1 -complete=customlist,fugitive#Complete G   exe fugitive#Comm/;"	c	line:548	language:Vim
+GITHUB_ZIP	vimrc/update_plugins.py	/^GITHUB_ZIP = "%s\/archive\/master.zip"$/;"	v	line:68	language:Python	access:public
 GO	vimrc/my_plugins/fzf/Makefile	/^GO             ?= go$/;"	m	line:2	language:Make
 GOOS	vimrc/my_plugins/fzf/Makefile	/^GOOS           ?= $(shell $(GO) env GOOS)$/;"	m	line:3	language:Make
 GTAGS_EXE	vimrc/my_plugins/vim-gutentags/plat/win32/update_gtags.cmd	/^	set GTAGS_EXE=%~2$/;"	v	line:17	language:DosBatch
@@ -2194,6 +2201,7 @@ NERDTreeSystemCommand	vimrc/sources_non_forked/nerdtree/nerdtree_plugin/fs_menu.
 NERDTreeToggle	vimrc/sources_non_forked/nerdtree/autoload/nerdtree/ui_glue.vim	/^    command! -n=? -complete=dir -bar NERDTreeToggle :call g:NERDTreeCreator.ToggleTabTree('<args/;"	c	line:660	language:Vim
 NERDTreeToggleVCS	vimrc/sources_non_forked/nerdtree/nerdtree_plugin/vcs.vim	/^command! -n=? -complete=dir -bar NERDTreeToggleVCS :call <SID>ToggleTabTreeVCS('<args>')$/;"	c	line:14	language:Vim
 NERDTreeVCS	vimrc/sources_non_forked/nerdtree/nerdtree_plugin/vcs.vim	/^command! -n=? -complete=dir -bar NERDTreeVCS :call <SID>CreateTabTreeVCS('<args>')$/;"	c	line:13	language:Vim
+NEVER	vimrc/sources_non_forked/vim-snippets/pythonx/javascript_snippets.py	/^NEVER = 'never'$/;"	v	line:8	language:Python	access:public
 Name	vimrc/my_plugins/fzf/src/terminal.go	/^func (a actionType) Name() string {$/;"	f	line:518	language:Go	type:fzf.actionType	typeref:typename:string	signature:()
 Native plugin management (Vim 8+)	vimrc/sources_non_forked/nginx.vim/README.md	/^### Native plugin management (Vim 8+)$/;"	S	line:56	language:Markdown	section:nginx.vim""Installation
 NeedScrollbarRedraw	vimrc/my_plugins/fzf/src/tui/dummy.go	/^func (r *FullscreenRenderer) NeedScrollbarRedraw() bool          { return false }$/;"	f	line:38	language:Go	unknown:tui.FullscreenRenderer	typeref:typename:bool	signature:()
@@ -2263,6 +2271,7 @@ Output	vimrc/my_plugins/fzf/src/options.go	/^	Output       chan string$/;"	m	lin
 PAUSE_BEFORE_EXIT	vimrc/my_plugins/vim-gutentags/plat/win32/update_tags.cmd	/^    set PAUSE_BEFORE_EXIT=1$/;"	v	line:56	language:DosBatch
 PAUSE_BEFORE_EXIT	vimrc/my_plugins/vim-gutentags/plat/win32/update_tags.cmd	/^set PAUSE_BEFORE_EXIT=0$/;"	v	line:16	language:DosBatch
 PEP8	vimrc/sources_non_forked/vim-python-pep8-indent/README.rst	/^.. _PEP8: http:\/\/www.python.org\/dev\/peps\/pep-0008\/$/;"	T	line:157	language:ReStructuredText	chapter:License and Authorship
+PLUGINS	vimrc/update_plugins.py	/^PLUGINS = """$/;"	v	line:18	language:Python	access:public
 PLUGIN_ROOT	vimrc/sources_non_forked/vim-yankstack/spec/spec_helper.rb	/^PLUGIN_ROOT = File.expand_path("..\/..", __FILE__)$/;"	C	line:3	language:Ruby
 POST_PROCESS_CMD	vimrc/my_plugins/vim-gutentags/plat/win32/update_tags.cmd	/^    set POST_PROCESS_CMD=%~2$/;"	v	line:75	language:DosBatch
 POST_PROCESS_CMD	vimrc/my_plugins/vim-gutentags/plat/win32/update_tags.cmd	/^set POST_PROCESS_CMD=$/;"	v	line:15	language:DosBatch
@@ -2481,6 +2490,7 @@ SEE ALSO	vimrc/my_plugins/fzf/man/man1/fzf.1	/^.SH SEE ALSO$/;"	s	line:1673	lang
 SHELL	vimrc/my_plugins/fzf/Makefile	/^SHELL          := bash$/;"	m	line:1	language:Make
 SLeftClick	vimrc/my_plugins/fzf/src/tui/tui.go	/^	SLeftClick$/;"	c	line:111	language:Go	package:tui
 SOURCES	vimrc/my_plugins/fzf/Makefile	/^SOURCES        := $(wildcard *.go src\/*.go src\/*\/*.go shell\/*sh man\/man1\/*.1) $(MAKEFILE)$/;"	m	line:7	language:Make
+SOURCE_DIR	vimrc/update_plugins.py	/^SOURCE_DIR = path.join(path.dirname(__file__), "sources_non_forked")$/;"	v	line:70	language:Python	access:public
 SRightClick	vimrc/my_plugins/fzf/src/tui/tui.go	/^	SRightClick$/;"	c	line:112	language:Go	package:tui
 SScrollDown	vimrc/my_plugins/fzf/src/tui/tui.go	/^	SScrollDown$/;"	c	line:116	language:Go	package:tui
 SScrollUp	vimrc/my_plugins/fzf/src/tui/tui.go	/^	SScrollUp$/;"	c	line:115	language:Go	package:tui
@@ -3123,6 +3133,7 @@ _	vimrc/sources_non_forked/vim-expand-region/plugin/expand_region.vim	/^  vmap _
 _EventType_index	vimrc/my_plugins/fzf/src/tui/eventtype_string.go	/^var _EventType_index = [...]uint16{0, 4, 9, 14, 19, 24, 29, 34, 39, 44, 47, 52, 57, 62, 67, 72, /;"	v	line:115	language:Go	package:tui
 _EventType_name	vimrc/my_plugins/fzf/src/tui/eventtype_string.go	/^const _EventType_name = "RuneCtrlACtrlBCtrlCCtrlDCtrlECtrlFCtrlGCtrlHTabCtrlJCtrlKCtrlLCtrlMCtrl/;"	c	line:113	language:Go	package:tui
 __anonad6f2ccb0100	vimrc/sources_non_forked/vim-ruby/spec/indent/blocks_spec.rb	/^        Class.new do$/;"	c	line:118	language:Ruby	module:X
+__author__	vimrc/sources_non_forked/ale/rplugin/python3/deoplete/sources/ale.py	/^__author__ = 'Joao Paulo, w0rp'$/;"	v	line:4	language:Python	access:protected
 __fzf_cd__	vimrc/my_plugins/fzf/shell/key-bindings.bash	/^__fzf_cd__() {$/;"	f	line:48	language:Sh
 __fzf_comprun	vimrc/my_plugins/fzf/shell/completion.bash	/^__fzf_comprun() {$/;"	f	line:45	language:Sh
 __fzf_comprun	vimrc/my_plugins/fzf/shell/completion.zsh	/^__fzf_comprun() {$/;"	f	line:107	language:Zsh
@@ -3340,6 +3351,7 @@ actionChannel	vimrc/my_plugins/fzf/src/server.go	/^	actionChannel chan []*action
 actionNameRegexp	vimrc/my_plugins/fzf/src/options.go	/^	actionNameRegexp *regexp.Regexp$/;"	v	line:1192	language:Go	package:fzf	typeref:typename:*regexp.Regexp
 actionType	vimrc/my_plugins/fzf/src/terminal.go	/^type actionType int$/;"	t	line:400	language:Go	package:fzf	typeref:typename:int
 activePreviewOpts	vimrc/my_plugins/fzf/src/terminal.go	/^	activePreviewOpts  *previewOpts$/;"	m	line:319	language:Go	struct:fzf.Terminal	typeref:typename:*previewOpts
+add_to_runtimepath	nvim_configs/init.lua	/^local function add_to_runtimepath(directory)$/;"	f	line:17	language:Lua
 addons.apt.packages	vimrc/sources_non_forked/vim-multiple-cursors/.travis.yml	/^    packages:$/;"	k	line:7	language:I18nRubyGem	keyInMiddle:addons.apt
 adjustMarginAndPadding	vimrc/my_plugins/fzf/src/terminal.go	/^func (t *Terminal) adjustMarginAndPadding() (int, int, [4]int, [4]int) {$/;"	f	line:1379	language:Go	struct:fzf.Terminal	typeref:typename:(int, int, [4]int, [4]int)	signature:()
 after	vimrc/sources_non_forked/vim-multiple-cursors/spec/benchmark_spec.rb	/^def after(string)$/;"	f	line:43	language:Ruby	signature:(string)
@@ -5096,6 +5108,7 @@ bracket operators	vimrc/sources_non_forked/vim-ruby/spec/syntax/operators_spec.r
 buf_utils#GotoBuf	vimrc/sources_non_forked/vim-addon-mw-utils/autoload/buf_utils.vim	/^fun! buf_utils#GotoBuf(buf_identifier, opts)$/;"	f	line:8	language:Vim	signature:(buf_identifier,opts)
 bufexplorer	vimrc/sources_non_forked/bufexplorer/README.md	/^bufexplorer$/;"	c	line:1	language:Markdown
 buffer	vimrc/my_plugins/fzf/src/tui/light.go	/^	buffer        []byte$/;"	m	line:92	language:Go	struct:tui.LightRenderer	typeref:typename:[]byte
+build	nvim_configs/lua/plugins/fzf.lua	/^    build = function()$/;"	f	line:6	language:Lua
 build	vimrc/my_plugins/fzf/Makefile	/^build:$/;"	t	line:95	language:Make
 build	vimrc/sources_non_forked/vim-markdown/Makefile	/^build:$/;"	t	line:46	language:Make
 build/html2vimdoc	vimrc/sources_non_forked/vim-markdown/Makefile	/^build\/html2vimdoc: | build$/;"	t	line:83	language:Make
@@ -5292,6 +5305,10 @@ compareRanks	vimrc/my_plugins/fzf/src/result_x86.go	/^func compareRanks(irank Re
 compatible	vimrc/my_plugins/fzf/src/core.go	/^func (r revision) compatible(other revision) bool {$/;"	f	line:35	language:Go	struct:fzf.revision	typeref:typename:bool	signature:(other revision)
 complete	vimrc/sources_non_forked/vim-snippets/pythonx/vimsnippets.py	/^def complete(tab, opts):$/;"	f	line:7	language:Python	access:public	signature:(tab, opts)
 cond	vimrc/my_plugins/fzf/src/util/eventbox.go	/^	cond   *sync.Cond$/;"	m	line:14	language:Go	struct:util.EventBox	typeref:typename:*sync.Cond
+config	nvim_configs/lua/plugins/ctrlp.lua	/^    config = function()$/;"	f	line:6	language:Lua
+config	nvim_configs/lua/plugins/fzf.lua	/^    config = function()$/;"	f	line:13	language:Lua
+config	nvim_configs/lua/plugins/gutentag.lua	/^    config = function()$/;"	f	line:6	language:Lua
+config	nvim_configs/lua/plugins/nerdtree.lua	/^    config = function()$/;"	f	line:11	language:Lua
 configured_lspconfig_servers	vimrc/sources_non_forked/ale/lua/ale/util.lua	/^function M.configured_lspconfig_servers()$/;"	f	line:3	language:Lua	unknown:M
 consoleDevice	vimrc/my_plugins/fzf/src/tui/light.go	/^const consoleDevice string = "\/dev\/tty"$/;"	c	line:30	language:Go	package:tui	typeref:typename:string
 consoleFlagsInput	vimrc/my_plugins/fzf/src/tui/light_windows.go	/^	consoleFlagsInput  = uint32(windows.ENABLE_VIRTUAL_TERMINAL_INPUT | windows.ENABLE_PROCESSED_IN/;"	v	line:19	language:Go	package:tui
@@ -5819,6 +5836,7 @@ fullscreen	vimrc/my_plugins/fzf/src/tui/light.go	/^	fullscreen    bool$/;"	m	lin
 funcref#Call	vimrc/sources_non_forked/vim-addon-mw-utils/autoload/funcref.vim	/^function! funcref#Call(...)$/;"	f	line:28	language:Vim	signature:(...)
 funcref#Function	vimrc/sources_non_forked/vim-addon-mw-utils/autoload/funcref.vim	/^function! funcref#Function(name,...)$/;"	f	line:14	language:Vim	signature:(name,...)
 functions,function definitions	vimrc/sources_non_forked/rust.vim/ctags/rust.ctags	/^--regex-Rust=\/^[ \\t]*(#\\[[^\\]]\\][ \\t]*)*(pub[ \\t]+)?(extern[ \\t]+)?("[^"]+"[ \\t]+)?(uns/;"	k	line:3	language:Ctags	langdef:Rust
+futures	vimrc/update_plugins.py	/^        futures = None$/;"	v	line:7	language:Python	access:public
 futures	vimrc/update_plugins.py	/^    import concurrent.futures as futures$/;"	I	line:2	language:Python	access:public	nameref:module:concurrent.futures
 fuzzy	vimrc/my_plugins/fzf/src/pattern.go	/^	fuzzy         bool$/;"	m	line:48	language:Go	struct:fzf.Pattern	typeref:typename:bool
 fuzzyAlgo	vimrc/my_plugins/fzf/src/pattern.go	/^	fuzzyAlgo     algo.Algo$/;"	m	line:49	language:Go	struct:fzf.Pattern	typeref:typename:algo.Algo
@@ -13063,6 +13081,7 @@ teardown	vimrc/my_plugins/fzf/test/test_go.rb	/^  def teardown$/;"	f	line:198	la
 teardown	vimrc/my_plugins/fzf/test/test_go.rb	/^  def teardown$/;"	f	line:237	language:Ruby	class:TestGoFZF	signature:()
 teardown	vimrc/my_plugins/fzf/test/test_go.rb	/^  def teardown$/;"	f	line:3377	language:Ruby	module:TestGoFZF.test_transform_query.test_transform_prompt.test_transform.TestShell	signature:()
 tempFiles	vimrc/my_plugins/fzf/src/terminal.go	/^	tempFiles []string$/;"	m	line:122	language:Go	struct:fzf.commandSpec	typeref:typename:[]string
+temp_directory	vimrc/update_plugins.py	/^    temp_directory = tempfile.mkdtemp()$/;"	v	line:105	language:Python	access:public
 template	vimrc/my_plugins/fzf/src/terminal.go	/^	template     string$/;"	m	line:561	language:Go	struct:fzf.previewRequest	typeref:typename:string
 template	vimrc/my_plugins/fzf/src/terminal.go	/^	template   string$/;"	m	line:2937	language:Go	struct:fzf.replacePlaceholderParams	typeref:typename:string
 template	vimrc/my_plugins/fzf/src/terminal_test.go	/^	template string$/;"	m	line:548	language:Go	struct:fzf.give	typeref:typename:string

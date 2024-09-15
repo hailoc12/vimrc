@@ -31,6 +31,5 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 # nvim -c "helptags coc.nvim/doc/ | q"
 
 # echo "Notice: open neovim then enter command :Copilot setup to finish setup Github Copilot"
+
 echo "OK"
-
-
