@@ -1,0 +1,12 @@
+[submodule "my_plugins/vim-gutentags"]
+	path = my_plugins/vim-gutentags
+	url = https://github.com/ludovicchabant/vim-gutentags.git
+[submodule "my_plugins/fzf.vim"]
+	path = my_plugins/fzf.vim
+	url = https://github.com/junegunn/fzf.vim.git
+[submodule "my_plugins/fzf"]
+	path = my_plugins/fzf
+	url = https://github.com/junegunn/fzf
+[submodule "my_plugins/codeium.vim"]
+	path = my_plugins/codeium.vim
+	url = https://github.com/Exafunction/codeium.vim
