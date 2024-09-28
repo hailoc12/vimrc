@@ -1466,6 +1466,7 @@ Erase	vimrc/my_plugins/fzf/src/tui/tui.go	/^	Erase()$/;"	n	line:567	language:Go	
 EraseMaybe	vimrc/my_plugins/fzf/src/tui/light.go	/^func (w *LightWindow) EraseMaybe() bool {$/;"	f	line:1158	language:Go	struct:tui.LightWindow	typeref:typename:bool	signature:()
 EraseMaybe	vimrc/my_plugins/fzf/src/tui/tcell.go	/^func (w *TcellWindow) EraseMaybe() bool {$/;"	f	line:576	language:Go	struct:tui.TcellWindow	typeref:typename:bool	signature:()
 EraseMaybe	vimrc/my_plugins/fzf/src/tui/tui.go	/^	EraseMaybe() bool$/;"	n	line:568	language:Go	interface:tui.Window	typeref:typename:bool	signature:()
+Error	vimrc/sources_non_forked/rust.vim/test/run-tests	/^class Error(Exception):$/;"	c	line:10	language:Python	inherits:Exception	access:public
 Error checking with [Syntastic][syn]	vimrc/sources_non_forked/rust.vim/README.md	/^### Error checking with [Syntastic][syn]$/;"	S	line:61	language:Markdown	section:rust.vim""Features
 ErubyAtCursor	vimrc/sources_non_forked/vim-ruby/ftplugin/eruby.vim	/^function! ErubyAtCursor() abort$/;"	f	line:129	language:Vim	signature:()
 Esc	vimrc/my_plugins/fzf/src/tui/tui.go	/^	Esc$/;"	c	line:45	language:Go	package:tui
@@ -1802,6 +1803,7 @@ I	vimrc/sources_non_forked/ale/ftplugin/ale-preview-selection.vim	/^noremap <buf
 I don't want to jump to the first result automatically.	vimrc/sources_non_forked/ack.vim/README.md	/^#### I don't want to jump to the first result automatically. ####$/;"	t	line:127	language:Markdown	section:ack.vim""Possibly FAQ
 I16	vimrc/my_plugins/fzf/src/util/slab.go	/^	I16 []int16$/;"	m	line:4	language:Go	struct:util.Slab	typeref:typename:[]int16
 I32	vimrc/my_plugins/fzf/src/util/slab.go	/^	I32 []int32$/;"	m	line:5	language:Go	struct:util.Slab	typeref:typename:[]int32
+IMAGE	vimrc/sources_non_forked/rust.vim/test/run-tests	/^IMAGE = "%s:%s" % (REPO, TAG)$/;"	v	line:8	language:Python	access:public
 INDEX_WHOLE_PROJECT	vimrc/my_plugins/vim-gutentags/plat/win32/update_tags.cmd	/^        set INDEX_WHOLE_PROJECT=0$/;"	v	line:105	language:DosBatch
 INDEX_WHOLE_PROJECT	vimrc/my_plugins/vim-gutentags/plat/win32/update_tags.cmd	/^set INDEX_WHOLE_PROJECT=1$/;"	v	line:98	language:DosBatch
 Important shortcuts to remember	README.md	/^# Important shortcuts to remember $/;"	c	line:32	language:Markdown
@@ -2388,6 +2390,7 @@ R	vimrc/sources_non_forked/bufexplorer/plugin/bufexplorer.vim	/^    nnoremap <sc
 REF	vimrc/sources_non_forked/vim-coffee-script/Makefile	/^REF = HEAD$/;"	m	line:1	language:Make
 REGISTRY	vimrc/sources_non_forked/vim-markdown/Makefile	/^REGISTRY=${VIMDIR}\/registry$/;"	m	line:3	language:Make
 RELOAD INPUT	vimrc/my_plugins/fzf/man/man1/fzf.1	/^.SS RELOAD INPUT$/;"	S	line:1585	language:Man	section:fzf""KEY/EVENT BINDINGS
+REPO	vimrc/sources_non_forked/rust.vim/test/run-tests	/^REPO = "alonid\/vim-testbed"$/;"	v	line:6	language:Python	access:public
 REVISION	vimrc/my_plugins/fzf/Makefile	/^REVISION       := $(FZF_REVISION)$/;"	m	line:21	language:Make
 REVISION	vimrc/my_plugins/fzf/Makefile	/^REVISION       := $(shell git log -n 1 --pretty=format:%h --abbrev=8 -- $(SOURCES) 2> \/dev\/nul/;"	m	line:23	language:Make
 ROOT_DIR	vimrc/my_plugins/fzf/Makefile	/^ROOT_DIR       := $(shell dirname $(MAKEFILE))$/;"	m	line:6	language:Make
@@ -2655,6 +2658,7 @@ SyntaxCheckers_rust_cargo_GetLocList	vimrc/sources_non_forked/rust.vim/syntax_ch
 SyntaxCheckers_rust_cargo_IsAvailable	vimrc/sources_non_forked/rust.vim/syntax_checkers/rust/cargo.vim	/^function! SyntaxCheckers_rust_cargo_IsAvailable() dict$/;"	f	line:20	language:Vim	signature:()
 SyntaxCheckers_rust_rustc_GetLocList	vimrc/sources_non_forked/rust.vim/syntax_checkers/rust/rustc.vim	/^function! SyntaxCheckers_rust_rustc_GetLocList() dict$/;"	f	line:18	language:Vim	signature:()
 T	vimrc/sources_non_forked/bufexplorer/plugin/bufexplorer.vim	/^    nnoremap <script> <silent> <nowait> <buffer> T             :call <SID>ToggleShowTabBuffer()</;"	m	line:536	language:Vim
+TAG	vimrc/sources_non_forked/rust.vim/test/run-tests	/^TAG = "10-rust.vim"$/;"	v	line:7	language:Python	access:public
 TAGS_FILE	vimrc/my_plugins/vim-gutentags/plat/win32/update_tags.cmd	/^    set TAGS_FILE=%~2$/;"	v	line:32	language:DosBatch
 TAGS_FILE	vimrc/my_plugins/vim-gutentags/plat/win32/update_tags.cmd	/^set TAGS_FILE=tags$/;"	v	line:10	language:DosBatch
 TBrowseOutput	vimrc/sources_non_forked/tlib/plugin/02tlib.vim	/^command! -nargs=1 -complete=command TBrowseOutput call tlib#cmd#BrowseOutput(<q-args>)$/;"	c	line:66	language:Vim
@@ -5525,6 +5529,7 @@ docker	vimrc/my_plugins/fzf/Makefile	/^docker:$/;"	t	line:175	language:Make
 docker-test	vimrc/my_plugins/fzf/Makefile	/^docker-test:$/;"	t	line:179	language:Make
 docker_image	vimrc/sources_non_forked/vim-python-pep8-indent/Makefile	/^docker_image:$/;"	t	line:9	language:Make
 docker_push	vimrc/sources_non_forked/vim-python-pep8-indent/Makefile	/^docker_push:$/;"	t	line:11	language:Make
+docker_run	vimrc/sources_non_forked/rust.vim/test/run-tests	/^def docker_run(cmd, interactive=False, ok_fail=False):$/;"	f	line:46	language:Python	access:public	signature:(cmd, interactive=False, ok_fail=False)
 docker_update_latest	vimrc/sources_non_forked/vim-python-pep8-indent/Makefile	/^docker_update_latest:$/;"	t	line:13	language:Make
 does not dedent	vimrc/sources_non_forked/vim-python-pep8-indent/spec/indent/indent_spec.rb	/^    it "does not dedent" do$/;"	i	line:137	language:RSpec	describe:when inside an unfinished string
 does not indent	vimrc/sources_non_forked/vim-python-pep8-indent/spec/indent/indent_spec.rb	/^    it "does not indent" do$/;"	i	line:121	language:RSpec	describe:when '#' is not contained in a string and is followed by a colon
@@ -7330,6 +7335,7 @@ ii	vimrc/sources_non_forked/vim-indent-object/plugin/indent-object.vim	/^vnorema
 im	vimrc/sources_non_forked/vim-ruby/ftplugin/ruby.vim	/^    onoremap <silent> <buffer> im :<C-U>call <SID>wrap_i('[m',']M')<CR>$/;"	m	line:209	language:Vim
 im	vimrc/sources_non_forked/vim-ruby/ftplugin/ruby.vim	/^    xnoremap <silent> <buffer> im :<C-U>call <SID>wrap_i('[m',']M')<CR>$/;"	m	line:211	language:Vim
 image	vimrc/my_plugins/fzf/src/terminal.go	/^	image     bool$/;"	m	line:146	language:Go	struct:fzf.previewed	typeref:typename:bool
+image_exists	vimrc/sources_non_forked/rust.vim/test/run-tests	/^def image_exists():$/;"	f	line:63	language:Python	access:public	signature:()
 impls,trait implementations	vimrc/sources_non_forked/rust.vim/ctags/rust.ctags	/^--regex-Rust=\/^[ \\t]*(pub[ \\t]+)?impl([ \\t\\n]*<[^>]*>)?[ \\t]+(([a-zA-Z0-9_:]+)[ \\t]*(<[^>/;"	k	line:10	language:Ctags	langdef:Rust
 in insert mode	vimrc/sources_non_forked/vim-yankstack/spec/yankstack/yankstack_spec.rb	/^    context "in insert mode" do$/;"	c	line:256	language:RSpec	describe:Yankstack
 in normal mode	vimrc/sources_non_forked/vim-yankstack/spec/yankstack/yankstack_spec.rb	/^    context "in normal mode" do$/;"	c	line:66	language:RSpec	describe:Yankstack
@@ -7413,6 +7419,7 @@ initialDelayTac	vimrc/my_plugins/fzf/src/constants.go	/^	initialDelayTac   = 100
 initialPreviewOpts	vimrc/my_plugins/fzf/src/terminal.go	/^	initialPreviewOpts previewOpts$/;"	m	line:317	language:Go	struct:fzf.Terminal	typeref:typename:previewOpts
 initialize	vimrc/my_plugins/fzf/test/test_go.rb	/^  def initialize(shell = :bash)$/;"	f	line:77	language:Ruby	class:Tmux	signature:(shell = :bash)
 input	vimrc/my_plugins/fzf/src/terminal.go	/^	input              []rune$/;"	m	line:255	language:Go	struct:fzf.Terminal	typeref:typename:[]rune
+inside_docker	vimrc/sources_non_forked/rust.vim/test/run-tests	/^def inside_docker():$/;"	f	line:75	language:Python	access:public	signature:()
 install	vimrc/my_plugins/fzf/Makefile	/^install: bin\/fzf$/;"	t	line:90	language:Make
 install	vimrc/sources_non_forked/vim-markdown/Makefile	/^install:$/;"	t	line:7	language:Make
 interpretCode	vimrc/my_plugins/fzf/src/ansi.go	/^func interpretCode(ansiCode string, prevState *ansiState) ansiState {$/;"	f	line:328	language:Go	package:fzf	typeref:typename:ansiState	signature:(ansiCode string, prevState *ansiState)
@@ -7567,6 +7574,7 @@ m	vimrc/sources_non_forked/bufexplorer/plugin/bufexplorer.vim	/^    nnoremap <sc
 macros,macro definitions	vimrc/sources_non_forked/rust.vim/ctags/rust.ctags	/^--regex-Rust=\/^[ \\t]*macro_rules![ \\t]+([a-zA-Z0-9_]+)\/\\1\/d,macros,macro definitions\/$/;"	k	line:11	language:Ctags	langdef:Rust
 main	vimrc/my_plugins/fzf/main.go	/^func main() {$/;"	f	line:48	language:Go	package:main	signature:()
 main	vimrc/my_plugins/fzf/main.go	/^package main$/;"	p	line:1	language:Go
+main	vimrc/sources_non_forked/rust.vim/test/run-tests	/^def main():$/;"	f	line:85	language:Python	access:public	signature:()
 main_syntax	vimrc/sources_non_forked/typescript-vim/syntax/typescript.vim	/^  let main_syntax = "typescript"$/;"	v	line:13	language:Vim
 main_syntax	vimrc/sources_non_forked/vim-bundle-mako/syntax/mako.vim	/^  let main_syntax = b:mako_outer_lang$/;"	v	line:30	language:Vim
 main_syntax	vimrc/sources_non_forked/vim-javascript/syntax/javascript.vim	/^  let main_syntax = 'javascript'$/;"	v	line:12	language:Vim
@@ -7940,6 +7948,7 @@ powerline (default)	vimrc/sources_non_forked/lightline.vim/README.md	/^### power
 powerline (default)	vimrc/sources_non_forked/lightline.vim/colorscheme.md	/^### powerline (default)$/;"	S	line:3	language:Markdown	chapter:Available Colorschemes
 powerlineish	vimrc/sources_non_forked/lightline.vim/colorscheme.md	/^### powerlineish$/;"	S	line:7	language:Markdown	chapter:Available Colorschemes
 prefixLength	vimrc/my_plugins/fzf/src/tokenizer.go	/^	prefixLength int32$/;"	m	line:24	language:Go	struct:fzf.Token	typeref:typename:int32
+prep	vimrc/sources_non_forked/rust.vim/test/run-tests	/^def prep():$/;"	f	line:30	language:Python	access:public	signature:()
 prepare	vimrc/my_plugins/fzf/test/test_go.rb	/^  def prepare$/;"	f	line:150	language:Ruby	class:Tmux	signature:()
 prepare	vimrc/my_plugins/vim-plug/test/run	/^prepare() {$/;"	f	line:69	language:Sh
 preserveSpace	vimrc/my_plugins/fzf/src/terminal.go	/^	preserveSpace bool$/;"	m	line:546	language:Go	struct:fzf.placeholderFlags	typeref:typename:bool
@@ -8145,6 +8154,7 @@ rhubarb#repo_search	vimrc/sources_non_forked/vim-rhubarb/autoload/rhubarb.vim	/^
 rhubarb#request	vimrc/sources_non_forked/vim-rhubarb/autoload/rhubarb.vim	/^function! rhubarb#request(...) abort$/;"	f	line:226	language:Vim	signature:(...)
 right	vimrc/my_plugins/fzf/src/tui/tui.go	/^	right       rune$/;"	m	line:395	language:Go	struct:tui.BorderStyle	typeref:typename:rune
 rmcup	vimrc/my_plugins/fzf/src/tui/light.go	/^func (r *LightRenderer) rmcup() {$/;"	f	line:661	language:Go	struct:tui.LightRenderer	signature:()
+root	vimrc/sources_non_forked/rust.vim/test/run-tests	/^def root():$/;"	f	line:27	language:Python	access:public	signature:()
 rosepine (`background=dark`)	vimrc/sources_non_forked/lightline.vim/colorscheme.md	/^### rosepine (`background=dark`)$/;"	S	line:123	language:Markdown	chapter:Available Colorschemes
 rosepine (`background=light`)	vimrc/sources_non_forked/lightline.vim/colorscheme.md	/^### rosepine (`background=light`)$/;"	S	line:127	language:Markdown	chapter:Available Colorschemes
 rosepine_moon	vimrc/sources_non_forked/lightline.vim/colorscheme.md	/^### rosepine_moon$/;"	S	line:131	language:Markdown	chapter:Available Colorschemes
@@ -8162,6 +8172,7 @@ runProxy	vimrc/my_plugins/fzf/src/proxy.go	/^func runProxy(commandPrefix string,
 runTmux	vimrc/my_plugins/fzf/src/tmux.go	/^func runTmux(args []string, opts *Options) (int, error) {$/;"	f	line:10	language:Go	package:fzf	typeref:typename:(int, error)	signature:(args []string, opts *Options)
 runWinpty	vimrc/my_plugins/fzf/src/winpty.go	/^func runWinpty(_ []string, _ *Options) (int, error) {$/;"	f	line:11	language:Go	package:fzf	typeref:typename:(int, error)	signature:(_ []string, _ *Options)
 runWinpty	vimrc/my_plugins/fzf/src/winpty_windows.go	/^func runWinpty(args []string, opts *Options) (int, error) {$/;"	f	line:46	language:Go	package:fzf	typeref:typename:(int, error)	signature:(args []string, opts *Options)
+run_with_vimrc	vimrc/sources_non_forked/rust.vim/test/run-tests	/^def run_with_vimrc(vimrc):$/;"	f	line:80	language:Python	access:public	signature:(vimrc)
 runeWidth	vimrc/my_plugins/fzf/src/tui/tui.go	/^func runeWidth(r rune) int {$/;"	f	line:875	language:Go	package:tui	typeref:typename:int	signature:(r rune)
 running	vimrc/my_plugins/fzf/src/terminal.go	/^	running            *util.AtomicBool$/;"	m	line:306	language:Go	struct:fzf.Terminal	typeref:typename:*util.AtomicBool
 rust	vimrc/sources_non_forked/rust.vim/after/syntax/rust.vim	/^    augroup rust.vim.after$/;"	a	line:34	language:Vim
@@ -13049,6 +13060,7 @@ summary	vimrc/sources_non_forked/vim-gitgutter/test/runner.vim	/^let summary = [
 suppress	vimrc/my_plugins/fzf/src/terminal.go	/^	suppress           bool$/;"	m	line:328	language:Go	struct:fzf.Terminal	typeref:typename:bool
 surround.vim	vimrc/sources_non_forked/vim-surround/README.markdown	/^# surround.vim$/;"	c	line:1	language:Markdown
 sync	vimrc/my_plugins/fzf/src/terminal.go	/^	sync    bool$/;"	m	line:554	language:Go	struct:fzf.searchRequest	typeref:typename:bool
+system	vimrc/sources_non_forked/rust.vim/test/run-tests	/^def system(cmd, capture=False, ok_fail=False):$/;"	f	line:13	language:Python	access:public	signature:(cmd, capture=False, ok_fail=False)
 t	vimrc/my_plugins/fzf/src/terminal.go	/^	t actionType$/;"	m	line:395	language:Go	struct:fzf.action	typeref:typename:actionType
 t	vimrc/sources_non_forked/ale/ftplugin/ale-preview-selection.vim	/^noremap <buffer> t :call ale#preview#OpenSelectionInTab()<CR>$/;"	m	line:16	language:Vim
 t	vimrc/sources_non_forked/bufexplorer/plugin/bufexplorer.vim	/^    nnoremap <script> <silent> <nowait> <buffer> t             :call <SID>SelectBuffer("tab")<CR/;"	m	line:535	language:Vim
@@ -13339,6 +13351,7 @@ test_with_nth_ansi	vimrc/my_plugins/fzf/test/test_go.rb	/^  def test_with_nth_an
 test_with_nth_basic	vimrc/my_plugins/fzf/test/test_go.rb	/^  def test_with_nth_basic$/;"	f	line:1371	language:Ruby	class:TestGoFZF	signature:()
 test_with_nth_no_ansi	vimrc/my_plugins/fzf/test/test_go.rb	/^  def test_with_nth_no_ansi$/;"	f	line:1385	language:Ruby	class:TestGoFZF	signature:()
 testc	vimrc/sources_non_forked/tlib/test/tlib.vim	/^let testc = tlib#TestChild#New()$/;"	v	line:110	language:Vim
+tests_on_docker	vimrc/sources_non_forked/rust.vim/test/run-tests	/^def tests_on_docker():$/;"	f	line:67	language:Python	access:public	signature:()
 testworld	vimrc/sources_non_forked/tlib/test/tlib.vim	/^let testworld = tlib#World#New()$/;"	v	line:107	language:Vim
 text	vimrc/my_plugins/fzf/src/item.go	/^	text        util.Chars    \/\/ 32 = 24 + 1 + 1 + 2 + 4$/;"	m	line:11	language:Go	struct:fzf.Item	typeref:typename:util.Chars
 text	vimrc/my_plugins/fzf/src/pattern.go	/^	text          []rune$/;"	m	line:34	language:Go	struct:fzf.term	typeref:typename:[]rune

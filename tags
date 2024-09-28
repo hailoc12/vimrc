@@ -1455,6 +1455,7 @@ EOF	vimrc/my_plugins/fzf/install	/^  cat > "$src" << EOF$/;"	h
 EOF	vimrc/my_plugins/fzf/install	/^  fish << EOF$/;"	h
 EOF	vimrc/my_plugins/fzf/uninstall	/^  cat << EOF$/;"	h
 EOF	vimrc/my_plugins/vim-plug/test/run	/^    cat > "$d\/xxx.vim" << EOF$/;"	h
+EOF	vimrc/sources_non_forked/editorconfig-vim/tests/core/editorconfig	/^helpstr=$(cat<<'EOF'$/;"	h
 EOF	vimrc/sources_non_forked/vim-snipmate/t/tests.sh	/^vim -Es $tmp <<- EOF$/;"	h
 EOT	vimrc/sources_non_forked/editorconfig-vim/tests/travis-test.sh	/^    cat <<EOT$/;"	h
 EXIT STATUS	vimrc/my_plugins/fzf/man/man1/fzf.1	/^.SH EXIT STATUS$/;"	s	title:fzf
@@ -1485,6 +1486,7 @@ Erase	vimrc/my_plugins/fzf/src/tui/tui.go	/^	Erase()$/;"	n	interface:tui.Window
 EraseMaybe	vimrc/my_plugins/fzf/src/tui/light.go	/^func (w *LightWindow) EraseMaybe() bool {$/;"	f	struct:tui.LightWindow	typeref:typename:bool
 EraseMaybe	vimrc/my_plugins/fzf/src/tui/tcell.go	/^func (w *TcellWindow) EraseMaybe() bool {$/;"	f	struct:tui.TcellWindow	typeref:typename:bool
 EraseMaybe	vimrc/my_plugins/fzf/src/tui/tui.go	/^	EraseMaybe() bool$/;"	n	interface:tui.Window	typeref:typename:bool
+Error	vimrc/sources_non_forked/rust.vim/test/run-tests	/^class Error(Exception):$/;"	c
 Error checking with [Syntastic][syn]	vimrc/sources_non_forked/rust.vim/README.md	/^### Error checking with [Syntastic][syn]$/;"	S	section:rust.vim""Features
 ErubyAtCursor	vimrc/sources_non_forked/vim-ruby/ftplugin/eruby.vim	/^function! ErubyAtCursor() abort$/;"	f
 Esc	vimrc/my_plugins/fzf/src/tui/tui.go	/^	Esc$/;"	c	package:tui
@@ -1818,6 +1820,7 @@ I	vimrc/sources_non_forked/ale/ftplugin/ale-preview-selection.vim	/^noremap <buf
 I don't want to jump to the first result automatically.	vimrc/sources_non_forked/ack.vim/README.md	/^#### I don't want to jump to the first result automatically. ####$/;"	t	section:ack.vim""Possibly FAQ
 I16	vimrc/my_plugins/fzf/src/util/slab.go	/^	I16 []int16$/;"	m	struct:util.Slab	typeref:typename:[]int16
 I32	vimrc/my_plugins/fzf/src/util/slab.go	/^	I32 []int32$/;"	m	struct:util.Slab	typeref:typename:[]int32
+IMAGE	vimrc/sources_non_forked/rust.vim/test/run-tests	/^IMAGE = "%s:%s" % (REPO, TAG)$/;"	v
 INDEX_WHOLE_PROJECT	vimrc/my_plugins/vim-gutentags/plat/win32/update_tags.cmd	/^        set INDEX_WHOLE_PROJECT=0$/;"	v
 INDEX_WHOLE_PROJECT	vimrc/my_plugins/vim-gutentags/plat/win32/update_tags.cmd	/^set INDEX_WHOLE_PROJECT=1$/;"	v
 Important shortcuts to remember	README.md	/^# Important shortcuts to remember $/;"	c
@@ -2399,6 +2402,7 @@ R	vimrc/sources_non_forked/bufexplorer/plugin/bufexplorer.vim	/^    nnoremap <sc
 REF	vimrc/sources_non_forked/vim-coffee-script/Makefile	/^REF = HEAD$/;"	m
 REGISTRY	vimrc/sources_non_forked/vim-markdown/Makefile	/^REGISTRY=${VIMDIR}\/registry$/;"	m
 RELOAD INPUT	vimrc/my_plugins/fzf/man/man1/fzf.1	/^.SS RELOAD INPUT$/;"	S	section:fzf""KEY/EVENT BINDINGS
+REPO	vimrc/sources_non_forked/rust.vim/test/run-tests	/^REPO = "alonid\/vim-testbed"$/;"	v
 REVISION	vimrc/my_plugins/fzf/Makefile	/^REVISION       := $(FZF_REVISION)$/;"	m
 REVISION	vimrc/my_plugins/fzf/Makefile	/^REVISION       := $(shell git log -n 1 --pretty=format:%h --abbrev=8 -- $(SOURCES) 2> \/dev\/nul/;"	m
 ROOT_DIR	vimrc/my_plugins/fzf/Makefile	/^ROOT_DIR       := $(shell dirname $(MAKEFILE))$/;"	m
@@ -2666,6 +2670,7 @@ SyntaxCheckers_rust_cargo_GetLocList	vimrc/sources_non_forked/rust.vim/syntax_ch
 SyntaxCheckers_rust_cargo_IsAvailable	vimrc/sources_non_forked/rust.vim/syntax_checkers/rust/cargo.vim	/^function! SyntaxCheckers_rust_cargo_IsAvailable() dict$/;"	f
 SyntaxCheckers_rust_rustc_GetLocList	vimrc/sources_non_forked/rust.vim/syntax_checkers/rust/rustc.vim	/^function! SyntaxCheckers_rust_rustc_GetLocList() dict$/;"	f
 T	vimrc/sources_non_forked/bufexplorer/plugin/bufexplorer.vim	/^    nnoremap <script> <silent> <nowait> <buffer> T             :call <SID>ToggleShowTabBuffer()</;"	m
+TAG	vimrc/sources_non_forked/rust.vim/test/run-tests	/^TAG = "10-rust.vim"$/;"	v
 TAGS_FILE	vimrc/my_plugins/vim-gutentags/plat/win32/update_tags.cmd	/^    set TAGS_FILE=%~2$/;"	v
 TAGS_FILE	vimrc/my_plugins/vim-gutentags/plat/win32/update_tags.cmd	/^set TAGS_FILE=tags$/;"	v
 TBrowseOutput	vimrc/sources_non_forked/tlib/plugin/02tlib.vim	/^command! -nargs=1 -complete=command TBrowseOutput call tlib#cmd#BrowseOutput(<q-args>)$/;"	c
@@ -5542,6 +5547,7 @@ docker	vimrc/my_plugins/fzf/Makefile	/^docker:$/;"	t
 docker-test	vimrc/my_plugins/fzf/Makefile	/^docker-test:$/;"	t
 docker_image	vimrc/sources_non_forked/vim-python-pep8-indent/Makefile	/^docker_image:$/;"	t
 docker_push	vimrc/sources_non_forked/vim-python-pep8-indent/Makefile	/^docker_push:$/;"	t
+docker_run	vimrc/sources_non_forked/rust.vim/test/run-tests	/^def docker_run(cmd, interactive=False, ok_fail=False):$/;"	f
 docker_update_latest	vimrc/sources_non_forked/vim-python-pep8-indent/Makefile	/^docker_update_latest:$/;"	t
 does not dedent	vimrc/sources_non_forked/vim-python-pep8-indent/spec/indent/indent_spec.rb	/^    it "does not dedent" do$/;"	i	describe:when inside an unfinished string
 does not indent	vimrc/sources_non_forked/vim-python-pep8-indent/spec/indent/indent_spec.rb	/^    it "does not indent" do$/;"	i	describe:when '#' is not contained in a string and is followed by a colon
@@ -7023,6 +7029,7 @@ getScrollbar	vimrc/my_plugins/fzf/src/terminal.go	/^func (t *Terminal) getScroll
 getScrollbar	vimrc/my_plugins/fzf/src/terminal.go	/^func getScrollbar(perLine int, total int, height int, offset int) (int, int) {$/;"	f	package:fzf	typeref:typename:(int, int)
 get_comment_format	vimrc/sources_non_forked/vim-snippets/pythonx/vimsnippets.py	/^def get_comment_format():$/;"	f
 get_complete_position	vimrc/sources_non_forked/ale/rplugin/python3/deoplete/sources/ale.py	/^    def get_complete_position(self, context):$/;"	m	class:Source
+get_dir	vimrc/sources_non_forked/editorconfig-vim/tests/core/editorconfig	/^function get_dir()$/;"	f
 get_file_content	vimrc/sources_non_forked/vim-multiple-cursors/spec/benchmark_spec.rb	/^def get_file_content()$/;"	f
 get_file_content	vimrc/sources_non_forked/vim-multiple-cursors/spec/multiple_cursors_spec.rb	/^def get_file_content()$/;"	f
 get_option	vimrc/sources_non_forked/vim-snippets/pythonx/javascript_snippets.py	/^def get_option(snip, option, default=None):$/;"	f
@@ -7259,6 +7266,7 @@ ii	vimrc/sources_non_forked/vim-indent-object/plugin/indent-object.vim	/^vnorema
 im	vimrc/sources_non_forked/vim-ruby/ftplugin/ruby.vim	/^    onoremap <silent> <buffer> im :<C-U>call <SID>wrap_i('[m',']M')<CR>$/;"	m
 im	vimrc/sources_non_forked/vim-ruby/ftplugin/ruby.vim	/^    xnoremap <silent> <buffer> im :<C-U>call <SID>wrap_i('[m',']M')<CR>$/;"	m
 image	vimrc/my_plugins/fzf/src/terminal.go	/^	image     bool$/;"	m	struct:fzf.previewed	typeref:typename:bool
+image_exists	vimrc/sources_non_forked/rust.vim/test/run-tests	/^def image_exists():$/;"	f
 impls,trait implementations	vimrc/sources_non_forked/rust.vim/ctags/rust.ctags	/^--regex-Rust=\/^[ \\t]*(pub[ \\t]+)?impl([ \\t\\n]*<[^>]*>)?[ \\t]+(([a-zA-Z0-9_:]+)[ \\t]*(<[^>/;"	k	langdef:Rust
 in insert mode	vimrc/sources_non_forked/vim-yankstack/spec/yankstack/yankstack_spec.rb	/^    context "in insert mode" do$/;"	c	describe:Yankstack
 in normal mode	vimrc/sources_non_forked/vim-yankstack/spec/yankstack/yankstack_spec.rb	/^    context "in normal mode" do$/;"	c	describe:Yankstack
@@ -7342,6 +7350,7 @@ initialDelayTac	vimrc/my_plugins/fzf/src/constants.go	/^	initialDelayTac   = 100
 initialPreviewOpts	vimrc/my_plugins/fzf/src/terminal.go	/^	initialPreviewOpts previewOpts$/;"	m	struct:fzf.Terminal	typeref:typename:previewOpts
 initialize	vimrc/my_plugins/fzf/test/test_go.rb	/^  def initialize(shell = :bash)$/;"	f	class:Tmux
 input	vimrc/my_plugins/fzf/src/terminal.go	/^	input              []rune$/;"	m	struct:fzf.Terminal	typeref:typename:[]rune
+inside_docker	vimrc/sources_non_forked/rust.vim/test/run-tests	/^def inside_docker():$/;"	f
 install	vimrc/my_plugins/fzf/Makefile	/^install: bin\/fzf$/;"	t
 install	vimrc/sources_non_forked/vim-markdown/Makefile	/^install:$/;"	t
 interpretCode	vimrc/my_plugins/fzf/src/ansi.go	/^func interpretCode(ansiCode string, prevState *ansiState) ansiState {$/;"	f	package:fzf	typeref:typename:ansiState
@@ -7495,6 +7504,7 @@ m	vimrc/sources_non_forked/bufexplorer/plugin/bufexplorer.vim	/^    nnoremap <sc
 macros,macro definitions	vimrc/sources_non_forked/rust.vim/ctags/rust.ctags	/^--regex-Rust=\/^[ \\t]*macro_rules![ \\t]+([a-zA-Z0-9_]+)\/\\1\/d,macros,macro definitions\/$/;"	k	langdef:Rust
 main	vimrc/my_plugins/fzf/main.go	/^func main() {$/;"	f	package:main
 main	vimrc/my_plugins/fzf/main.go	/^package main$/;"	p
+main	vimrc/sources_non_forked/rust.vim/test/run-tests	/^def main():$/;"	f
 main_syntax	vimrc/sources_non_forked/typescript-vim/syntax/typescript.vim	/^  let main_syntax = "typescript"$/;"	v
 main_syntax	vimrc/sources_non_forked/vim-bundle-mako/syntax/mako.vim	/^  let main_syntax = b:mako_outer_lang$/;"	v
 main_syntax	vimrc/sources_non_forked/vim-javascript/syntax/javascript.vim	/^  let main_syntax = 'javascript'$/;"	v
@@ -7841,6 +7851,7 @@ powerline (default)	vimrc/sources_non_forked/lightline.vim/README.md	/^### power
 powerline (default)	vimrc/sources_non_forked/lightline.vim/colorscheme.md	/^### powerline (default)$/;"	S	chapter:Available Colorschemes
 powerlineish	vimrc/sources_non_forked/lightline.vim/colorscheme.md	/^### powerlineish$/;"	S	chapter:Available Colorschemes
 prefixLength	vimrc/my_plugins/fzf/src/tokenizer.go	/^	prefixLength int32$/;"	m	struct:fzf.Token	typeref:typename:int32
+prep	vimrc/sources_non_forked/rust.vim/test/run-tests	/^def prep():$/;"	f
 prepare	vimrc/my_plugins/fzf/test/test_go.rb	/^  def prepare$/;"	f	class:Tmux
 prepare	vimrc/my_plugins/vim-plug/test/run	/^prepare() {$/;"	f
 preserveSpace	vimrc/my_plugins/fzf/src/terminal.go	/^	preserveSpace bool$/;"	m	struct:fzf.placeholderFlags	typeref:typename:bool
@@ -8048,6 +8059,7 @@ rhubarb#repo_search	vimrc/sources_non_forked/vim-rhubarb/autoload/rhubarb.vim	/^
 rhubarb#request	vimrc/sources_non_forked/vim-rhubarb/autoload/rhubarb.vim	/^function! rhubarb#request(...) abort$/;"	f
 right	vimrc/my_plugins/fzf/src/tui/tui.go	/^	right       rune$/;"	m	struct:tui.BorderStyle	typeref:typename:rune
 rmcup	vimrc/my_plugins/fzf/src/tui/light.go	/^func (r *LightRenderer) rmcup() {$/;"	f	struct:tui.LightRenderer
+root	vimrc/sources_non_forked/rust.vim/test/run-tests	/^def root():$/;"	f
 rosepine (`background=dark`)	vimrc/sources_non_forked/lightline.vim/colorscheme.md	/^### rosepine (`background=dark`)$/;"	S	chapter:Available Colorschemes
 rosepine (`background=light`)	vimrc/sources_non_forked/lightline.vim/colorscheme.md	/^### rosepine (`background=light`)$/;"	S	chapter:Available Colorschemes
 rosepine_moon	vimrc/sources_non_forked/lightline.vim/colorscheme.md	/^### rosepine_moon$/;"	S	chapter:Available Colorschemes
@@ -8066,6 +8078,7 @@ runTmux	vimrc/my_plugins/fzf/src/tmux.go	/^func runTmux(args []string, opts *Opt
 runWinpty	vimrc/my_plugins/fzf/src/winpty.go	/^func runWinpty(_ []string, _ *Options) (int, error) {$/;"	f	package:fzf	typeref:typename:(int, error)
 runWinpty	vimrc/my_plugins/fzf/src/winpty_windows.go	/^func runWinpty(args []string, opts *Options) (int, error) {$/;"	f	package:fzf	typeref:typename:(int, error)
 run_process	vimrc/sources_non_forked/editorconfig-vim/tests/core/ecvimlib.ps1	/^function global:run_process$/;"	f
+run_with_vimrc	vimrc/sources_non_forked/rust.vim/test/run-tests	/^def run_with_vimrc(vimrc):$/;"	f
 runeWidth	vimrc/my_plugins/fzf/src/tui/tui.go	/^func runeWidth(r rune) int {$/;"	f	package:tui	typeref:typename:int
 running	vimrc/my_plugins/fzf/src/terminal.go	/^	running            *util.AtomicBool$/;"	m	struct:fzf.Terminal	typeref:typename:*util.AtomicBool
 rust	vimrc/sources_non_forked/rust.vim/after/syntax/rust.vim	/^    augroup rust.vim.after$/;"	a
@@ -12915,6 +12928,7 @@ summary	vimrc/sources_non_forked/vim-gitgutter/test/runner.vim	/^let summary = [
 suppress	vimrc/my_plugins/fzf/src/terminal.go	/^	suppress           bool$/;"	m	struct:fzf.Terminal	typeref:typename:bool
 surround.vim	vimrc/sources_non_forked/vim-surround/README.markdown	/^# surround.vim$/;"	c
 sync	vimrc/my_plugins/fzf/src/terminal.go	/^	sync    bool$/;"	m	struct:fzf.searchRequest	typeref:typename:bool
+system	vimrc/sources_non_forked/rust.vim/test/run-tests	/^def system(cmd, capture=False, ok_fail=False):$/;"	f
 t	vimrc/my_plugins/fzf/src/terminal.go	/^	t actionType$/;"	m	struct:fzf.action	typeref:typename:actionType
 t	vimrc/sources_non_forked/ale/ftplugin/ale-preview-selection.vim	/^noremap <buffer> t :call ale#preview#OpenSelectionInTab()<CR>$/;"	m
 t	vimrc/sources_non_forked/bufexplorer/plugin/bufexplorer.vim	/^    nnoremap <script> <silent> <nowait> <buffer> t             :call <SID>SelectBuffer("tab")<CR/;"	m
@@ -13208,6 +13222,7 @@ test_with_nth_ansi	vimrc/my_plugins/fzf/test/test_go.rb	/^  def test_with_nth_an
 test_with_nth_basic	vimrc/my_plugins/fzf/test/test_go.rb	/^  def test_with_nth_basic$/;"	f	class:TestGoFZF
 test_with_nth_no_ansi	vimrc/my_plugins/fzf/test/test_go.rb	/^  def test_with_nth_no_ansi$/;"	f	class:TestGoFZF
 testc	vimrc/sources_non_forked/tlib/test/tlib.vim	/^let testc = tlib#TestChild#New()$/;"	v
+tests_on_docker	vimrc/sources_non_forked/rust.vim/test/run-tests	/^def tests_on_docker():$/;"	f
 testworld	vimrc/sources_non_forked/tlib/test/tlib.vim	/^let testworld = tlib#World#New()$/;"	v
 text	vimrc/my_plugins/fzf/src/item.go	/^	text        util.Chars    \/\/ 32 = 24 + 1 + 1 + 2 + 4$/;"	m	struct:fzf.Item	typeref:typename:util.Chars
 text	vimrc/my_plugins/fzf/src/pattern.go	/^	text          []rune$/;"	m	struct:fzf.Pattern	typeref:typename:[]rune
