@@ -4,7 +4,7 @@ export local_dir="vimrc"
 
 # get all source codes
 cd ~/$local_dir/
-git submodule update --init --recursive
+#git submodule update --init --recursive
 
 #rm -rf vimrc/sources_non_forked/YouCompleteMe
 #git clone https://github.com/ycm-core/YouCompleteMe vimrc/sources_non_forked/YouCompleteMe
@@ -29,8 +29,7 @@ sudo chmod -R 755 ~/.vim_runtime
 sudo apt install build-essential python3-dev
 sudo apt install cmake
 # sudo snap install cmake --classic
-sudo apt-get install g++-8
-sudo apt install libstdc++6
+# sudo apt-get install g++-8
 #cd ~/.vim_runtime/sources_non_forked/YouCompleteMe
 #sudo chown -R $(whoami) ~/.vim_runtime/sources_non_forked/YouCompleteMe
 
