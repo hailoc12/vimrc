@@ -223,6 +223,7 @@ let g:gutentags_ctags_extra_args = [
 let g:gutentags_ctags_extra_args += ['--python-kinds=-iv']
 let g:gutentags_ctags_extra_args += ['--exclude=*.pyc']
 let g:gutentags_ctags_extra_args += ['--exclude=*.pyo']
+let g:gutentags_cache_dir = expand('~/.cache/vim/ctags/')
 
 autocmd BufWritePost * call system("ctags -R .")
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
