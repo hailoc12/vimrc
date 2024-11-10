@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 export local_dir="vimrc"
-sudo add-apt-repository ppa:neovim-ppa/stable
+sudo add-apt-repository ppa:neovim-ppa/unstable
 sudo apt-get update
 sudo apt-get install neovim
 
@@ -20,10 +20,10 @@ cp -r ~/$local_dir/nvim_configs/* ~/.config/nvim
 python3 -m pip install --user --upgrade pynvim
 
 # upgrade nodejs to 16x
-sudo apt update
-curl -sL https://deb.nodesource.com/setup_16.x | sudo bash -
-sudo apt install -y nodejs
-node -v
+# sudo apt update
+# curl -sL https://deb.nodesource.com/setup_16.x | sudo bash -
+# sudo apt install -y nodejs
+# node -v
 
 # install plug.vim to install avante
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
