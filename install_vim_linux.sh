@@ -35,7 +35,10 @@ sudo apt install cmake
 
 sudo apt install golang-go
 sudo apt install default-jre
-sudo apt install npm
+
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+sudo apt install -y nodejs
+# sudo apt install npm
 
 #CC=gcc-8 CXX=g++-8 python3 ./install.py --all
 
