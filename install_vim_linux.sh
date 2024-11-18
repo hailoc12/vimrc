@@ -66,4 +66,7 @@ cd ~/.vim_runtime
 # fix undo error files
 sudo chown -R $(whoami) ~/.vim_runtime
 
+cp .tmux.conf ~/
+
+echo "Remember to run brew install reattach-to-user-namespace on your macos to copy to iterm2"
 echo "Remember to set ANTHROPIC API KEY in nvim_config/init.lua before running nvim install"

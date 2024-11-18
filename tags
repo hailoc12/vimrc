@@ -4664,6 +4664,7 @@ calc_size	vimrc/my_plugins/fzf/plugin/fzf.vim	/^function! s:calc_size(max, val, 
 calculateScore	vimrc/my_plugins/fzf/src/algo/algo.go	/^func calculateScore(caseSensitive bool, normalize bool, text *util.Chars, pattern []rune, sidx int, eidx int, withPos bool) (int, *[]int) {$/;"	f
 calculateSize	vimrc/my_plugins/fzf/src/terminal.go	/^func calculateSize(base int, size sizeSpec, occupied int, minSize int, pad int) int {$/;"	f
 callback	vimrc/my_plugins/fzf/plugin/fzf.vim	/^function! s:callback(dict, lines) abort$/;"	f
+callback 	nvim_configs/lua/plugins/oscyank.lua	/^     callback = function()$/;"	f
 camelcase	vimrc/sources_non_forked/vim-abolish/plugin/abolish.vim	/^function! s:camelcase(word)$/;"	f
 canPreview	vimrc/my_plugins/fzf/src/terminal.go	/^func (t *Terminal) canPreview() bool {$/;"	f
 can_diffoff	vimrc/sources_non_forked/vim-fugitive/autoload/fugitive.vim	/^function! s:can_diffoff(buf) abort$/;"	f
@@ -4852,6 +4853,7 @@ config 	nvim_configs/lua/plugins/ctrlp.lua	/^    config = function()$/;"	f
 config 	nvim_configs/lua/plugins/fzf.lua	/^    config = function()$/;"	f
 config 	nvim_configs/lua/plugins/gutentag.lua	/^    config = function()$/;"	f
 config 	nvim_configs/lua/plugins/nerdtree.lua	/^    config = function()$/;"	f
+config 	nvim_configs/lua/plugins/oscyank.lua	/^ config = function()$/;"	f
 config_Get	vimrc/sources_non_forked/vim-fugitive/autoload/fugitive.vim	/^function! s:config_Get(name, ...) dict abort$/;"	f
 config_GetAll	vimrc/sources_non_forked/vim-fugitive/autoload/fugitive.vim	/^function! s:config_GetAll(name) dict abort$/;"	f
 config_GetRegexp	vimrc/sources_non_forked/vim-fugitive/autoload/fugitive.vim	/^function! s:config_GetRegexp(pattern) dict abort$/;"	f
