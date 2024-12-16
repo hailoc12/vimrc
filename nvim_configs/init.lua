@@ -47,5 +47,5 @@ vim.cmd('filetype plugin indent on')
 require("config.lazy")
 
 -- set api key for avante
-vim.env.ANTHROPIC_API_KEY=
+vim.env.ANTHROPIC_API_KEY=""
 
