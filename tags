@@ -2936,7 +2936,6 @@ adjust_hunk_summary	vimrc/sources_non_forked/vim-gitgutter/autoload/gitgutter/hu
 after	vimrc/sources_non_forked/vim-multiple-cursors/spec/benchmark_spec.rb	/^def after(string)$/;"	f
 after	vimrc/sources_non_forked/vim-multiple-cursors/spec/multiple_cursors_spec.rb	/^def after(string)$/;"	f
 after_paste	vimrc/sources_non_forked/vim-yankstack/autoload/yankstack.vim	/^function! s:after_paste()$/;"	f
-after_update_hook 	nvim_configs/lua/plugins/aider.lua	/^      after_update_hook = function()$/;"	f
 ag_handler	vimrc/my_plugins/fzf.vim/autoload/fzf/vim.vim	/^function! s:ag_handler(name, lines)$/;"	f
 ag_to_qf	vimrc/my_plugins/fzf.vim/autoload/fzf/vim.vim	/^function! s:ag_to_qf(line)$/;"	f
 ai	vimrc/sources_non_forked/vim-indent-object/plugin/indent-object.vim	/^onoremap <silent>ai :<C-u>cal <Sid>HandleTextObjectMapping(0, 0, 0, [line("."), line("."), col("."), col(".")])<CR>$/;"	m
@@ -6951,7 +6950,6 @@ normalized	vimrc/my_plugins/fzf/src/algo/normalize.go	/^var normalized = map[run
 nosort	vimrc/sources_non_forked/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:nosort()$/;"	f
 nosplit	vimrc/sources_non_forked/ctrlp.vim/autoload/ctrlp.vim	/^fu! s:nosplit()$/;"	f
 not_git_dir	vimrc/sources_non_forked/vim-gitgutter/autoload/gitgutter/utility.vim	/^function! s:not_git_dir(bufnr) abort$/;"	f
-notify 	nvim_configs/lua/plugins/aider.lua	/^      notify = function(...)$/;"	f
 notifyOnCont	vimrc/my_plugins/fzf/src/terminal_unix.go	/^func notifyOnCont(resizeChan chan<- os.Signal) {$/;"	f
 notifyOnCont	vimrc/my_plugins/fzf/src/terminal_windows.go	/^func notifyOnCont(resizeChan chan<- os.Signal) {$/;"	f
 notifyOnResize	vimrc/my_plugins/fzf/src/terminal_unix.go	/^func notifyOnResize(resizeChan chan<- os.Signal) {$/;"	f
