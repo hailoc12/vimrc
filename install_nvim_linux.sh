@@ -1,9 +1,16 @@
 #!/bin/sh
 set -e
 export local_dir="vimrc"
-sudo add-apt-repository ppa:neovim-ppa/unstable
-sudo apt-get update
-sudo apt-get install neovim
+# sudo add-apt-repository ppa:neovim-ppa/unstable
+# sudo apt-get update
+# sudo apt-get install neovim
+
+# Download the AppImage
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+chmod u+x nvim.appimage
+
+# Optional: Move to system path
+sudo mv nvim.appimage /usr/bin/nvim
 
 # set neovim to use vim config
 rm -rf ~/.config/nvim
@@ -17,7 +24,7 @@ cp -r ~/$local_dir/nvim_configs/* ~/.config/nvim
 #    ~/.config/nvim/pack/github/start/copilot.vim
 
 # install lib for YouCompleteMe to work correctly
-python3 -m pip install --user --upgrade pynvim
+# python3 -m pip install --user --upgrade pynvim
 
 # upgrade nodejs to 16x
 # sudo apt update
