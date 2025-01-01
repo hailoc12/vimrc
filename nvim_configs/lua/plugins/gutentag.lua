@@ -5,8 +5,8 @@ return {
     "ludovicchabant/vim-gutentags",
     config = function()
       -- Gutentags configuration
-      vim.g.gutentags_generate_on_new = 1
-      vim.g.gutentags_generate_on_write = 1
+      vim.g.gutentags_generate_on_new = 0
+      vim.g.gutentags_generate_on_write = 0
       vim.g.gutentags_generate_on_empty_buffer = 0
       vim.g.gutentags_ctags_extra_args = {'--tag-relative=yes', '--fields=+ailmnS'}
     end,
